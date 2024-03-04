@@ -27,9 +27,9 @@ Input
 def calculate_probability(a, b, c):
     if c <= a + b:
         if c <= min(a,b):
-            return c*c/(2*a*b)
+            return (c*c)*1/(2*a*b)
         else:
-            return (2*c - min(a,b)) * min(a,b)/(2*a*b)
+            return c*(c-min(a,b)) * min(a,b)/(2*a*b)
     return 1
 
 if __name__ == "__main__":
