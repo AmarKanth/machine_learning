@@ -57,8 +57,11 @@ sorted_frequencies = [frequencies[i] for i in sorted_indices]
 
 total_frequency = sum(sorted_frequencies)
 
-cumulative_frequencies = np.cumsum(sorted_frequencies)
-cumulative_percentages = cumulative_frequencies / total_frequency * 100
+# cumulative_frequencies = np.cumsum(sorted_frequencies)
+# cumulative_percentages = cumulative_frequencies / total_frequency * 100
+
+cumulative_frequencies = [sum(sorted_frequencies[:i+1]) for i in range(len(sorted_frequencies))]
+cumulative_percentages = [frequency / total_frequency * 100 for frequency in cumulative_frequencies]
 
 fig, ax1 = plt.subplots()
 
