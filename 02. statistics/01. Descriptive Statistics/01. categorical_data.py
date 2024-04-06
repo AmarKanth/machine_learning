@@ -77,13 +77,3 @@ ax2.set_ylim([0, 100])
 plt.title('Pareto Diagram for Car Brands')
 plt.xticks(rotation=45)
 plt.show()
-
-"""
-Levels of measurement
-1. qualitative :
-	nominal : these are like categories, can not be ordered.
-	ordinal : consist of groups and categories, which can follow the order.
-2. quantitative :
-	interval : has true zero
-	ratio : has no true zero
-"""
