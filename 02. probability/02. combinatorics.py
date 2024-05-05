@@ -12,51 +12,21 @@ can be called assuming each student gives the right answer. While it is given th
 if two numbers are same in the given set, they have different colors. 
 It means that if a1 = a2, then choosing a1 and choosing a2 will be considered as different 
 sets.
-(2, 4)
-(2, 6)
-(2, 1)
-(4, 6)
-(4, 1)
-(6, 1)
-(2, 4, 6)
-(2, 4, 1)
-(2, 6, 1)
-(4, 6, 1)
-(2, 4, 6, 1)
 """
-import math
+from itertools import combinations
 
-def combinations(n, k):
-    """
-    C(n,k)=n!/k!(n-k)!
-    """
-    return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))
-
-def solve_set_game(N, A):
+def count_even_sum_subsets(elements):
     MOD = 10**9 + 7
-    even_count = 0
-    odd_count = 0
-    
-    for num in A:
-        if num % 2 == 0:
-            even_count += 1
-        else:
-            odd_count += 1
-    
-    even_sum_subsets = 0
-    if even_count > 0:
-        for k in range(0, even_count + 1):
-            even_sum_subsets += combinations(even_count, k)
-        even_sum_subsets = even_sum_subsets - 1
-    
-    odd_even_sum_subsets = 0
-    if odd_count > 0:
-        for k in range(0, odd_count + 1, 2):
-            odd_even_sum_subsets += combinations(odd_count, k)
-    
-    total_even_sum_subsets = even_sum_subsets * odd_even_sum_subsets % MOD
-    return total_even_sum_subsets
+    even_sum_count = 0
+
+    for r in range(1, len(elements) + 1):
+        for combo in combinations(elements, r):
+            if sum(combo) % 2 == 0:
+                even_sum_count += 1
+
+    return even_sum_count % MOD
 
 N = 4
 A = [2, 4, 6, 1]
-print(solve_set_game(N, A))
+result = count_even_sum_subsets(A)
+print(result)
