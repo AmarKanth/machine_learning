@@ -34,6 +34,12 @@ E(A) = P(A) * n
 """
 
 """
+(1) A bag contains 10 oranges and 20 apples out of which 5 apples and 3 oranges are defective. 
+If a person takes out two at random, what is the probability that either both are 
+good or both are apples? 
+"""
+
+"""
 Given two numbers A and B and we generate x and y using the random number generator with 
 uniform probability density function [0, A] and [0, B] respectively, 
 what's the probability that x + y is less than C?
