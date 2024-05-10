@@ -36,7 +36,15 @@ E(A) = P(A) * n
 """
 (1) A bag contains 10 oranges and 20 apples out of which 5 apples and 3 oranges are defective. 
 If a person takes out two at random, what is the probability that either both are 
-good or both are apples? 
+good or both are apples?
+
+from math import comb
+
+P_A = comb(20, 2) / comb(30, 2)
+P_B = comb(22, 2) / comb(30, 2)
+P_A_intersect_B = comb(15, 2) / comb(30, 2)
+probability = P_A + P_B - P_A_intersect_B
+print(probability)
 """
 
 """
