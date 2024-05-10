@@ -1,8 +1,15 @@
 """
-A 		=> Event
-P(A) 	=> Probability
+Probability of an Event – If there are total p possible outcomes associated with a random experiment 
+and q of them are favourable outcomes to the event A, then the probability of event A is 
+denoted by P(A) and is given by
 
-P(A) = preferred-outcomes/all-outcomes
+P(A) = q/p
+The probability of non-occurrence of event A, i.e, P(A’) = 1 – P(A)
+
+Note –
+If the value of P(A) = 1, then event A is called a sure event.
+If the value of P(A) = 0, then event A is called an impossible event.
+Also, P(A) + P(A’) = 1
 """
 
 """
