@@ -63,6 +63,14 @@ P_union_AB = Fraction(2, 3)
 P_intersection_AB = P_A + P_B - P_union_AB
 print(P_intersection_AB)
 
+"""
+(3) Find the probability of getting a multiple of 3 when a die is rolled.
+"""
+total_outcomes = 6
+multiples_of_3 = [i for i in range(1,total_outcomes+1) if i%3==0]
+num_favorable_outcomes = len(multiples_of_3)
+probability = num_favorable_outcomes / total_outcomes
+print(probability)
 
 """
 Given two numbers A and B and we generate x and y using the random number generator with 
