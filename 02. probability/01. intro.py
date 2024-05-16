@@ -73,6 +73,14 @@ probability = num_favorable_outcomes / total_outcomes
 print(probability)
 
 """
+(4) Find the probability of getting a card of kings from a deck of 52 cards.
+"""
+total_outcomes = 52
+num_favorable_outcomes = 4
+probability = num_favorable_outcomes / total_outcomes
+print(probability)
+
+"""
 Given two numbers A and B and we generate x and y using the random number generator with 
 uniform probability density function [0, A] and [0, B] respectively, 
 what's the probability that x + y is less than C?
