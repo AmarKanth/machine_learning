@@ -101,6 +101,16 @@ x = 2 * P_red
 print(x)
 
 """
+(7) There are 24 students in a class. Out of these, 24 students, 16 are boys and the 
+remaining are girls. Find the probability of selecting a girl randomly.
+"""
+total_students = 24
+boys = 16
+girls = total_students - boys
+probability_girl = girls / total_students
+print(probability_girl)
+
+"""
 Given two numbers A and B and we generate x and y using the random number generator with 
 uniform probability density function [0, A] and [0, B] respectively, 
 what's the probability that x + y is less than C?
