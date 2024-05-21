@@ -91,6 +91,16 @@ probability = vowel_count / total_letters
 print(probability)
 
 """
+(6) A bag is filled with balls. Some of these balls are red in color. The probability 
+of picking a red ball is x/2. Find the value of x if the probability of picking 
+a non-red ball is 2/3.
+"""
+P_non_red = 2 / 3
+P_red = 1 - P_non_red
+x = 2 * P_red
+print(x)
+
+"""
 Given two numbers A and B and we generate x and y using the random number generator with 
 uniform probability density function [0, A] and [0, B] respectively, 
 what's the probability that x + y is less than C?
