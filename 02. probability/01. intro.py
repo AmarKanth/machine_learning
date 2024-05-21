@@ -81,6 +81,16 @@ probability = num_favorable_outcomes / total_outcomes
 print(probability)
 
 """
+(5) Find the probability of picking vowels in the word 'CHAMPION'
+"""
+word = "CHAMPION"
+vowels = 'AEIOU'
+total_letters = len(word)
+vowel_count = sum(1 for letter in word if letter in vowels)
+probability = vowel_count / total_letters
+print(probability)
+
+"""
 Given two numbers A and B and we generate x and y using the random number generator with 
 uniform probability density function [0, A] and [0, B] respectively, 
 what's the probability that x + y is less than C?
