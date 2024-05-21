@@ -111,6 +111,16 @@ probability_girl = girls / total_students
 print(probability_girl)
 
 """
+(8) There are 20 defective bulbs in a box of 500 electric bubs. Find the probability 
+of randomly selecting a non-defective bulb.
+"""
+total_bulbs = 500
+defective_bulbs = 20
+non_defective_bulbs = total_bulbs - defective_bulbs
+probability_non_defective = non_defective_bulbs / total_bulbs
+print(probability_non_defective)
+
+"""
 Given two numbers A and B and we generate x and y using the random number generator with 
 uniform probability density function [0, A] and [0, B] respectively, 
 what's the probability that x + y is less than C?
