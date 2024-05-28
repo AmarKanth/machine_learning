@@ -1,5 +1,5 @@
 """
-Probability of an Event – If there are total p possible outcomes associated with a random experiment 
+(1) Probability of an Event – If there are total p possible outcomes associated with a random experiment 
 and q of them are favourable outcomes to the event A, then the probability of event A is 
 denoted by P(A) and is given by
 
@@ -13,7 +13,7 @@ Also, P(A) + P(A’) = 1
 """
 
 """
-Theorems:
+(2) Theorems:
 General – Let A, B, and C are the events associated with a random experiment, then
 P(A∪B) = P(A) + P(B) – P(A∩B)
 P(A∪B) = P(A) + P(B) if A and B are mutually exclusive
@@ -26,7 +26,7 @@ then P(A1∩A2∩A3 ….. An) = P(A1)P(A2/A1)P(A3/A2∩A1) ….. P(An/A1∩A2∩
 """
 
 """
-Experimental Probabilities
+(3) Experimental Probabilities
 P(A) = successful-trails/all-trails
 
 Expected outcome = Theoritical outcome * number of trails
@@ -34,7 +34,7 @@ E(A) = P(A) * n
 """
 
 """
-(1) A bag contains 10 oranges and 20 apples out of which 5 apples and 3 oranges are defective. 
+(4) A bag contains 10 oranges and 20 apples out of which 5 apples and 3 oranges are defective. 
 If a person takes out two at random, what is the probability that either both are 
 good or both are apples?
 """
@@ -47,7 +47,7 @@ probability = P_A + P_B - P_A_intersect_B
 print(probability)
 
 """
-(2) The probability that a person will get an electric contract is 2/5 and 
+(5) The probability that a person will get an electric contract is 2/5 and 
 the probability that he will not get a plumbing contract is 4/7. 
 If the probability of getting at least one contact is 2/3, what is the 
 probability of getting both? 
@@ -64,7 +64,7 @@ P_intersection_AB = P_A + P_B - P_union_AB
 print(P_intersection_AB)
 
 """
-(3) Find the probability of getting a multiple of 3 when a die is rolled.
+(6) Find the probability of getting a multiple of 3 when a die is rolled.
 """
 total_outcomes = 6
 multiples_of_3 = [i for i in range(1,total_outcomes+1) if i%3==0]
@@ -73,7 +73,7 @@ probability = num_favorable_outcomes / total_outcomes
 print(probability)
 
 """
-(4) Find the probability of getting a card of kings from a deck of 52 cards.
+(7) Find the probability of getting a card of kings from a deck of 52 cards.
 """
 total_outcomes = 52
 num_favorable_outcomes = 4
@@ -81,7 +81,7 @@ probability = num_favorable_outcomes / total_outcomes
 print(probability)
 
 """
-(5) Find the probability of picking vowels in the word 'CHAMPION'
+(8) Find the probability of picking vowels in the word 'CHAMPION'
 """
 word = "CHAMPION"
 vowels = 'AEIOU'
@@ -91,7 +91,7 @@ probability = vowel_count / total_letters
 print(probability)
 
 """
-(6) A bag is filled with balls. Some of these balls are red in color. The probability 
+(9) A bag is filled with balls. Some of these balls are red in color. The probability 
 of picking a red ball is x/2. Find the value of x if the probability of picking 
 a non-red ball is 2/3.
 """
@@ -101,7 +101,7 @@ x = 2 * P_red
 print(x)
 
 """
-(7) There are 24 students in a class. Out of these, 24 students, 16 are boys and the 
+(10) There are 24 students in a class. Out of these, 24 students, 16 are boys and the 
 remaining are girls. Find the probability of selecting a girl randomly.
 """
 total_students = 24
@@ -111,7 +111,7 @@ probability_girl = girls / total_students
 print(probability_girl)
 
 """
-(8) There are 20 defective bulbs in a box of 500 electric bubs. Find the probability 
+(11) There are 20 defective bulbs in a box of 500 electric bubs. Find the probability 
 of randomly selecting a non-defective bulb.
 """
 total_bulbs = 500
