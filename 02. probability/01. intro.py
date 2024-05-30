@@ -62,14 +62,16 @@ probability of getting both?
 """
 from fractions import Fraction
 
-P_A = Fraction(2, 5)
-P_B_prime = Fraction(4, 7)
+person_gets_electric_contract = Fraction(2,5)
+person_does_not_get_plumbing_contract = Fraction(4,7)
+has_at_least_one_contract = Fraction(2,3)
 
-P_B = 1 - P_B_prime
-P_union_AB = Fraction(2, 3)
+P_A = person_gets_electric_contract
+P_B = 1 - person_does_not_get_plumbing_contract
+P_A_UNION_B = has_at_least_one_contract
 
-P_intersection_AB = P_A + P_B - P_union_AB
-print(P_intersection_AB)
+P_A_INTERSECT_B = P_A + P_B - P_A_UNION_B
+print(float(P_A_INTERSECT_B))
 
 """
 (6) Find the probability of getting a multiple of 3 when a die is rolled.
