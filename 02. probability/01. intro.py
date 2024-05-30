@@ -50,9 +50,9 @@ ways_to_select_two_good_apples = math.comb(15,2)
 
 P_A = ways_to_select_two_apples / ways_to_select_two_fruits
 P_B = ways_to_select_two_good_fruits / ways_to_select_two_fruits
-P_A_intersect_B = ways_to_select_two_good_apples / ways_to_select_two_fruits
-P = P_A + P_B - P_A_intersect_B
-print(P)
+P_A_INTERSECT_B = ways_to_select_two_good_apples / ways_to_select_two_fruits
+P_A_UNION_B = P_A + P_B - P_A_INTERSECT_B
+print(P_A_UNION_B)
 
 """
 (5) The probability that a person will get an electric contract is 2/5 and 
