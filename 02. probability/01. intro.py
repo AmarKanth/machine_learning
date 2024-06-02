@@ -127,12 +127,12 @@ defective_bulb_from_MachineA = Fraction(5, 100)
 defective_bulb_from_MachineB = Fraction(4, 100)
 defective_bulb_from_MachineC = Fraction(2, 100)
 
-s1 = bulb_from_MachineA*defective_bulb_from_MachineA
-s2 = bulb_from_MachineB*defective_bulb_from_MachineB
-s3 = bulb_from_MachineC*defective_bulb_from_MachineC
+p1 = bulb_from_MachineA*defective_bulb_from_MachineA
+p2 = bulb_from_MachineB*defective_bulb_from_MachineB
+p3 = bulb_from_MachineC*defective_bulb_from_MachineC
 
-P = s1 + s2 + s3
-print(float(P))
+p = p1 + p2 + p3
+print(float(p))
 
 
 """
