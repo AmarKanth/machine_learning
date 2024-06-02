@@ -12,6 +12,7 @@ If the value of P(A) = 0, then event A is called an impossible event.
 Also, P(A) + P(A’) = 1
 """
 
+
 """
 (2) Theorems:
 General – Let A, B, and C are the events associated with a random experiment, then
@@ -25,13 +26,14 @@ Extension of Multiplication Theorem – Let A1, A2, ….., An are n events assoc
 then P(A1∩A2∩A3 ….. An) = P(A1)P(A2/A1)P(A3/A2∩A1) ….. P(An/A1∩A2∩A3∩ ….. ∩An-1)
 """
 
-"""
-(3) Experimental Probabilities
-P(A) = successful-trails/all-trails
 
-Expected outcome = Theoritical outcome * number of trails
-E(A) = P(A) * n
 """
+(3) Probability Density Function
+The Probability Density Function (PDF) is the probability function that is the density of a 
+continuous random variable that lies between a range of certain values. Probability density 
+function explains how the normal distribution and how mean and deviation exist in the system.
+"""
+
 
 """
 (4) A bag contains 10 oranges and 20 apples out of which 5 apples and 3 oranges are defective. 
@@ -54,6 +56,7 @@ P_A_INTERSECT_B = ways_to_select_two_good_apples / ways_to_select_two_fruits
 P_A_UNION_B = P_A + P_B - P_A_INTERSECT_B
 print(P_A_UNION_B)
 
+
 """
 (5) The probability that a person will get an electric contract is 2/5 and 
 the probability that he will not get a plumbing contract is 4/7. 
@@ -73,6 +76,7 @@ P_A_UNION_B = has_at_least_one_contract
 P_A_INTERSECT_B = P_A + P_B - P_A_UNION_B
 print(float(P_A_INTERSECT_B))
 
+
 """
 (6) Find the probability of getting a multiple of 3 when a die is rolled.
 """
@@ -82,16 +86,65 @@ num_favorable_outcomes = len(multiples_of_3)
 probability = num_favorable_outcomes / total_outcomes
 print(probability)
 
+
 """
-(7) Find the probability of getting a card of kings from a deck of 52 cards.
+(7) Total Law of Probability – Let S be the sample space associated with a random 
+experiment and E1, E2, …, En be n mutually exclusive and exhaustive events associated 
+with the random experiment. If A is any event that occurs with E1 or E2 or … or En, then
+"""
+
+
+"""
+(8) A bag contains 3 black balls and 4 red balls. A second bag contains 4 black balls 
+and 2 red balls. One bag is selected at random. From the selected bag, one ball is drawn. 
+Find the probability that the ball drawn is red.
+"""
+from fractions import Fraction
+
+P_Selecting_FirstBag = Fraction(1,2)
+P_Selecting_SecondBag = Fraction(1,2)
+P_Red_FirstBag = Fraction(4,7)
+P_Red_SecondBag = Fraction(2,6)
+
+P_A = P_Selecting_FirstBag*P_Red_FirstBag + P_Selecting_SecondBag*P_Red_SecondBag
+print(P_A)
+
+
+"""
+(9) In a bulb factory, three machines namely A, B, C produces 25%, 35% and 40% of the 
+total bulbs respectively. Of their output, 5, 4 and 2 percent are defective bulbs 
+respectively. A bulb is drawn at random from products. What is the probability 
+that bulb drawn is defective?
+"""
+from fractions import Fraction
+
+bulb_from_MachineA = Fraction(25, 100)
+bulb_from_MachineB = Fraction(35, 100)
+bulb_from_MachineC = Fraction(40, 100)
+
+defective_bulb_from_MachineA = Fraction(5, 100)
+defective_bulb_from_MachineB = Fraction(4, 100)
+defective_bulb_from_MachineC = Fraction(2, 100)
+
+s1 = bulb_from_MachineA*defective_bulb_from_MachineA
+s2 = bulb_from_MachineB*defective_bulb_from_MachineB
+s3 = bulb_from_MachineC*defective_bulb_from_MachineC
+
+P = s1 + s2 + s3
+print(float(P))
+
+
+"""
+(10) Find the probability of getting a card of kings from a deck of 52 cards.
 """
 total_outcomes = 52
 num_favorable_outcomes = 4
 probability = num_favorable_outcomes / total_outcomes
 print(probability)
 
+
 """
-(8) Find the probability of picking vowels in the word 'CHAMPION'
+(11) Find the probability of picking vowels in the word 'CHAMPION'
 """
 word = "CHAMPION"
 vowels = 'AEIOU'
@@ -100,8 +153,9 @@ vowel_count = sum(1 for letter in word if letter in vowels)
 probability = vowel_count / total_letters
 print(probability)
 
+
 """
-(9) A bag is filled with balls. Some of these balls are red in color. The probability 
+(12) A bag is filled with balls. Some of these balls are red in color. The probability 
 of picking a red ball is x/2. Find the value of x if the probability of picking 
 a non-red ball is 2/3.
 """
@@ -110,8 +164,9 @@ P_red = 1 - P_non_red
 x = 2 * P_red
 print(x)
 
+
 """
-(10) There are 24 students in a class. Out of these, 24 students, 16 are boys and the 
+(13) There are 24 students in a class. Out of these, 24 students, 16 are boys and the 
 remaining are girls. Find the probability of selecting a girl randomly.
 """
 total_students = 24
@@ -120,8 +175,9 @@ girls = total_students - boys
 probability_girl = girls / total_students
 print(probability_girl)
 
+
 """
-(11) There are 20 defective bulbs in a box of 500 electric bubs. Find the probability 
+(14) There are 20 defective bulbs in a box of 500 electric bubs. Find the probability 
 of randomly selecting a non-defective bulb.
 """
 total_bulbs = 500
@@ -129,6 +185,7 @@ defective_bulbs = 20
 non_defective_bulbs = total_bulbs - defective_bulbs
 probability_non_defective = non_defective_bulbs / total_bulbs
 print(probability_non_defective)
+
 
 """
 Given two numbers A and B and we generate x and y using the random number generator with 
