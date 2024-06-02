@@ -91,6 +91,7 @@ print(probability)
 (7) Total Law of Probability – Let S be the sample space associated with a random 
 experiment and E1, E2, …, En be n mutually exclusive and exhaustive events associated 
 with the random experiment. If A is any event that occurs with E1 or E2 or … or En, then
+P(A) = P(E1)P(A/E1) + P(E2)P(A/E2) + ... +  P(En)P(A/En)
 """
 
 
