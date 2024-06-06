@@ -102,13 +102,13 @@ Find the probability that the ball drawn is red.
 """
 from fractions import Fraction
 
-P_Selecting_FirstBag = Fraction(1,2)
-P_Selecting_SecondBag = Fraction(1,2)
-P_Red_FirstBag = Fraction(4,7)
-P_Red_SecondBag = Fraction(2,6)
+p_selecting_first_bag = Fraction(1,2)
+p_selecting_second_bag = Fraction(1,2)
+p_red_first_bag = Fraction(4,7)
+p_red_second_bag = Fraction(2,6)
 
-P_A = P_Selecting_FirstBag*P_Red_FirstBag + P_Selecting_SecondBag*P_Red_SecondBag
-print(P_A)
+p_a = p_selecting_first_bag*p_red_first_bag + p_selecting_second_bag*p_red_second_bag
+print(p_a)
 
 
 """
