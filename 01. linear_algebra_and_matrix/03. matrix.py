@@ -66,18 +66,6 @@ print(sum)
 
 
 """
-Adding Matrices
-[[1, 2], [3, 4]], [[4, 5], [6, 7]]
-"""
-import numpy as np
-
-A = np.array([[1, 2], [3, 4]])  
-B = np.array([[4, 5], [6, 7]])
-res = np.add(A, B)  
-print(res)
-
-
-"""
 Subtract Matrices
 [[1, 2], [3, 4]], [[4, 5], [6, 7]]
 """
