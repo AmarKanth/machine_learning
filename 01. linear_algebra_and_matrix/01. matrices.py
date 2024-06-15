@@ -1,0 +1,11 @@
+"""
+1) Find sum of two matrices
+a = [[1,2], [4,5]]
+b = [[2,3], [6,7]]
+"""
+import numpy as np
+
+a = np.array([[1, 2], [4, 5]])
+b = np.array([[2, 3], [6, 7]])
+res = np.add(a, b)
+print(res)
