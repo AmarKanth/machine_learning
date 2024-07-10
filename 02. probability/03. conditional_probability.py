@@ -40,6 +40,11 @@ using the following formula:
 """
 
 """
+Multiplication Rule of Probability
+P(A∩B) = P(A) × P(B∣A)
+"""
+
+"""
 A bag contains 5 red balls and 7 blue balls. Two balls are drawn without 
 replacement. What is the probability that the second ball drawn is red, given 
 that the first ball drawn was red?
