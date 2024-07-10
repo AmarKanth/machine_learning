@@ -58,7 +58,14 @@ remaining_total_balls = total_balls - 1
 p_B_given_A = remaining_red_balls / remaining_total_balls
 print(p_B_given_A)
 
+
 """
 A box contains 5 green balls and 3 yellow balls. Two balls are drawn without replacement. 
 What is the probability that both balls are green?
 """
+from fractions import Fraction
+
+P_A = Fraction(5, 8)
+P_B_given_A = Fraction(4, 7)
+P_A_and_B = P_A * P_B_given_A
+print(P_A_and_B)
