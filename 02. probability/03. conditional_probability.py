@@ -58,3 +58,7 @@ remaining_total_balls = total_balls - 1
 p_B_given_A = remaining_red_balls / remaining_total_balls
 print(p_B_given_A)
 
+"""
+A box contains 5 green balls and 3 yellow balls. Two balls are drawn without replacement. 
+What is the probability that both balls are green?
+"""
