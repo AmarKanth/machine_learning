@@ -80,3 +80,19 @@ blue_marbles = 4
 p_blue = Fraction(blue_marbles, total_marbles)
 p_not_blue = 1 - p_blue
 print(p_not_blue)
+
+"""
+In a survey among a group of students, 70% play football, 60% play basketball, 
+and 40% play both sports. If a student is chosen at random and it is 
+known that the student plays basketball, what is the probability that 
+the student also plays football?
+"""
+from fractions import Fraction
+
+total_students = 100
+students_play_football = 70
+students_play_basketball = 60
+students_play_both = 40
+
+p_football_given_basketball = Fraction(students_play_both, students_play_basketball)
+print(p_football_given_basketball)
