@@ -96,3 +96,18 @@ students_play_both = 40
 
 p_football_given_basketball = Fraction(students_play_both, students_play_basketball)
 print(p_football_given_basketball)
+
+
+"""
+In a deck of 52 playing cards, 4 cards are drawn without replacement. What is the 
+probability that all 4 cards are aces, given that the first card drawn is an ace?
+"""
+from fractions import Fraction
+
+P_A = Fraction(4, 52)
+P_B_given_A = Fraction(3, 51)
+P_C_given_A_and_B = Fraction(2, 50)
+P_D_given_A_and_B_and_C = Fraction(1, 49)
+
+P = P_A * P_B_given_A * P_C_given_A_and_B * P_D_given_A_and_B_and_C
+print(P)
