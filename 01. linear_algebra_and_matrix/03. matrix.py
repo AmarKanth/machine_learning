@@ -79,22 +79,6 @@ print(res)
 
 
 """
-A = [[1, 2], [2, 3]]
-B = [[4, 5], [6, 7]]
-
-A.B = [[1*4 + 2*6, 2*4 + 3*6], [1*5 + 2*7, 2*5 + 3*7]
-answer will be: [[16, 26], [19, 31]]
-"""
-import numpy as np
-  
-p = [[1, 2], [2, 3]]
-q = [[4, 5], [6, 7]]
-
-result = np.dot(p, q)  
-print(result)
-
-
-"""
 count the number of occurances of elements
 [10, 20, 5, 10, 8, 20, 8, 9]
 """
