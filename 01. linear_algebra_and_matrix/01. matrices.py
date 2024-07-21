@@ -33,3 +33,18 @@ a = np.array([[1, 2], [4, 5]])
 b = np.array([[2, 3], [6, 7]])
 res = np.dot(a, b)
 print(res)
+
+
+"""
+4) Inverse Of the matrix
+A = [['a', 'b'],
+     ['c', 'd']]
+A_inverse = (1/det(A)) * [['d', '-b'],
+                          ['-c', 'a']]
+det(A) = ad - bc
+"""
+import numpy as np 
+
+arr = np.array([[1, 2], [5, 6]]) 
+res = np.linalg.inv(arr)
+print(res)
