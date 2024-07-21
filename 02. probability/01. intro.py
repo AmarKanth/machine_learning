@@ -28,8 +28,7 @@ then P(A1∩A2∩A3 ….. An) = P(A1)P(A2/A1)P(A3/A2∩A1) ….. P(An/A1∩A2∩
 
 
 """
-(3) Probability Density Function
-The Probability Density Function (PDF) is the probability function that is the density of a 
+(3) Probability Density Function is the probability function that is the density of a 
 continuous random variable that lies between a range of certain values. Probability density 
 function explains how the normal distribution and how mean and deviation exist in the system.
 """
