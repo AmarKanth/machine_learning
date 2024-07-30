@@ -54,3 +54,16 @@ import numpy as np
 arr = np.array([[1, 2, 3], [4, 5, 6]])
 res = np.transpose(arr)
 print(res)
+
+"""
+6) Normal : square root of sum of squares of matrix elements.
+Trace : sum of diagonal elements
+"""
+from math import sqrt
+mat = [[7, 8, 9],
+       [6, 1, 2],
+       [5, 4, 3]]
+normal = sqrt(7*7+8*8+9*9+6*6+1*1+2*2+5*5+4*4+3*3)
+trace = 7+1+3
+print(normal)
+print(trace)
