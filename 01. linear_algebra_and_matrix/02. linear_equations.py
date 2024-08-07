@@ -27,3 +27,25 @@ b = np.array([5, 1])
 solution = np.linalg.solve(A, b)
 x, y = solution
 print((x, y))
+
+
+"""
+Solve the 3×3 system:
+x + y + z = 6
+2x – y + z = 4
+x + 2y – z = 3
+"""
+import numpy as np
+
+# Coefficient matrix
+A = np.array([
+    [1, 1, 1],
+    [2, -1, 1],
+    [1, 2, -1]
+])
+
+# Constant terms
+B = np.array([6, 4, 3])
+
+solution = np.linalg.solve(A, B)
+print(solution)
