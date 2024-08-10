@@ -49,3 +49,44 @@ B = np.array([6, 4, 3])
 
 solution = np.linalg.solve(A, B)
 print(solution)
+
+
+"""
+Determine the nature of the system:
+2x + 3y = 5
+4x + 6y = 11
+"""
+import numpy as np
+
+A = np.array([[4, 6], [4, 6]])
+B = np.array([10, 11])
+
+try:
+    solution = np.linalg.solve(A, B)
+    print("Solution:", solution)
+except np.linalg.LinAlgError:
+    print("The system is inconsistent (no solution).")
+
+
+"""
+Solve using Cramer’s Rule:
+3x + 2y = 14
+x + y = 6
+"""
+import numpy as np
+
+A = np.array([[3, 2], [1, 1]])
+B = np.array([14, 6])
+
+det_A = np.linalg.det(A)
+
+A_x = np.array([[14, 2], [6, 1]])
+A_y = np.array([[3, 14], [1, 6]])
+
+det_A_x = np.linalg.det(A_x)
+det_A_y = np.linalg.det(A_y)
+
+x = det_A_x / det_A
+y = det_A_y / det_A
+
+print((x, y))
