@@ -1,4 +1,28 @@
 """
+Given two numbers A and B and we generate x and y using the random number generator with uniform probability 
+density function [0, A] and [0, B] respectively, what's the probability that x + y is less than C? 
+where C is a positive integer.
+"""
+from fractions import Fraction
+
+def random_generator(arr):
+    A,B,C = arr    
+    if A+B <= C: 
+        fr = Fraction(1,1)
+    elif C <= A and C <= B: 
+        fr = Fraction(C**2,(2*A*B))
+    elif C <= B: 
+        fr = Fraction(2*C*A-A**2,(2*A*B))
+    elif C <= A: 
+        fr = Fraction(2*C*B-B**2,(2*A*B))
+    else: 
+        fr = Fraction((2*C*(A+B)-A**2-B**2-C**2),(2*A*B))
+    return f"{fr.numerator}/{fr.denominator}"
+
+res = random_generator([1,1,3])
+print(res)
+
+"""
 Welcome to the exciting class of Professor Manasa. In each lecture she used to play 
 some game while teaching a new concept. Today's topic is Set Theory. For today's game, 
 she had given a set A = {a1, a2, ...aN} of N integers to her students and asked them 
