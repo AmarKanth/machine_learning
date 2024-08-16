@@ -198,30 +198,24 @@ Input
 1 1 2
 1 1 3
 """
-def calculate_probability(A, B, C):
-    area_rectangle = A * B
-    
-    if C <= 0:
-        return 0
-    elif C >= A + B:
-        return 1
-    else:
-        if C <= A and C <= B:
-            area_triangle = 0.5 * C * C
-        elif C > A and C > B:
-            triangle_out = 0.5 * (C - A) * (C - B)
-            area_triangle = 0.5 * C * C - triangle_out
-        elif C > A:
-            triangle_out = 0.5 * (C - A) * (C - A)
-            area_triangle = 0.5 * C * C - triangle_out
-        elif C > B:
-            triangle_out = 0.5 * (C - B) * (C - B)
-            area_triangle = 0.5 * C * C - triangle_out
-        return area_triangle / area_rectangle
+from fractions import Fraction
 
-inputs = [(1, 1, 1), (1, 1, 2), (1, 1, 3)]
-results = [calculate_probability(A, B, C) for A, B, C in inputs]
-print(results)
+def random_generator(arr):
+    A,B,C = arr    
+    if A+B <= C: 
+        fr = Fraction(1,1)
+    elif C <= A and C <= B: 
+        fr = Fraction(C**2,(2*A*B))
+    elif C <= B: 
+        fr = Fraction(2*C*A-A**2,(2*A*B))
+    elif C <= A: 
+        fr = Fraction(2*C*B-B**2,(2*A*B))
+    else: 
+        fr = Fraction((2*C*(A+B)-A**2-B**2-C**2),(2*A*B))
+    return f"{fr.numerator}/{fr.denominator}"
+
+res = random_generator([1,1,3])
+print(res)
 
 
 """
