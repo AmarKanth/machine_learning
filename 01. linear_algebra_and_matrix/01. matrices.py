@@ -22,8 +22,8 @@ print(res)
 
 """
 3) Mlutiple a and b
-[a 	b] [i  j] [a*i+b*k 	a*j+b*l]
-[c 	d] [k  l] [c*i+d*k  c*j+d*l]
+[a 	b] [i  j] [a*i+b*k a*j+b*l]
+[c 	d] [k  l] [c*i+d*k c*j+d*l]
 """
 import numpy as np
 a = np.array([[1, 2], [4, 5]])
