@@ -188,7 +188,7 @@ print(probability_non_defective)
 
 
 """
-Given two numbers A and B and we generate x and y using the random number generator with 
+(15) Given two numbers A and B and we generate x and y using the random number generator with 
 uniform probability density function [0, A] and [0, B] respectively, 
 what's the probability that x + y is less than C?
 
@@ -219,7 +219,7 @@ print(res)
 
 
 """
-Isaac has to buy a new HackerPhone for his girlfriend Amy. 
+(16) Isaac has to buy a new HackerPhone for his girlfriend Amy. 
 He is exploring the shops in the town to compare the prices whereupon 
 he finds a shop located on the first floor of a building, 
 that has a unique pricing policy. There are N steps leading to the shop. 
