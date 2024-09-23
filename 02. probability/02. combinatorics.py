@@ -27,7 +27,7 @@ value of 3 on it, you can't pick that card up unless you've already picked up
 3 cards previously) In how many ways can all the cards be picked up?
 """
 def ways_to_pick_cards(cards):
-    MOD = 1000000007
+    MOD = 10**9 + 7
     n = len(cards)
     sorted_cards = sorted(cards)
     res = 1
