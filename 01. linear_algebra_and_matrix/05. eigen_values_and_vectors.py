@@ -3,7 +3,7 @@ Eigenvectors are special vectors that, when a matrix (or transformation) is appl
 direction. They might stretch, shrink, or stay the same size, but their direction remains unchanged.
 
 Eigenvalues are the scaling factors that tell you how much the eigenvector is stretched or shrunk during 
-the transformation.
+the transformation. Is also knows as scalar value.
 
 A = [[2, 0]
      [0, 1]]
