@@ -1,5 +1,5 @@
 """
-Count the even sum of subsets in the given array
+1) Count the even sum of subsets in the given array
 """
 def count_even_sum_subsets(arr):
     MOD = 10**9 + 7
@@ -19,7 +19,7 @@ print(res)
 
 
 """
-There are N cards on the table and each has a number between 0 and N. 
+2) There are N cards on the table and each has a number between 0 and N. 
 Let us denote the number on the ith card by ci. 
 You want to pick up all the cards. The ith card can be picked up only if 
 at least ci cards have been picked up before it. (As an example, if a card has a 
