@@ -41,7 +41,7 @@ P(A∩B) = P(A) × P(B∣A)
 """
 
 """
-A bag contains 5 red balls and 7 blue balls. Two balls are drawn without 
+1) A bag contains 5 red balls and 7 blue balls. Two balls are drawn without 
 replacement. What is the probability that the second ball drawn is red, given 
 that the first ball drawn was red?
 """
@@ -55,7 +55,7 @@ p_B_given_A = remaining_red_balls / remaining_total_balls
 print(p_B_given_A)
 
 """
-A box contains 5 green balls and 3 yellow balls. Two balls are drawn without replacement. 
+2) A box contains 5 green balls and 3 yellow balls. Two balls are drawn without replacement. 
 What is the probability that both balls are green?
 """
 from fractions import Fraction
@@ -66,7 +66,7 @@ P_A_and_B = P_A * P_B_given_A
 print(P_A_and_B)
 
 """
-In a bag, there are 8 red marbles, 4 blue marbles, and 3 green marbles. 
+3) In a bag, there are 8 red marbles, 4 blue marbles, and 3 green marbles. 
 If one marble is randomly drawn, what is the probability that it is not blue?
 """
 from fractions import Fraction
@@ -78,7 +78,7 @@ p_not_blue = 1 - p_blue
 print(p_not_blue)
 
 """
-In a survey among a group of students, 70% play football, 60% play basketball, 
+4) In a survey among a group of students, 70% play football, 60% play basketball, 
 and 40% play both sports. If a student is chosen at random and it is 
 known that the student plays basketball, what is the probability that 
 the student also plays football?
@@ -95,7 +95,7 @@ print(p_football_given_basketball)
 
 
 """
-In a deck of 52 playing cards, 4 cards are drawn without replacement. What is the 
+5) In a deck of 52 playing cards, 4 cards are drawn without replacement. What is the 
 probability that all 4 cards are aces, given that the first card drawn is an ace?
 """
 from fractions import Fraction
