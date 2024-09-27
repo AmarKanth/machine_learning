@@ -19,3 +19,21 @@ Eigenvector v2=[[0]
 v2 (pointing in the yy-direction)
 v2​ is an eigenvector with an eigenvalue of 1.
 """
+
+"""
+Av = λv
+Where,
+A is the matrix,
+v is associated eigenvector, and
+λ is scalar eigenvalue.
+"""
+
+"""
+Find the eigenvalues and the eigenvector for the matrix A = [[1, 2], [5, 4]
+"""
+import numpy as np
+
+A = np.array([[1, 2], [5, 4]])
+eigenvalues, eigenvectors = np.linalg.eig(A)
+print(eigenvalues)
+print(eigenvectors)
