@@ -29,11 +29,30 @@ v is associated eigenvector, and
 """
 
 """
-Find the eigenvalues and the eigenvector for the matrix A = [[1, 2], [5, 4]
+1) Find the eigenvalues and the eigenvector for the matrix A = [[1, 2], [5, 4]
 """
 import numpy as np
 
-A = np.array([[1, 2], [5, 4]])
+A = np.array([
+     [1, 2], 
+     [5, 4]
+])
+eigenvalues, eigenvectors = np.linalg.eig(A)
+print(eigenvalues)
+print(eigenvectors)
+
+"""
+2) Find the eigenvalues and the eigenvector for the matrix 
+A = [[2,2,2], [2,2,2], [2,2,2]]
+"""
+import numpy as np
+
+A = np.array([
+    [2, 2, 2],
+    [2, 2, 2],
+    [2, 2, 2]
+])
+
 eigenvalues, eigenvectors = np.linalg.eig(A)
 print(eigenvalues)
 print(eigenvectors)
