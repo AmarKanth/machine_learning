@@ -1,6 +1,7 @@
 """
-(1) Probability of an Event – If there are total p possible outcomes associated with a random experiment 
-and q of them are favourable outcomes to the event A, then the probability of event A is 
+(1) Probability of an Event: 
+If there are total p possible outcomes associated with a random experiment and 
+q of them are favourable outcomes to the event A, then the probability of event A is 
 denoted by P(A) and is given by
 
 P(A) = q/p
@@ -14,28 +15,31 @@ Also, P(A) + P(A’) = 1
 
 
 """
-(2) Theorems:
-General – Let A, B, and C are the events associated with a random experiment, then
+(2) Let A, B, and C are the events associated with a random experiment, then
 P(A∪B) = P(A) + P(B) – P(A∩B)
 P(A∪B) = P(A) + P(B) if A and B are mutually exclusive
 P(A∪B∪C) = P(A) + P(B) + P(C) – P(A∩B) – P(B∩C)- P(C∩A) + P(A∩B∩C)
 P(A∩B’) = P(A) – P(A∩B)
 P(A’∩B) = P(B) – P(A∩B)
+"""
 
-Extension of Multiplication Theorem – Let A1, A2, ….., An are n events associated with a random experiment, 
-then P(A1∩A2∩A3 ….. An) = P(A1)P(A2/A1)P(A3/A2∩A1) ….. P(An/A1∩A2∩A3∩ ….. ∩An-1)
+"""
+(3) Extension of Multiplication Theorem: 
+Let A1, A2,....An are n events associated with a random experiment, then 
+P(A1∩A2∩A3 .... An) = P(A1)P(A2/A1)P(A3/A2∩A1)....P(An/A1∩A2∩A3....An-1)
 """
 
 
 """
-(3) Probability Density Function is the probability function that is the density of a 
+(4) Probability Density Function: 
+Probability Density Function is the probability function that is the density of a 
 continuous random variable that lies between a range of certain values. Probability density 
 function explains how the normal distribution and how mean and deviation exist in the system.
 """
 
 
 """
-(4) A bag contains 10 oranges and 20 apples out of which 5 apples and 3 oranges are defective. 
+(5) A bag contains 10 oranges and 20 apples out of which 5 apples and 3 oranges are defective. 
 If a person takes out two at random, what is the probability that either both are 
 good or both are apples?
 The combination formula is:
@@ -57,7 +61,7 @@ print(P_A_UNION_B)
 
 
 """
-(5) The probability that a person will get an electric contract is 2/5 and 
+(6) The probability that a person will get an electric contract is 2/5 and 
 the probability that he will not get a plumbing contract is 4/7. 
 If the probability of getting at least one contact is 2/3, what is the 
 probability of getting both? 
@@ -77,7 +81,7 @@ print(float(P_A_INTERSECT_B))
 
 
 """
-(6) Find the probability of getting a multiple of 3 when a die is rolled.
+(7) Find the probability of getting a multiple of 3 when a die is rolled.
 """
 total_outcomes = 6
 multiples_of_3 = [i for i in range(1,total_outcomes+1) if i%3==0]
@@ -87,7 +91,7 @@ print(probability)
 
 
 """
-(7) Total Law of Probability – Let S be the sample space associated with a random 
+(8) Total Law of Probability – Let S be the sample space associated with a random 
 experiment and E1, E2, …, En be n mutually exclusive and exhaustive events associated 
 with the random experiment. If A is any event that occurs with E1 or E2 or … or En, then
 P(A) = P(E1)P(A/E1) + P(E2)P(A/E2) + ... +  P(En)P(A/En)
@@ -95,7 +99,7 @@ P(A) = P(E1)P(A/E1) + P(E2)P(A/E2) + ... +  P(En)P(A/En)
 
 
 """
-(8) A bag contains 3 black balls and 4 red balls. A second bag contains 4 black balls 
+(9) A bag contains 3 black balls and 4 red balls. A second bag contains 4 black balls 
 and 2 red balls. One bag is selected at random. From the selected bag, one ball is drawn. 
 Find the probability that the ball drawn is red.
 """
@@ -111,7 +115,7 @@ print(p_a)
 
 
 """
-(9) In a bulb factory, three machines namely A, B, C produces 25%, 35% and 40% of the 
+(10) In a bulb factory, three machines namely A, B, C produces 25%, 35% and 40% of the 
 total bulbs respectively. Of their output, 5, 4 and 2 percent are defective bulbs 
 respectively. A bulb is drawn at random from products. What is the probability 
 that bulb drawn is defective?
@@ -135,7 +139,7 @@ print(float(p))
 
 
 """
-(10) Find the probability of getting a card of kings from a deck of 52 cards.
+(11) Find the probability of getting a card of kings from a deck of 52 cards.
 """
 total_outcomes = 52
 num_favorable_outcomes = 4
@@ -144,7 +148,7 @@ print(probability)
 
 
 """
-(11) Find the probability of picking vowels in the word 'CHAMPION'
+(12) Find the probability of picking vowels in the word 'CHAMPION'
 """
 word = "CHAMPION"
 vowels = 'AEIOU'
@@ -155,7 +159,7 @@ print(probability)
 
 
 """
-(12) A bag is filled with balls. Some of these balls are red in color. The probability 
+(13) A bag is filled with balls. Some of these balls are red in color. The probability 
 of picking a red ball is x/2. Find the value of x if the probability of picking 
 a non-red ball is 2/3.
 """
@@ -166,7 +170,7 @@ print(x)
 
 
 """
-(13) There are 24 students in a class. Out of these, 24 students, 16 are boys and the 
+(14) There are 24 students in a class. Out of these, 24 students, 16 are boys and the 
 remaining are girls. Find the probability of selecting a girl randomly.
 """
 total_students = 24
@@ -177,7 +181,7 @@ print(probability_girl)
 
 
 """
-(14) There are 20 defective bulbs in a box of 500 electric bubs. Find the probability 
+(15) There are 20 defective bulbs in a box of 500 electric bubs. Find the probability 
 of randomly selecting a non-defective bulb.
 """
 total_bulbs = 500
@@ -188,7 +192,7 @@ print(probability_non_defective)
 
 
 """
-(15) Given two numbers A and B and we generate x and y using the random number generator with 
+(16) Given two numbers A and B and we generate x and y using the random number generator with 
 uniform probability density function [0, A] and [0, B] respectively, 
 what's the probability that x + y is less than C?
 
@@ -219,7 +223,7 @@ print(res)
 
 
 """
-(16) Isaac has to buy a new HackerPhone for his girlfriend Amy. 
+(17) Isaac has to buy a new HackerPhone for his girlfriend Amy. 
 He is exploring the shops in the town to compare the prices whereupon 
 he finds a shop located on the first floor of a building, 
 that has a unique pricing policy. There are N steps leading to the shop. 
