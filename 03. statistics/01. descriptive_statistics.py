@@ -100,8 +100,8 @@ Levels of measurement
 	ordinal : oridinal looks same as nominal but categories have order
  		  (Ex: High School, Bachelor's, Master's, Doctorate)
 2. quantitative :
-	interval : has true zero
-	ratio : has no true zero
+	interval : Interval data does not have a true zero point(Ex: temperature 0°C does not mean "no temperature")
+	ratio : Ratio data has a true zero point(Ex: income of $0 indicates no income.)
 """
 
 """
