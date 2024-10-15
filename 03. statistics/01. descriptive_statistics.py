@@ -6,12 +6,10 @@ Sample : A sample is a subset of the population that is selected for the actual 
 """
 
 """
-Randomness: The quality of being unpredictable or lacking a pattern; in statistics, it refers to 
-selecting samples from a population in such a way that every individual has an equal chance of being chosen.
+Randomness: Selecting samples in a random manner.
 
-Representativeness: The extent to which a sample accurately reflects the characteristics or diversity of the 
-population it is drawn from; a representative sample allows valid conclusions to be drawn about the 
-entire population.
+Representativeness: Ensuring the sample includes a balanced mix of the population 
+(not specific to one type of individual or event).
 """
 
 """
