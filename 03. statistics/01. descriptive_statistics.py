@@ -20,20 +20,19 @@ Types of data
 	continuous : infinte and imposible to count(time)
 
 Representation of categorical data
-1. frequency distribution tables
-2. bar charts
-3. pie charts
-4. pareto diagrams
+1. bar charts
+2. pie charts
+3. pareto diagrams
 """
 
 """
-Frequency distribution
+Bar Chart
 """
 categories = ['Audi', 'BMW', 'Mercedes']
 frequencies = [124, 98, 113]
 
 """
-Pie chart
+Pie Chart
 """
 categories = ['Audi', 'BMW', 'Mercedes']
 frequencies = [124, 98, 113]
