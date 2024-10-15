@@ -1,7 +1,17 @@
 """
 Population : Population is enitre set of individuals, objects, events, or data points that you 
 are interested in studying.
+
 Sample : A sample is a subset of the population that is selected for the actual study.
+"""
+
+"""
+Randomness: The quality of being unpredictable or lacking a pattern; in statistics, it refers to 
+selecting samples from a population in such a way that every individual has an equal chance of being chosen.
+
+Representativeness: The extent to which a sample accurately reflects the characteristics or diversity of the 
+population it is drawn from; a representative sample allows valid conclusions to be drawn about the 
+entire population.
 """
 
 """
