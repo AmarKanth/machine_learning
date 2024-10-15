@@ -41,6 +41,10 @@ relative_frequencies = [freq / total_frequency for freq in frequencies]
 
 """
 Pareto diagram
+X axis represents the brands
+Y1 axis represents the frequencies
+Y2 axis represents the comulative frequencies
+Poligonal Line represents (Audi), (Audi, Mercedes), (Audi, Mercedes, BMW) comulative share in toatl sales. 
 """
 categories = ['Audi', 'BMW', 'Mercedes']
 frequencies = [124, 98, 113]
