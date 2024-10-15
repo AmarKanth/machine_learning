@@ -1,4 +1,10 @@
 """
+Population : Population is enitre set of individuals, objects, events, or data points that you 
+are interested in studying.
+Sample : A sample is a subset of the population that is selected for the actual study.
+"""
+
+"""
 Types of data
 1. categorical : describes categories or groups
 2. numerical : represents numbers, these divided into two subsets 
