@@ -97,7 +97,8 @@ plt.show()
 Levels of measurement
 1. qualitative :
 	nominal : these are like categories, can not be ordered.
-	ordinal : consist of groups and categories, which can follow the order.
+	ordinal : oridinal looks same as nominal but categories have order
+ 		  (Ex: High School, Bachelor's, Master's, Doctorate)
 2. quantitative :
 	interval : has true zero
 	ratio : has no true zero
