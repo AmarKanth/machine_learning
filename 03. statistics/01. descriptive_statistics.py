@@ -144,3 +144,25 @@ Symmetric (Zero Skewness) : Mean = Median = Mode.
 Positive Skewness (Right-Skewed) : Mean > Median > Mode.
 Negative Skewness (Left-Skewed) : Mean < Median < Mode.
 """
+
+"""
+Variance : Variance is a statistical measure that tells us how much the values in a dataset vary or spread out from the mean (average).
+
+Variance for a population:    
+σ² = Σ (xᵢ - μ)² / N
+
+where:
+- σ² is the population variance,
+- xᵢ represents each data point,
+- μ is the population mean,
+- N is the total number of data points in the population.
+
+Variance for a sample:
+s² = Σ (xᵢ - x̄)² / (n - 1)
+
+where:
+- s² is the sample variance,
+- xᵢ represents each data point,
+- x̄ is the sample mean,
+- n is the number of data points in the sample.
+"""
