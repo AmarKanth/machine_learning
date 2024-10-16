@@ -61,6 +61,29 @@ total_frequency = sum(sorted_frequencies)
 cumulative_frequencies = [sum(sorted_frequencies[:i+1]) for i in range(len(sorted_frequencies))]
 cumulative_percentages = [frequency / total_frequency * 100 for frequency in cumulative_frequencies]
 
+
+"""
+Cross Table
+
+       Investor  Invest A  Invest B  Invest C  Total
+0        Stocks      96.0     185.0      39.0  320.0
+1         Bonds     181.0       3.0      29.0  213.0
+2   Real Estate      88.0     152.0     142.0  382.0
+3        Total      365.0     340.0     210.0  915.0
+"""
+import pandas as pd
+
+data = {
+    'Invest A': {'Stocks': 96, 'Bonds': 181, 'Real Estate': 88},
+    'Invest B': {'Stocks': 185, 'Bonds': 3, 'Real Estate': 152},
+    'Invest C': {'Stocks': 39, 'Bonds': 29, 'Real Estate': 142}
+}
+df = pd.DataFrame(data)
+df['Total'] = df.sum(axis=1)
+df.loc['Total'] = df.sum()
+df = df.reset_index().rename(columns={'index': 'Investor'})
+print(df)
+
 """
 Levels of measurement
 1. qualitative :
