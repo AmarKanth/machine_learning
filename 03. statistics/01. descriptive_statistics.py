@@ -127,3 +127,10 @@ print(relative_frequency)
 """
 Scatter Plot
 """
+
+"""
+Mean, Median and Mode
+Mean : The mean is the average value of a set of numbers.
+Median : The median is the middle value when all the numbers are arranged in ascending order.
+Mode : The mode is the value that appears most frequently in the dataset.
+"""
