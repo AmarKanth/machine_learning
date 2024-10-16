@@ -134,3 +134,13 @@ Mean : The mean is the average value of a set of numbers.
 Median : The median is the middle value when all the numbers are arranged in ascending order.
 Mode : The mode is the value that appears most frequently in the dataset.
 """
+
+"""
+Skewness is a measure of the asymmetry in the distribution of data.
+It tells us whether the data is skewed to the left (negatively skewed), to the right (positively skewed), 
+or is symmetric.
+
+Symmetric (Zero Skewness) : Mean = Median = Mode.
+Positive Skewness (Right-Skewed) : Mean > Median > Mode.
+Negative Skewness (Left-Skewed) : Mean < Median < Mode.
+"""
