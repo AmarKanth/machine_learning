@@ -23,6 +23,7 @@ Representation of categorical data
 1. bar charts
 2. pie charts
 3. pareto diagrams
+4. Cross Table
 """
 
 """
@@ -60,7 +61,6 @@ total_frequency = sum(sorted_frequencies)
 
 cumulative_frequencies = [sum(sorted_frequencies[:i+1]) for i in range(len(sorted_frequencies))]
 cumulative_percentages = [frequency / total_frequency * 100 for frequency in cumulative_frequencies]
-
 
 """
 Cross Table
