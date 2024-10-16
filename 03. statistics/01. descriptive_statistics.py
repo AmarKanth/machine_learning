@@ -123,3 +123,7 @@ relative_frequency = [freq / total_frequency for freq in interval_frequency]
 print(intervals)
 print(interval_frequency)
 print(relative_frequency)
+
+"""
+Scatter Plot
+"""
