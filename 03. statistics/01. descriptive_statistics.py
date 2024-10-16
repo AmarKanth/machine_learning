@@ -81,7 +81,7 @@ data = {
 df = pd.DataFrame(data)
 df['Total'] = df.sum(axis=1)
 df.loc['Total'] = df.sum()
-df = df.reset_index().rename(columns={'index': 'Investor'})
+df = df.reset_index().rename(columns={'index': 'Type Of investment'})
 print(df)
 
 """
