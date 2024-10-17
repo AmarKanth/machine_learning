@@ -171,16 +171,38 @@ where:
 """
 Standard Deviation 
 
-Standard Deviation for population
+Standard Deviation for population:
 σ = √σ²
 
 Where:
 - σ is the standard deviation.
 - σ² is the variance.
 
+Standard Deviation for sample:
 s = √s²
 
 Where:
 - s is the sample standard deviation.
 - s² is the sample variance.
+"""
+
+"""
+Coefficient Of Variance(Relative Standard Deviation)
+
+Coefficient Of Variance for popultaion
+CV = σ / μ
+
+Where:
+- CV is the Coefficient of Variation (expressed as a percentage).
+- σ is the standard deviation.
+- μ is the mean of the dataset.
+
+
+Coefficient Of Variance for sample
+CV = s / x̄
+
+Where:
+- CV is the sample Coefficient of Variation (expressed as a percentage).
+- s is the sample standard deviation.
+- x̄ is the sample mean.
 """
