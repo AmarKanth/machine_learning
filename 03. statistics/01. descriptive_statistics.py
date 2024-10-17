@@ -146,7 +146,8 @@ Negative Skewness (Left-Skewed) : Mean < Median < Mode.
 """
 
 """
-Variance : Variance is a statistical measure that tells us how much the values in a dataset vary or spread out from the mean (average).
+Variance : Variance is a statistical measure that tells us how much the values in a dataset vary or 
+spread out from the mean (average).
 
 Variance for a population:    
 σ² = Σ (xᵢ - μ)² / N
@@ -165,4 +166,21 @@ where:
 - xᵢ represents each data point,
 - x̄ is the sample mean,
 - n is the number of data points in the sample.
+"""
+
+"""
+Standard Deviation 
+
+Standard Deviation for population
+σ = √σ²
+
+Where:
+- σ is the standard deviation.
+- σ² is the variance.
+
+s = √s²
+
+Where:
+- s is the sample standard deviation.
+- s² is the sample variance.
 """
