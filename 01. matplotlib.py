@@ -81,3 +81,7 @@ fig, ax = plt.subplots()
 ax.plot(monthly_revenue.index, monthly_revenue["LodgingRevenue"])
 ax.plot(monthly_revenue.index, monthly_revenue["OtherRevenue"])
 plt.show()
+
+"""
+Chart Titles And Font Sizes 
+"""
