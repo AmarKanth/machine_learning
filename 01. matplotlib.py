@@ -38,3 +38,23 @@ ax.set_title("Title")
 fig.suptitle("Overall Title")
 
 plt.show()
+
+"""
+Format Plotting
+"""
+import matplotlib.pyplot as plt
+import pandas as pd
+
+data = {
+    "Sales": [10, 20, 30, 40],
+    "Profiles": [2, 4, 3, 1],
+    "Date": ["2022-01-01", "2022-02-01", "2022-03-01", "2022-04-01"]
+}
+
+df = pd.DataFrame(data, columns=["Sales", "Profiles"], index=data["Date"])
+
+fig, ax = plt.subplots()
+ax.plot(df.index, df["Sales"])
+ax.plot(df.index, df["Profiles"], ls="--")
+ax.set_title("Product Sales And Profits")
+plt.show()
