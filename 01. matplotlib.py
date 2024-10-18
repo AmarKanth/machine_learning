@@ -62,3 +62,18 @@ ax.plot(df.index, df["Sales"])
 ax.plot(df.index, df["Profiles"], ls="--")
 ax.set_title("Product Sales And Profits")
 plt.show()
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+hotels = pd.read_excel("./HotelCustomersDataset.xlsx")
+hotels["date"] = (
+    pd.to_datetime("2018-12-31") - pd.to_timedelta(hotels["DaysSinceCreation"], unit="D")
+)
+daily_revenue = hotels.groupby("date").agg({"LodgingRevenue":"sum", "OtherRevenue":"sum"})
+monthly_revenue = daily_revenue.resample("ME").sum()
+
+fig, ax = plt.subplots()
+ax.plot(monthly_revenue.index, monthly_revenue["LodgingRevenue"])
+ax.plot(monthly_revenue.index, monthly_revenue["OtherRevenue"])
+plt.show()
