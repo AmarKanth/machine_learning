@@ -206,3 +206,25 @@ Where:
 - s is the sample standard deviation.
 - x̄ is the sample mean.
 """
+
+"""
+Covariance for population:
+σₓᵧ = Σ((xᵢ - μₓ) * (yᵢ - μᵧ)) / n
+
+where:
+- σₓᵧ is the population covariance between `x` and `y`
+- xᵢ and yᵢ are the individual elements of the lists `x` and `y`
+- μₓ is the mean of the list `x`
+- μᵧ is the mean of the list `y`
+- n is the number of elements in `x` and `y` (both must have the same length)
+
+Covariance for sample:
+Sₓᵧ = Σ((xᵢ - x̄) * (yᵢ - ȳ)) / (n - 1)
+
+where:
+- Sₓᵧ is the covariance between `x` and `y`
+- xᵢ and yᵢ are the individual elements of the lists `x` and `y`
+- x̄ is the mean of the list `x`
+- ȳ is the mean of the list `y`
+- n is the number of elements in `x` and `y` (both must have the same length)
+"""
