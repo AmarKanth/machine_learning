@@ -63,6 +63,10 @@ ax.plot(df.index, df["Profiles"], ls="--")
 ax.set_title("Product Sales And Profits")
 plt.show()
 
+
+"""
+Assignment
+"""
 import matplotlib.pyplot as plt
 import pandas as pd
 
