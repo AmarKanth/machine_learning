@@ -87,10 +87,7 @@ plt.show()
 Chart Titles And Font Sizes 
 """
 import pandas as pd
-import numpy as np
-
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 housing_raw = pd.read_csv(
     "./data_science/data/housing_data.csv",
