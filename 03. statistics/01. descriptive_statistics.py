@@ -1,19 +1,22 @@
 """
+1) Population And Sample
+------------------------
 Population : Population is enitre set of individuals, objects, events, or data points that you 
 are interested in studying.
-
 Sample : A sample is a subset of the population that is selected for the actual study.
 """
 
 """
+2) Randomness And Representativeness
+------------------------------------
 Randomness: Selecting samples in a random manner.
-
 Representativeness: Ensuring the sample includes a balanced mix of the population 
 (not specific to one type of individual or event).
 """
 
 """
-Types of data
+3) Types of data
+----------------
 1. categorical : describes categories or groups
 2. numerical : represents numbers, these divided into two subsets 
 	discrete : can be counted in finite matter(limit or range)
@@ -27,13 +30,15 @@ Representation of categorical data
 """
 
 """
-Bar Chart
+4) Bar Chart
+------------
 """
 categories = ['Audi', 'BMW', 'Mercedes']
 frequencies = [124, 98, 113]
 
 """
-Pie Chart
+5) Pie Chart
+------------
 """
 categories = ['Audi', 'BMW', 'Mercedes']
 frequencies = [124, 98, 113]
@@ -41,7 +46,8 @@ total_frequency = sum(frequencies)
 relative_frequencies = [freq / total_frequency for freq in frequencies]
 
 """
-Pareto diagram
+6) Pareto diagram
+-----------------
 X axis represents the brands
 Y1 axis represents the frequencies
 Y2 axis represents the comulative frequencies
@@ -63,7 +69,8 @@ cumulative_frequencies = [sum(sorted_frequencies[:i+1]) for i in range(len(sorte
 cumulative_percentages = [frequency / total_frequency * 100 for frequency in cumulative_frequencies]
 
 """
-Cross Table
+7) Cross Table
+--------------
 
        Investor  Invest A  Invest B  Invest C  Total
 0        Stocks      96.0     185.0      39.0  320.0
@@ -85,7 +92,8 @@ df = df.reset_index().rename(columns={'index': 'Type Of investment'})
 print(df)
 
 """
-Levels of measurement
+8) Levels of measurement
+------------------------
 1. qualitative :
 	nominal : these are like categories, can not be ordered.
 	ordinal : oridinal looks same as nominal but categories have order
@@ -96,7 +104,8 @@ Levels of measurement
 """
 
 """
-Histogram
+9) Histogram
+------------
 """
 import math
 
@@ -125,17 +134,21 @@ print(interval_frequency)
 print(relative_frequency)
 
 """
-Scatter Plot
+10) Scatter Plot
+----------------
 """
 
 """
-Mean, Median and Mode
+11) Mean, Median and Mode
+-------------------------
 Mean : The mean is the average value of a set of numbers.
 Median : The median is the middle value when all the numbers are arranged in ascending order.
 Mode : The mode is the value that appears most frequently in the dataset.
 """
 
 """
+12) Skewness
+------------
 Skewness is a measure of the asymmetry in the distribution of data.
 It tells us whether the data is skewed to the left (negatively skewed), to the right (positively skewed), 
 or is symmetric.
@@ -146,6 +159,8 @@ Negative Skewness (Left-Skewed) : Mean < Median < Mode.
 """
 
 """
+13) Variance
+------------
 Variance : Variance is a statistical measure that tells us how much the values in a dataset vary or 
 spread out from the mean (average).
 
@@ -169,8 +184,8 @@ where:
 """
 
 """
-Standard Deviation 
-
+14) Standard Deviation 
+----------------------
 Standard Deviation for population:
 σ = √σ²
 
@@ -187,7 +202,8 @@ Where:
 """
 
 """
-Coefficient Of Variance(Relative Standard Deviation)
+15) Coefficient Of Variance(Relative Standard Deviation)
+--------------------------------------------------------
 
 Coefficient Of Variance for popultaion
 CV = σ / μ
@@ -208,6 +224,8 @@ Where:
 """
 
 """
+16) Covariance
+--------------
 Covariance for population:
 σₓᵧ = Σ((xᵢ - μₓ) * (yᵢ - μᵧ)) / n
 
@@ -230,5 +248,6 @@ where:
 """
 
 """
-Correlation Coefficient
+17) Correlation Coefficient
+---------------------------
 """
