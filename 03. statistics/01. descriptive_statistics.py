@@ -114,7 +114,7 @@ range_val = (min_value + max_value)/desired_intervals
 intervals = [[] for _ in range(desired_intervals)]
 
 for j in data_set:
-    idx = math.floor((j - min_value) / range_val)
+    idx = math.floor((j - min_value) // range_val)
     intervals[idx].append(j)
 
 interval_frequency = [0] * desired_intervals
