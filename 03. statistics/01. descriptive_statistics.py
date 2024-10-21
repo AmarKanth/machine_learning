@@ -112,6 +112,7 @@ min_value = min(data_set)
 
 range_val = (min_value + max_value)/desired_intervals
 intervals = [[] for _ in range(desired_intervals)]
+interval_boundaries = [(min_value + i * range_value, min_value + (i + 1) * range_value - 1) for i in range(desired_intervals)]
 
 for j in data_set:
     idx = math.floor((j - min_value) // range_val)
