@@ -49,21 +49,17 @@ relative_frequencies = [freq / total_frequency for freq in frequencies]
 6) Pareto diagram
 -----------------
 X axis represents the brands
-Y1 axis represents the frequencies
-Y2 axis represents the comulative frequencies
+Y1 axis represents the comulative frequencies
+Y2 axis represents the comulative percentages
 Poligonal Line represents (Audi), (Audi, Mercedes), (Audi, Mercedes, BMW) comulative share in toatl sales. 
 """
 categories = ['Audi', 'BMW', 'Mercedes']
 frequencies = [124, 98, 113]
 
-sorted_indices = np.argsort(frequencies)[::-1]
+sorted_indices = sorted(range(len(frequencies)), key=lambda i: frequencies[i], reverse=True)
 sorted_categories = [categories[i] for i in sorted_indices]
 sorted_frequencies = [frequencies[i] for i in sorted_indices]
-
 total_frequency = sum(sorted_frequencies)
-
-# cumulative_frequencies = np.cumsum(sorted_frequencies)
-# cumulative_percentages = cumulative_frequencies / total_frequency * 100
 
 cumulative_frequencies = [sum(sorted_frequencies[:i+1]) for i in range(len(sorted_frequencies))]
 cumulative_percentages = [frequency / total_frequency * 100 for frequency in cumulative_frequencies]
