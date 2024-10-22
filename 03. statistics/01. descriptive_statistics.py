@@ -208,7 +208,6 @@ Where:
 - σ is the standard deviation.
 - μ is the mean of the dataset.
 
-
 Coefficient Of Variance for sample
 CV = s / x̄
 
