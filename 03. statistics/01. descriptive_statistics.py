@@ -244,4 +244,10 @@ where:
 """
 17) Correlation Coefficient
 ---------------------------
+σₓᵧ / (σₓ * σᵧ)
+
+Where:
+- σₓᵧ is the covariance of X and Y.
+- σₓ is the standard deviation of X.
+- σᵧ is the standard deviation of Y.
 """
