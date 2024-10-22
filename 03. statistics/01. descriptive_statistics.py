@@ -200,7 +200,6 @@ Where:
 """
 15) Coefficient Of Variance(Relative Standard Deviation)
 --------------------------------------------------------
-
 Coefficient Of Variance for popultaion
 CV = σ / μ
 
