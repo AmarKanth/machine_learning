@@ -44,3 +44,20 @@ b₀ : is the estimated of the regression constant β₀
 b₁ : is the estimated of β₁ and x
 x₁ : is the sample data for the independent variable
 """
+
+"""
+You have an ice-cream shop. You noticed a relationship between the number of cones 
+you order and the number of ice-creams you sell. Is this a suitable situation for 
+regression analysis?
+
+If you run out of cones, you cant sell anymore ice creams, this is not 
+regression analysis material. The two variables go hand in hand as (ususally) 
+each ice cream requires cone.
+"""
+
+"""
+You are trying to predict the amount of beer consumed in the US, 
+depending on the state. Is this regression material?
+
+Beer_Consumption = β₀ + β₁*Population + β₂*Avg_Temperature + β₃*Brewery_Count + ε
+"""
