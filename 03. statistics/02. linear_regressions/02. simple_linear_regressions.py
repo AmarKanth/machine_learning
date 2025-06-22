@@ -61,3 +61,36 @@ depending on the state. Is this regression material?
 
 Beer_Consumption = β₀ + β₁*Population + β₂*Avg_Temperature + β₃*Brewery_Count + ε
 """
+
+"""
+What is the difference between correlation and regression?
+
+Correlation :
+1. Represents the relationship between two variables
+2. Shows that two variables move together (no matter in which direction)
+3. Symmetrical w.r.t. the two variables: ρ(x,y)=ρ(y,x)
+4. A single point (a number)
+
+Rgression :
+1. Represents the relationship between two or more variables
+2. Shows cause and effect (one variable is affected by the other)
+3. One way – there is always only one variable that is causally dependent
+4. A line (in 2D space)
+"""
+
+"""
+Which statement is false?
+1. Correlation doesnt imply causation
+2. Correlation is symmetrical regarding both variables
+3. Correlation could represented as line
+4. Correlation does not capture the direction of the causal relationship
+"""
+
+"""
+Assume you have the following sample regression ŷ = 6 + x. If we draw the regression 
+line, what would be its slope?
+1. 1
+2. 6
+3. Xi
+4. None of the above
+"""
