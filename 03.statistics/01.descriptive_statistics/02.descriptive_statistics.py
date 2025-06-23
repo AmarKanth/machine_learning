@@ -1,5 +1,5 @@
 """
-11) Mean, Median and Mode
+1) Mean, Median and Mode
 -------------------------
 Mean : The mean is the average value of a set of numbers.
 Median : The median is the middle value when all the numbers are arranged in ascending order.
@@ -7,7 +7,7 @@ Mode : The mode is the value that appears most frequently in the dataset.
 """
 
 """
-12) Skewness
+2) Skewness
 ------------
 Skewness is a measure of the asymmetry in the distribution of data.
 It tells us whether the data is skewed to the left (negatively skewed), to the right (positively skewed), 
@@ -19,7 +19,7 @@ Negative Skewness (Left-Skewed) : Mean < Median < Mode.
 """
 
 """
-13) Variance
+3) Variance
 ------------
 Variance : Variance is a statistical measure that tells us how much values in a dataset vary 
 from the mean (average).
@@ -44,7 +44,7 @@ where:
 """
 
 """
-14) Standard Deviation 
+4) Standard Deviation 
 ----------------------
 Standard Deviation for population:
 σ = √σ²
@@ -62,7 +62,7 @@ Where:
 """
 
 """
-15) Coefficient Of Variance(Relative Standard Deviation)
+5) Coefficient Of Variance(Relative Standard Deviation)
 --------------------------------------------------------
 Coefficient Of Variance for popultaion
 CV = σ / μ
@@ -82,7 +82,7 @@ Where:
 """
 
 """
-16) Covariance
+6) Covariance
 --------------
 Covariance for population:
 σₓᵧ = Σ((xᵢ - μₓ) * (yᵢ - μᵧ)) / n
@@ -106,7 +106,7 @@ where:
 """
 
 """
-17) Correlation Coefficient
+7) Correlation Coefficient
 ---------------------------
 σₓᵧ / (σₓ * σᵧ)
 
