@@ -100,4 +100,5 @@ yᵢ = actual observed values
 """
 SST and SSR is equal, it means your regression model captures all the 
 observed variability and is perfect.
+SST = SSR + SSE
 """
