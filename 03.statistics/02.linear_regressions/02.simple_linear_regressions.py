@@ -54,22 +54,6 @@ x₁ : is the sample data for the independent variable
 """
 
 """
-Questions :
-1)You have an ice-cream shop. You noticed a relationship between the number of cones 
-you order and the number of ice-creams you sell. Is this a suitable situation for 
-regression analysis?
-
-If you run out of cones, you cant sell anymore ice creams, this is not 
-regression analysis material. The two variables go hand in hand as (ususally) 
-each ice cream requires cone.
-
-2)You are trying to predict the amount of beer consumed in the US, 
-depending on the state. Is this regression material?
-
-Beer_Consumption = β₀ + β₁*Population + β₂*Avg_Temperature + β₃*Brewery_Count + ε
-"""
-
-"""
 What is the difference between correlation and regression?
 
 Correlation :
@@ -83,21 +67,4 @@ Rgression :
 2. Shows cause and effect (one variable is affected by the other)
 3. One way – there is always only one variable that is causally dependent
 4. A line (in 2D space)
-"""
-
-"""
-Which statement is false?
-1. Correlation doesnt imply causation
-2. Correlation is symmetrical regarding both variables
-3. Correlation could represented as line
-4. Correlation does not capture the direction of the causal relationship
-"""
-
-"""
-Assume you have the following sample regression ŷ = 6 + x. If we draw the regression 
-line, what would be its slope?
-1. 1
-2. 6
-3. Xi
-4. None of the above
 """
