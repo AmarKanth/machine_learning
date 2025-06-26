@@ -24,12 +24,26 @@ to the right (positively skewed), or is symmetric.
 Symmetric (Zero Skewness) : Mean = Median = Mode.
 Positive Skewness (Right-Skewed) : Mean > Median > Mode.
 Negative Skewness (Left-Skewed) : Mean < Median < Mode.
+
+Skewness for population:
+skewness = (1 / n) * Σⁿᵢ₌₁ [ (xᵢ - x̄) / s ]³
+n  = number of observations
+xᵢ = individual data points
+x̄  = population mean
+s  = population standard deviation
+
+Skewness for sample:
+skewness = (n / ((n - 1)(n - 2))) * Σ[((xᵢ - x̄) / s)³]
+n  = number of observations
+xᵢ = individual data points
+x̄  = sample mean
+s  = sample standard deviation
 """
 
 """
 5) What is Variance?
-Variance : Variance is a statistical measure that tells us how much values in a 
-dataset vary from the mean (average).
+Variance is a statistical measure that tells us how much values in a dataset 
+vary from the mean (average).
 
 Variance for a population:    
 σ² = Σ (xᵢ - μ)² / N
