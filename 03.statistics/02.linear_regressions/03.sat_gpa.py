@@ -102,3 +102,18 @@ SST and SSR is equal, it means your regression model captures all the
 observed variability and is perfect.
 SST = SSR + SSE
 """
+
+"""
+OLS Ordinary Least Squares
+It is most common method to estimate the linear regression equation.
+Least squares stands for the minimum squares error or SSE.
+Lower error results in a better explanatory power of the regression model.
+This method aims to find the line which minimizes the sum of th squared errors.
+
+Other methods performing the regression line
+1. Generalized least squares
+2. Maximum likelihood estimation
+3. Bayesian regression
+4. Kernel regression
+5. Gaussian process regeression
+"""
