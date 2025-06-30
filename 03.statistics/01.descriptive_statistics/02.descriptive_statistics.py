@@ -5,18 +5,22 @@
 """
 
 """
-1) What is mean?
+mean :
 The mean is the average value of a set of numbers.
+"""
 
-2) What is median?
+"""
+median :
 The median is the middle value when all the numbers are arranged in ascending order.
+"""
 
-3) What is mode?
+"""
+mode :
 The mode is the value that appears most frequently in the dataset.
 """
 
 """
-4) What is Skewness?
+Skewness :
 Skewness is a measure of the asymmetry in the distribution of data.
 It tells us whether the data is skewed to the left (negatively skewed), 
 to the right (positively skewed), or is symmetric.
@@ -41,7 +45,7 @@ s  = sample standard deviation
 """
 
 """
-5) What is Variance?
+Variance :
 Variance is a statistical measure that tells us how much values in a dataset 
 vary from the mean (average).
 
@@ -61,7 +65,7 @@ s² = Σ (xᵢ - x̄)² / (n - 1)
 """
 
 """
-6) What is Standard Deviation?
+Standard Deviation :
 
 Standard Deviation for population:
 σ = √σ²
@@ -75,7 +79,7 @@ s = √s²
 """
 
 """
-7) What is Coefficient Of Variance(Relative Standard Deviation)?
+Coefficient Of Variance(Relative Standard Deviation) :
 
 Coefficient Of Variance for popultaion
 CV = σ / μ
@@ -91,7 +95,7 @@ CV = s / x̄
 """
 
 """
-8) What is Covariance?
+Covariance :
 
 Covariance for population:
 σₓᵧ = Σ((xᵢ - μₓ) * (yᵢ - μᵧ)) / n
@@ -111,7 +115,7 @@ Sₓᵧ = Σ((xᵢ - x̄) * (yᵢ - ȳ)) / (n - 1)
 """
 
 """
-9) What is Correlation Coefficient?
+Correlation Coefficient :
 σₓᵧ / (σₓ * σᵧ)
 - σₓᵧ is the covariance of X and Y.
 - σₓ is the standard deviation of X.
