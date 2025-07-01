@@ -85,3 +85,16 @@ Notes:
 - Type I error (α): Incorrectly rejecting a true null hypothesis.
 - Type II error (β): Failing to reject a false null hypothesis.
 """
+
+"""
+p value is the smallest level of significance at which we can still reject the 
+null hypothesis, given the observed sample statistics
+
+p < α we should reject the null hypothesis
+
+The p-value for a two-tailed test is
+1-number from the table
+
+The p-value for a two-tailed test is
+p=2×(1−number from the table)
+"""
