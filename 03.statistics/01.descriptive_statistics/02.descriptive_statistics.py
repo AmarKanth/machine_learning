@@ -80,6 +80,8 @@ s = √s²
 
 """
 Coefficient Of Variance(Relative Standard Deviation) :
+The coefficient of variation tells us what percentage of the mean is made up by 
+the standard deviation.
 
 Coefficient Of Variance for popultaion
 CV = σ / μ
