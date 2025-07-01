@@ -96,6 +96,7 @@ CV = s / x̄
 
 """
 Covariance :
+Covariance measures how much two variables vary together from their respective means.
 
 Covariance for population:
 σₓᵧ = Σ((xᵢ - μₓ) * (yᵢ - μᵧ)) / n
