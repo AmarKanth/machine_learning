@@ -46,8 +46,8 @@ s  = sample standard deviation
 
 """
 Variance :
-Variance is a statistical measure that tells us how much values in a dataset 
-vary from the mean (average).
+Variance is a statistical measure that indicates how much the values in a dataset 
+deviate from the mean (average).
 
 Variance for a population:    
 σ² = Σ (xᵢ - μ)² / N
