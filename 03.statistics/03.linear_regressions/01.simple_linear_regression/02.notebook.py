@@ -66,6 +66,27 @@ GPA = 0.2750 + 0.0017*SAT
 """
 
 """
+Example :
+1. The income a person receives depends on the number of years of education that person 
+has received.
+2. Here the dependent variable is income, while the independent variable is years of 
+education.
+3. There is causal relation between two, the more education you get, the higher income 
+you are likely to receive.
+4. Reverse relation is education depends on income. Meaning the more money you have, the 
+more years you spend in school. The causal relationship is not correct.
+5. In our model, there are coefficients. β₁ is the coefficient in front of the 
+independent variable, and it measures the effect of education on income. 
+If β₁ = 50, it means that for each additional year of education, income increases 
+by $50.
+6. In this example think about β₀ is the minimum wage.
+7. ε is error of estimation, the error is the actual difference between the real 
+income and the income regression predicted. on average accross all the observations, 
+the error is zero. If you earn more than what the regression is predected, then 
+someone earns less than what the regression predected everything evens out. 
+"""
+
+"""
 std err shows the accuracy of prediction for each variable. The lower the 
 standard error, the better the estimate.
 """
