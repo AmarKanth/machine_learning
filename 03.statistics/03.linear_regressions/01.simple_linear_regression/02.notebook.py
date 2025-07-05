@@ -1,13 +1,13 @@
 """
-We will create linear regression which predicts GPA based on the 
-SAT score obtained
+Create linear regression which predicts GPA based on the SAT score obtained
 """
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 
-file_path = "data_science/03.statistics/02.linear_regressions/data/01.simple_linear_regression.csv"
+file_path = "data_science/03.statistics/03.linear_regressions/00.data/01.slr.csv"
 df = pd.read_csv(file_path)
 
 y = df["GPA"]
@@ -120,6 +120,8 @@ Other methods performing the regression line
 
 """
 R² = SSR / SST
+
+It measures how much of the total variability is explained by our model
 
 R² = 0 means your regression line explains none of the variability of the data
 R² = 1 means your model explains the entire variability of data
