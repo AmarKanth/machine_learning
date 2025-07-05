@@ -117,3 +117,14 @@ Other methods performing the regression line
 4. Kernel regression
 5. Gaussian process regeression
 """
+
+"""
+R² = SSR / SST
+
+R² = 0 means your regression line explains none of the variability of the data
+R² = 1 means your model explains the entire variability of data
+
+Unfortunately, regressions explaining the entire variability are rare.
+What you will usually observe is values ranging from 0.2 to 0.9.
+The more factors you include in regression, higher the R².
+"""
