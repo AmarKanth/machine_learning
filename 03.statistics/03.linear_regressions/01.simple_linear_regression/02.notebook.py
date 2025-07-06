@@ -66,39 +66,37 @@ GPA = 0.2750 + 0.0017*SAT
 """
 
 """
-Example :
-1. The income a person receives depends on the number of years of education that person 
-has received.
-2. Here the dependent variable is income, while the independent variable is years of 
-education.
-3. There is causal relation between two, the more education you get, the higher income 
-you are likely to receive.
-4. Reverse relation is education depends on income. Meaning the more money you have, the 
-more years you spend in school. The causal relationship is not correct.
-5. In our model, there are coefficients. β₁ is the coefficient in front of the 
-independent variable, and it measures the effect of education on income. 
-If β₁ = 50, it means that for each additional year of education, income increases 
-by $50.
-6. In this example think about β₀ is the minimum wage.
-7. ε is error of estimation, the error is the actual difference between the real 
-income and the income regression predicted. on average accross all the observations, 
-the error is zero. If you earn more than what the regression is predected, then 
-someone earns less than what the regression predected everything evens out. 
+1. Causal relation is that the higher your SAT score, the higher your GPA.
+2. Rverse causal realtion is that the higher your GPA, the more likely it is that you 
+had a high SAT score.
+3. β₀ and β₁ are the coefficients. β₁ is the coefficient in front of the independent 
+variable, and it measures the effect of SAT scores on GPA.
+4. β₀ is the minimum GPA.
+5. ε is error of estimation, the error is the actual difference between the real 
+gpa and the gpa regression predicted.
 """
 
 """
-std err shows the accuracy of prediction for each variable. The lower the 
+std err : shows the accuracy of prediction for each variable. The lower the 
 standard error, the better the estimate.
 """
 
 """
-1. There is hypothesis involved.
-2. The null hypothesis of this test is H₀: β = 0, in other words is the coefficient 
-equals to zero.
-3. ŷ = 0 + 0.0017*x1 then line crosses the y axis at the origin.
-4. if β₁ = 0, ŷ will be zero, so the variable will not be for the model.
-5. P < 0.05 means that the variable is significant. Therefore co-efficient is most 
-probably different from zero.
+Hypothesis
+
+For the SAT coefficient:
+-----------------------
+Null Hypothesis(H₀): The SAT score has no effect on GPA(i.e. the coefficient=0).
+Alternative Hypothesis(H₁): The SAT score does have an effect on GPA(i.e. the coefficient≠0).
+p-value for SAT is extremely small (p < 0.05), we reject the null hypothesis.
+This means there is statistically significant evidence that SAT score does affect GPA.
+
+For the Intercept (const):
+-------------------------
+Null Hypothesis: The intercept is zero (no GPA when SAT = 0).
+p-value = 0.503, which is not significant (p > 0.05).
+This tells us the intercept isn't statistically significant — but in practical terms, 
+this is often less important than the slope (SAT’s effect on GPA).
 """
 
 """
@@ -116,9 +114,7 @@ Sum of squares error :
 SSE = Σ(yᵢ - ŷᵢ)²
 yᵢ = actual observed values
 ŷᵢ = predicted values from the model
-"""
 
-"""
 SST and SSR is equal, it means your regression model captures all the 
 observed variability and is perfect.
 SST = SSR + SSE

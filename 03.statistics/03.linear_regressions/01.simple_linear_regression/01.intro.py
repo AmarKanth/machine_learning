@@ -6,14 +6,14 @@
 """
 
 """
-linear regression :
+Linear Regression :
 A linear regression is a linear approximation of a causal relationship between two or 
-more variables.
-regression models are one of the most common ways to make inference and predictions.
+more variables. Regression models are one of the most common ways to make inference 
+and predictions.
 """
 
 """
-Simple linear regression
+Simple Linear Regression
 
 y = β₀ + β₁X₁ + ε
 
@@ -22,9 +22,6 @@ y  : It is the variable we are trying to predict and is called dependent variabl
 β₁ : Coeffiecient(slope)
 X₁ : Input feature, it is independent variable
 ε  : Error term
-
-when we using the regression analysis, we want to predict the value of y provided we have 
-the value of x.
 
 There should be causal relation between y and x. whenever there is a change in x, 
 such change must translate into a change in y.
