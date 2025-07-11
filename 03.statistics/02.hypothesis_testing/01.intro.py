@@ -44,21 +44,6 @@ rejection of the null hypothesis (H₀).
 """
 
 """
-Z-score representing the standardized distance of the sample mean from the 
-population mean.
-
-z = (x̄ - μ) / (σ / √n)
-Where:
-  x̄ : Sample mean
-  μ : Population mean (under the null hypothesis)
-  σ : Population standard deviation
-  n : Sample size
-
-if x̄=μ=0 then z=0 then we accept the null hypothesis.
-if z falls into rejection region then we reject the null hypothesis.
-"""
-
-"""
 One-Sided Test :
 A one-sided test (also called a one-tailed test) is a hypothesis test where the 
 alternative hypothesis (H₁) states that the effect or difference exists in only one 
@@ -84,18 +69,4 @@ Summary of Type I and Type II Errors in Hypothesis Testing:
 Notes:
 - Type I error (α): Incorrectly rejecting a true null hypothesis.
 - Type II error (β): Failing to reject a false null hypothesis.
-"""
-
-"""
-p value is the smallest level of significance at which we can still reject the 
-null hypothesis, given the observed sample statistics
-
-p < α   we should reject the null hypothesis
-p >= α  we failed to reject the null hypothesis
-
-The p-value for a one sided test is
-1-number from the table
-
-The p-value for a two-tailed test is
-p=2×(1−number from the table)
 """

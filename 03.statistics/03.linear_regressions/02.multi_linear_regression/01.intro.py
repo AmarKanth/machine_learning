@@ -26,3 +26,22 @@ If a new variable improves the model, adjusted R² goes up
 If a new variable is useless, adjusted R² goes down
 Adjusted R² ≤ R² (always less than or equal)
 """
+
+"""
+Assumptions
+
+1. Linearity
+ŷ = β₀ + β₁x₁ + β₂x₂ + ⋯ + βₙxₙ + ε
+
+2. No Endogeneity
+σₓε = 0 ∀ x, ε
+
+3. Normality and Homoscedasticity
+ε ~ N(0, σ²)
+
+4. No Autocorrelation
+σ(εᵢ, εⱼ) = 0 ∀ i ≠ j
+
+5. No Multicollinearity
+ρ(xᵢ, xⱼ) ≠ 1 ∀ i ≠ j
+"""
