@@ -17,9 +17,9 @@ Is there a difference between a group and the population
 t = (x̄ - μ₀) / (s / √n)
 
 x̄   = sample mean
-μ₀   = population mean
-s    = sample standard deviation
-n    = sample size
+μ₀  = population mean
+s   = sample standard deviation
+n   = sample size
 
 Decision rules for one-tailed and two-tailed t-tests using p-values.
 ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────────┬─────────────────────────────┐
