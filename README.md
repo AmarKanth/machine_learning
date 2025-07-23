@@ -1,8 +1,8 @@
 ### Supervised Learning
-- <ins>**Regression (Predict Continuous Values)**</ins>
+- <ins>**Regression**</ins>
 1. Linear Regression
 
-- <ins>**Classification (Predict Categories)**</ins>
+- <ins>**Classification**</ins>
 1. Logistic Regression
 
 ### Unsupervised Learning
