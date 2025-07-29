@@ -1,6 +1,6 @@
 """
-Multiple regressions, address the higher complexity of problems. The more variables 
-you have more factors you are considering in a model.
+Multiple regression addresses more complex relationships by including multiple 
+independent variables.
 """
 
 """
@@ -9,7 +9,7 @@ you have more factors you are considering in a model.
 ŷ 	is the predicted value (y-hat)
 β₀ 	is the intercept
 β₁, β₂, ..., βₙ are the regression coefficients
-x₁, x₂, ..., xₙ are the input (independent) variables
+x₁, x₂, ..., xₙ are the input(independent) variables
 """
 
 """
