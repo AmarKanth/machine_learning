@@ -1,7 +1,7 @@
 """
 Bayes Theorem : 
 It is enables us to calculate the probability of a hypothesis being true given observed evidence.
-P(A∣B) = (P(B∣A) × P(A))​ / P(B)
+𝑃(𝐴|𝐵) = (𝑃(𝐵|𝐴) × 𝑃(𝐴))/𝑃(𝐵)
 
 Mathematical Formulation :
 To derive Bayes’s Theorem, we start with the definition of conditional probability:
