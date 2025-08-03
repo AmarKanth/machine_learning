@@ -58,30 +58,6 @@ strong multicollinearity or other numerical problems.
 """
 
 """
-β₀ = 0.2750
-β₁ = 0.0017
-
-ŷ = 0.2750 + 0.0017*x1
-GPA = 0.2750 + 0.0017*SAT
-"""
-
-"""
-1. Causal relation is that the higher your SAT score, the higher your GPA.
-2. Rverse causal realtion is that the higher your GPA, the more likely it is that you 
-had a high SAT score.
-3. β₀ and β₁ are the coefficients. β₁ is the coefficient in front of the independent 
-variable, and it measures the effect of SAT scores on GPA.
-4. β₀ is the minimum GPA.
-5. ε is error of estimation, the error is the actual difference between the real 
-gpa and the gpa regression predicted.
-"""
-
-"""
-std err : shows the accuracy of prediction for each variable. The lower the 
-standard error, the better the estimate.
-"""
-
-"""
 Hypothesis
 
 For the SAT coefficient:
@@ -97,53 +73,4 @@ Null Hypothesis: The intercept is zero (no GPA when SAT = 0).
 p-value = 0.503, which is not significant (p > 0.05).
 This tells us the intercept isn't statistically significant — but in practical terms, 
 this is often less important than the slope (SAT’s effect on GPA).
-"""
-
-"""
-Sum of squares total : It measures the total variability of the dataset
-SST = Σ(yᵢ - ȳ)²
-yᵢ = observed dependent value
-ȳ  = mean of y value
-
-Sum of squares regression :
-SSR = Σ(ŷᵢ - ȳ)²
-ŷᵢ = predicted values from the model
-ȳ  = mean of actual y values
-
-Sum of squares error :
-SSE = Σ(yᵢ - ŷᵢ)²
-yᵢ = actual observed values
-ŷᵢ = predicted values from the model
-
-SST and SSR is equal, it means your regression model captures all the 
-observed variability and is perfect.
-SST = SSR + SSE
-"""
-
-"""
-OLS Ordinary Least Squares
-It is most common method to estimate the linear regression equation.
-Least squares stands for the minimum squares error or SSE.
-Lower error results in a better explanatory power of the regression model.
-This method aims to find the line which minimizes the sum of th squared errors.
-
-Other methods performing the regression line
-1. Generalized least squares
-2. Maximum likelihood estimation
-3. Bayesian regression
-4. Kernel regression
-5. Gaussian process regeression
-"""
-
-"""
-R² = SSR / SST
-
-It measures how much of the total variability is explained by our model
-
-R² = 0 means your regression line explains none of the variability of the data
-R² = 1 means your model explains the entire variability of data
-
-Unfortunately, regressions explaining the entire variability are rare.
-What you will usually observe is values ranging from 0.2 to 0.9.
-The more factors you include in regression, higher the R².
 """
