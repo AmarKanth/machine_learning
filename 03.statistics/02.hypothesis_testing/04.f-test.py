@@ -1,9 +1,20 @@
 """
 F Test :
 
-Null Hypothesis for f test is
+Null Hypothesis
 H₀ : β₁ = β₂ = ⋯ = βₖ = 0
+High F-value and low p-value (typically < 0.05)
+F > F-Critical and p < 0.05
+
+Alternative Hypothesis
 H₁ : At least one βⱼ ≠ 0
+Low F-value and high p-value
+F < F-Critical and p >= 0.05
+"""
+
+"""
+βⱼ ≠ 0 means its not symmetric
+F-test in regression = one-tailed test which means it only consider right tail
 """
 
 """

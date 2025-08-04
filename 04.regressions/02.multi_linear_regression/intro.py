@@ -13,8 +13,7 @@ x₁, x₂, ..., xₙ are the input(independent) variables
 """
 
 """
-Adjusted R² penalizes unnecessary complexity and tells you whether adding a variable 
-actually improves the model.
+Adjusted R² tells you whether adding a variable actually improves the model or not.
 
 R²_adj = 1 - [(1 - R²) × (n - 1) / (n - p - 1)]
 
@@ -25,6 +24,7 @@ p = number of predictors (independent variables)
 If a new variable improves the model, adjusted R² goes up
 If a new variable is useless, adjusted R² goes down
 Adjusted R² ≤ R² (always less than or equal)
+It helps prevent overfitting by punishing complexity
 """
 
 """
