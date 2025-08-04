@@ -45,3 +45,7 @@ Assumptions
 5. No Multicollinearity
 ρ(xᵢ, xⱼ) ≠ 1 ∀ i ≠ j
 """
+
+"""
+How to check the model is overfitting or underfitting
+"""
