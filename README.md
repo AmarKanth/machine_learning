@@ -4,6 +4,7 @@
 
 - <ins>**Classification**</ins>
 1. Logistic Regression
+2. SVM
 
 ### Unsupervised Learning
 - <ins>**Clustering**</ins>
