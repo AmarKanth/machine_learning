@@ -36,4 +36,7 @@ ColumnTransformer
 OneHotEncoder
 LabelEncoder
 StandardScaler
+
+imputing 
+label encoding 
 """
