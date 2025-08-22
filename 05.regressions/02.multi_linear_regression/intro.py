@@ -47,5 +47,9 @@ Assumptions
 """
 
 """
-How to check the model is overfitting or underfitting
+Overfitting : Overfitting means a model fits the existing observations too well but fails to 
+predict future new observations.
+
+Underfitting : When a model is underfit, it doesn't perform well on the training sets and won't 
+do so on the testing sets, which means it fails to capture the underlying trend of the data.
 """
