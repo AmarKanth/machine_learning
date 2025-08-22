@@ -1,4 +1,5 @@
 """
+What is multiple linear regression?
 Multiple regression addresses more complex relationships by including multiple 
 independent variables.
 """
@@ -28,28 +29,18 @@ It helps prevent overfitting by punishing complexity
 """
 
 """
-Assumptions
-
-1. Linearity
-ŷ = β₀ + β₁x₁ + β₂x₂ + ⋯ + βₙxₙ + ε
-
-2. No Endogeneity
-σₓε = 0 ∀ x, ε
-
-3. Normality and Homoscedasticity
-ε ~ N(0, σ²)
-
-4. No Autocorrelation
-σ(εᵢ, εⱼ) = 0 ∀ i ≠ j
-
-5. No Multicollinearity
-ρ(xᵢ, xⱼ) ≠ 1 ∀ i ≠ j
-"""
-
-"""
-Overfitting : Overfitting means a model fits the existing observations too well but fails to 
+What is overfitting in machine learning and how can it be avoided?
+Overfitting means a model fits the existing observations too well but fails to 
 predict future new observations.
 
-Underfitting : When a model is underfit, it doesn't perform well on the training sets and won't 
+1. Early stopping of the model’s training in case of validation training stops increasing but 
+the training keeps going on.
+2. Using regularization methods like L1 or L2 regularization which is used to penalize the 
+model's weights to avoid overfitting.
+"""
+
+"""
+What is underfitting?
+When a model is underfit, it doesn't perform well on the training sets and won't 
 do so on the testing sets, which means it fails to capture the underlying trend of the data.
 """
