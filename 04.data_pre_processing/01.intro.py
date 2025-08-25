@@ -42,6 +42,17 @@ label encoding
 """
 
 """
+Label encoding
+One-hot encoding
+Scaling
+Feature engineering 
+Polynomial features 
+Power transformations 
+Binning 
+Name two feature engineering approaches.
+"""
+
+"""
 Why do we perform normalization?
 To achieve stable and fast training of the model we use normalization techniques to bring 
 all the features to a certain scale or range of values. If we do not perform normalization 
@@ -83,7 +94,4 @@ diagonals represents the numbers for which our model's prediction and the true l
 the same. Our target is also to maximize the values along these diagonals. From the 
 confusion matrix, we can calculate various evaluation metrics like accuracy, precision, 
 recall, F1 score, etc.
-"""
-
-"""
 """
