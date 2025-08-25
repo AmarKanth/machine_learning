@@ -50,14 +50,14 @@ Variance is a statistical measure that indicates how much the values in a datase
 deviate from the mean (average).
 
 Variance for a population:    
-σ² = Σ (xᵢ - μ)² / N
+σ² = (1/N)*Σ (xᵢ - μ)²
 - σ² is the population variance,
 - xᵢ represents each data point,
 - μ is the population mean,
 - N is the total number of data points in the population.
 
 Variance for a sample:
-s² = Σ (xᵢ - x̄)² / (n - 1)
+s² = (1/(n-1)Σ (xᵢ - x̄)²
 - s² is the sample variance,
 - xᵢ represents each data point,
 - x̄ is the sample mean,
