@@ -53,6 +53,15 @@ Name two feature engineering approaches.
 """
 
 """
+What is z-standardization?
+
+Z-standardization is a statistical procedure used to make data points from different 
+datasets comparable. 
+In this procedure, each data point is converted into a z-score. 
+A z-score indicates how many standard deviations a data point is from the mean of the dataset.
+"""
+
+"""
 Why do we perform normalization?
 To achieve stable and fast training of the model we use normalization techniques to bring 
 all the features to a certain scale or range of values. If we do not perform normalization 

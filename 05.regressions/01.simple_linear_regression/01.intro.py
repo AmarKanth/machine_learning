@@ -93,3 +93,19 @@ Unfortunately, regressions explaining the entire variability are rare.
 What you will usually observe is values ranging from 0.2 to 0.9.
 The more factors you include in regression, higher the R².
 """
+
+"""
+What is the null hypothesis in linear regression problem?
+In linear regression, the null hypothesis id that there is no relationship between the 
+independent variable(s) and the dependent variable. This is formally represented as 
+H₀ : β₁ = 0, where β₁ is the coefficient of the independent variable.
+
+Essentially, the null hypothesis suggests that the predictor variable does not contribute 
+to predicting the outcome. For instance, if the null hypothesis states that the slope of 
+the regression line is zero, then a student's score in an English class would not be a 
+useful predictor of their overall grade-point average.
+
+The alternative hypothesis, denoted as βⱼ ≠ 0, proposes that changes in the independent 
+variable are indeed associated with changes in the dependent variable, indicating a meaningful 
+relationship.
+"""

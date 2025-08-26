@@ -5,7 +5,7 @@ H₁ : Alternative Hypothesis
 """
 
 """
-Null Hypothesis :
+What is Null Hypothesis?
 A default assumption that there is no effect, no difference, or no relationship 
 between variables.
 
@@ -13,7 +13,7 @@ Example: The new product performs the same as the old one.
 """
 
 """
-Alternative Hypothesis :
+What is Alternative Hypothesis?
 A statement that there is an effect, a difference, or a relationship — it's 
 what you're trying to prove.
 
@@ -51,6 +51,8 @@ direction.
 """
 
 """
+Explain about type 1 and type 2 error?
+
 Type I Error:
 A Type I error occurs in hypothesis testing when you reject the null hypothesis (H₀) 
 even though it is actually true.
@@ -69,20 +71,4 @@ Summary of Type I and Type II Errors in Hypothesis Testing:
 Notes:
 - Type I error (α): Incorrectly rejecting a true null hypothesis.
 - Type II error (β): Failing to reject a false null hypothesis.
-"""
-
-"""
-What is the null hypothesis in linear regression problem?
-In linear regression, the null hypothesis id that there is no relationship between the 
-independent variable(s) and the dependent variable. This is formally represented as 
-H₀ : β₁ = 0, where β₁ is the coefficient of the independent variable.
-
-Essentially, the null hypothesis suggests that the predictor variable does not contribute 
-to predicting the outcome. For instance, if the null hypothesis states that the slope of 
-the regression line is zero, then a student's score in an English class would not be a 
-useful predictor of their overall grade-point average.
-
-The alternative hypothesis, denoted as βⱼ ≠ 0, proposes that changes in the independent 
-variable are indeed associated with changes in the dependent variable, indicating a meaningful 
-relationship.
 """
