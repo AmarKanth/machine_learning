@@ -1,106 +1,124 @@
 """
-Data Preprocessing
-------------------
-1. Import data
-2. Clean the data
-3. Split into training and test sets
-
-Modeling
----------
-1. Build the model
-2. Train the model
-3. Make Predictions
-
-Evaluation
-----------
-1. Calculate the performance metrics
-2. Make a verdict
-"""
-
-"""
 What is feature scaling?
+It involves transforming numerical features to a "standard" scale, often leading to better 
+model performance.
 
-Normalization :
+Methods for Feature Scaling
+1. Min-Max Scaling
+2. Standardization
+3. Robust Scaling
+"""
+
+"""
+Min-Max Scaling:
+It is also called normalization.
 x' = (x - x_min) / (x_max - x_min)
 
-Standardization :
-x' = (x - μ) / σ
+To achieve stable and fast training of the model we use normalization techniques to bring 
+all the features to a certain scale or range of values.
+"""
+from sklearn.preprocessing import MinMaxScaler
+min_max_scaler = MinMaxScaler()
+X_minmax = min_max_scaler.fit_transform(X)
 
+"""
+Standardization:
+x' = (x - μ) / σ
 μ : Mean of the feature
 σ : Standard deviation of the feature
+
+It indicates how many standard deviations a data point is from the mean of the dataset.
+"""
+from sklearn.preprocessing import StandardScaler
+std_scaler = StandardScaler()
+X_std = std_scaler.fit_transform(X)
+
+"""
+Robust Scaling:
+(X − Q₁(X)) / (Q₃(X) − Q₁(X))
+Q₁(X) = first quartile  
+Q₃(X) = third quartile
+"""
+from sklearn.preprocessing import RobustScaler
+robust_scaler = RobustScaler()
+X_robust = robust_scaler.fit_transform(X)
+
+"""
+How do you handle missing values in a dataset using Scikit-Learn?
+
+SimpleImputer offers several strategies
+
+1. Mean, Median, Most Frequent: Fills in with the mean, median, or mode of the non-missing 
+values in the column.
+2. Constant: Assigns a fixed value to all missing entries.
+3. KNN: Uses the k-Nearest Neighbors algorithm to determine an appropriate value based on other 
+instances' known feature values.
+"""
+from sklearn.impute import SimpleImputer
+import numpy as np
+
+X = np.array([[1, 2], [np.nan, 3], [7, 6]])
+imp_mean = SimpleImputer()
+X_mean = imp_mean.fit_transform(X)
+print(X_mean)
+
+"""
+How do you encode categorical variables using Scikit-Learn?
+1. OneHotEncoder
+2. OrdinalEncoder
+3. LabelBinarizer
 """
 
 """
-SimpleImputer
-ColumnTransformer
-OneHotEncoder
-LabelEncoder
-StandardScaler
+OneHotEncoder: 
+Creates Binary columns representing each category to avoid assuming any ordinal 
+relationship. Ideal for non-binary categories.
+"""
+import pandas as pd
+from sklearn.preprocessing import OneHotEncoder
 
-imputing 
-label encoding 
+data = pd.DataFrame({'Color': ['Red', 'Green', 'Blue', 'Green', 'Red']})
+encoder = OneHotEncoder()
+encoded_data = encoder.fit_transform(data[['Color']])
+columns = encoder.get_feature_names_out(['Color'])
+encoded_df = pd.DataFrame(encoded_data.toarray(), columns=columns)
+print(encoded_df)
+
+"""
+OrdinalEncoder: 
+For ordinal categories, assigns a range of numbers to each category. Works 
+well when certain categories have an inherent order.
 """
 
 """
-Label encoding
-One-hot encoding
-Scaling
+LabelBinarizer: 
+A simpler version of OneHotEncoder designed for binary (two-class) categories.
+"""
+
+"""
+Describe the use of ColumnTransformer in Scikit-Learn
+"""
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import Normalizer, StandardScaler, OneHotEncoder
+from sklearn.impute import SimpleImputer
+
+preprocessor = ColumnTransformer(
+    transformers=[
+        ('num', StandardScaler(), ['numerical_feature_1', 'numerical_feature_2']),
+        ('num2',Normalizer(),['numerical_feature_3']),
+        ('cat', OneHotEncoder(), ['categorical_feature_1', 'categorical_feature_2']),
+        ('drop_col', 'drop', ['column_to_drop']),
+        ('fill_unk', SimpleImputer(strategy='constant', fill_value='Unknown'), ['categorical_feature_with_nan']),
+        ('default', 'passthrough', ['remaining_col_1'])
+    ]
+)
+
+transformed_data = preprocessor.fit_transform(data)
+
+"""
 Feature engineering 
 Polynomial features 
 Power transformations 
 Binning 
 Name two feature engineering approaches.
-"""
-
-"""
-What is z-standardization?
-
-Z-standardization is a statistical procedure used to make data points from different 
-datasets comparable. 
-In this procedure, each data point is converted into a z-score. 
-A z-score indicates how many standard deviations a data point is from the mean of the dataset.
-"""
-
-"""
-Why do we perform normalization?
-To achieve stable and fast training of the model we use normalization techniques to bring 
-all the features to a certain scale or range of values. If we do not perform normalization 
-then there are chances that the gradient will not converge to the global or local minima and 
-end up oscillating back and forth.
-"""
-
-"""
-Is it always necessary to use an 80:20 ratio for the train test split?
-No, there is no such necessary condition that the data must be split into 80:20 ratio. 
-The main purpose of the splitting is to have some data which the model has not seen 
-previously so, that we can evaluate the performance of the model.
-
-If the dataset contains let’s say 50,000 rows of data then only 1000 or maybe 2000 rows 
-of data is enough to evaluate the model’s performance.
-"""
-
-"""
-What is the difference between one hot encoding and ordinal encoding?
-One Hot encoding and ordinal encoding both are different methods to convert categorical 
-features to numeric ones the difference is in the way they are implemented. In one hot encoding, 
-we create a separate column for each category and add 0 or 1 as per the value corresponding 
-to that row.
-
-In ordinal encoding, we replace the categories with numbers from 0 to n-1 based on the 
-order or rank where n is the number of unique categories present in the dataset. The main 
-difference between one-hot encoding and ordinal encoding is that one-hot encoding 
-results in a binary matrix representation of the data in the form of 0 and 1, it is 
-used when there is no order or ranking between the dataset whereas ordinal encoding 
-represents categories as ordinal values.
-"""
-
-"""
-How can you conclude about the model's performance using the confusion matrix?
-Confusion matrix summarizes the performance of a classification model. In a confusion matrix, 
-we get four types of output (in case of a binary classification problem) which are TP, TN, FP, 
-and FN. As we know that there are two diagonals possible in a square, and one of these two 
-diagonals represents the numbers for which our model's prediction and the true labels are 
-the same. Our target is also to maximize the values along these diagonals. From the 
-confusion matrix, we can calculate various evaluation metrics like accuracy, precision, 
-recall, F1 score, etc.
 """
