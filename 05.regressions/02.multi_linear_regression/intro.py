@@ -30,8 +30,7 @@ It helps prevent overfitting by punishing complexity
 
 """
 What is overfitting in machine learning and how can it be avoided?
-Overfitting means a model fits the existing observations too well but fails to 
-predict future new observations.
+Model fits the existing observations too well but fails to predict future new observations.
 
 1. Early stopping of the model’s training in case of validation training stops increasing but 
 the training keeps going on.
@@ -41,6 +40,6 @@ model's weights to avoid overfitting.
 
 """
 What is underfitting?
-When a model is underfit, it doesn't perform well on the training sets and won't 
-do so on the testing sets, which means it fails to capture the underlying trend of the data.
+1. It doesn't perform well on the training sets and on the testing sets. 
+2. It fails to capture the underlying trend of the data.
 """
