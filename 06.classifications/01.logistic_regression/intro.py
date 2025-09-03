@@ -11,16 +11,6 @@ P(y = 0) = 1 − 1 / (1 + e^(−Z))
 """
 
 """
-Logistic Regression Assumptions
-
-1. Linearity 
-2. No Endogeneity
-3. Normality and Homoscedasticity
-4. No Autocorrelation
-5. No Multilinearity
-"""
-
-"""
 MLE (Maximum likelihood estimation)
 A function which estimates how likely it is that the model at hand 
 describes the real underlying relationship of the variables.
