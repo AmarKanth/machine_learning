@@ -43,3 +43,20 @@ What is underfitting?
 1. It doesn't perform well on the training sets and on the testing sets. 
 2. It fails to capture the underlying trend of the data.
 """
+
+"""
+4. What is overfitting in machine learning and how can it be avoided?
+Overfitting happens when the model learns patterns as well as the noises present in the data this leads to high performance on the training data but very low performance for data that the model has not seen earlier.
+
+To avoid overfitting there are multiple methods that we can use:
+
+Early stopping of the model’s training in case of validation training stops increasing but the training keeps going on.
+Using regularization methods like L1 or L2 regularization which is used to penalize the model's weights to avoid overfitting.
+"""
+
+"""
+13. Is it always necessary to use an 80:20 ratio for the train test split?
+No, there is no such necessary condition that the data must be split into 80:20 ratio. The main purpose of the splitting is to have some data which the model has not seen previously so, that we can evaluate the performance of the model.
+
+If the dataset contains let’s say 50,000 rows of data then only 1000 or maybe 2000 rows of data is enough to evaluate the model’s performance.
+"""

@@ -98,3 +98,15 @@ The alternative hypothesis, denoted as βⱼ ≠ 0, means that changes in the in
 variable are directly effect the changes in the dependent variable, indicating a meaningful 
 relationship.
 """
+
+"""
+36. Why removing highly correlated features are considered a good practice?
+When two features are highly correlated, they may provide similar information to the model, which may cause overfitting. If there are highly correlated features in the dataset then they unnecessarily increase the dimensionality of the feature space and sometimes create the problem of the curse of dimensionality. If the dimensionality of the feature space is high then the model training may take more time than expected, it will increase the complexity of the model and chances of error. This somehow also helps us to achieve data compression as the features have been removed without much loss of data.
+"""
+
+"""
+38. How you would assess the goodness-of-fit for a linear regression model? Which metrics would you consider most important and why?
+To evaluate the performance of a linear regression model, important key metrics are: R-squared, Adjusted R-squared, RMSE, and F-Statistics. R-squared is particularly important as it reflects the proportion of variance in the dependent variable that can be explained by the independent variables, providing a measure of how well our model fits the data. However, Adjusted R-squared also plays a crucial role, especially when comparing models with different numbers of predictors. It adjusts for the complexity of the model, helping to prevent overfitting and ensuring the robustness of our findings.
+
+To learn more about regression metrics, check out: Regression Metrics
+"""
