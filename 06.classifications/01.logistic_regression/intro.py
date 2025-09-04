@@ -1,27 +1,41 @@
 """
-Logistic Regression :
+Logistic Regression:
 It predicts the probability of an event occuring (ex spam/not-spam, yes/no, 0/1).
+"""
 
+"""
+Logistic(sigmoid) function:
 ŷ = b₁·x₁ + b₂·x₂ + ... + bₖ·xₖ + a
+
 f(z) = 1 / (1 + e^(−z))
-f(z) = 1 / (1 + e^(−(b₁·x₁ + b₂·x₂ + ... + bₖ·xₖ + a)))
+f(z) = e^(z)/(1+e^(z))
+z = b₁·x₁ + b₂·x₂ + ... + bₖ·xₖ + a
 
-P(y = 1) = 1 / (1 + e^(−Z))
-P(y = 0) = 1 − 1 / (1 + e^(−Z))
-"""
-
-"""
-MLE (Maximum likelihood estimation)
-A function which estimates how likely it is that the model at hand 
-describes the real underlying relationship of the variables.
-The bigger the likelihood function, the higher the probability 
-that our model is correct.
+P(y = 1) = f(z)
+P(y = 0) = 1 − f(z)
 """
 
 """
-LLR (Log likelihood Ratio)
-measures if our model is statistically different from LL-null, 
-a.k.a a useless model
+MLE(Maximum likelihood estimation)
+1. It is a method used to estimate the model’s parameters (the coefficients).
+2. It produces Standard errors, Log-likelihood values, Pseudo R-Squared as well
+"""
+
+"""
+LLR(Log likelihood Ratio)
+The log-likelihood tells us how well the model explains the data.
+
+The null model(LL-null) is the model with only the intercept (no predictors).
+The full model(LL) is your fitted logistic regression with predictors.
+
+LLR = −2×(LLnull−LLmodel)
+
+Interpretation
+LLR p-value: This is the probability of seeing such an improvement in log-likelihood 
+if the null model were true.
+
+A small p-value(< 0.05) means your predictors significantly improve the model 
+compared to the null.
 """
 
 """
@@ -45,41 +59,57 @@ Interpretation:
 
 """
 Pseudo R-Squared
+1 - (LL_model / LL_null)
+
+Interpretation
+- Values closer to 1 indicate a better fit.
+- Typical values for real-world logistic regression are between 0.2 and 0.4.
+- Much higher values may indicate a very strong predictor or possible overfitting.
 """
 
 """
 Why we cannot use linear regression for a classification task?
 The main reason why we cannot use linear regression for a classification task is that the 
-output of linear regression is continuous and unbounded, while classification requires 
-discrete and bounded output values. 
-
-If we use linear regression for the classification task the error function graph will not 
-be convex. A convex graph has only one minimum which is also known as the global minima 
-but in the case of the non-convex graph, there are chances of our model getting stuck at 
-some local minima which may not be the global minima. To avoid this situation of getting 
-stuck at the local minima we do not use the linear regression algorithm for a 
-classification task.
+output of linear regression is continuous, while classification requires discrete 
+output values.
 """
 
 """
 Explain the classification report and the metrics it includes?
-The classification report provides key metrics to evaluate a model’s performance, including:
 
-Precision: The proportion of true positives to all predicted positives, measuring accuracy of positive predictions.
-Recall: The proportion of true positives to all actual positives, indicating how well the model finds positive instances.
-F1-Score: The harmonic mean of precision and recall, balancing the two metrics.
+Precision: When the model predicts positive, how often is it correct?
+Precision = TP / (TP + FP)
+
+Recall: Out of all the actual positive cases, how many did the model find?
+Recall = TP / (TP + FN)
+
+F1-Score: The F1-Score is the harmonic mean of Precision and Recall
+F1 = 2 * (Precision * Recall) / (Precision + Recall)
+- High F1-score indicates a good balance between precision and recall.
+- Useful when both false positives and false negatives are important.
+
 Support: The number of true instances for each class in the dataset.
+
 Accuracy: The overall proportion of correct predictions.
-Macro Average: The average of precision, recall, and F1-score across all classes, treating them equally.
-Weighted Average: The average of metrics, weighted by class support, giving more importance to frequent classes.
+Accuracy = (TP + TN) / (TP + TN + FP + FN)
+
+Macro Average: Compute the metric (Precision, Recall, F1-score) for each class individually.
+
+Weighted Average: Compute the metric (Precision, Recall, F1) for each class individually.
+Weighted Precision = Σ (Precision_i × Support_i) / Σ (Support_i)
+- Precision_i : Precision score for class i
+- Support_i   : Number of true instances of class i
+- C           : Total number of classes
 """
 
 """
 Does the accuracy score always a good metric to measure the performance of a 
 classification model?
 No, there are times when we train our model on an imbalanced dataset the accuracy score is 
-not a good metric to measure the performance of the model. In such cases, we use precision 
-and recall to measure the performance of a classification model.
+not a good metric to measure the performance of the model. 
+
+In such cases, we use precision and recall to measure the performance of a 
+classification model.
 
 Also, f1-score is another metric that can be used to measure performance but in the end, 
 f1-score is also calculated using precision and recall as the f1-score is nothing but 

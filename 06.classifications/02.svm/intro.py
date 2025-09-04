@@ -16,29 +16,6 @@ The distance between the hyperplane and the support vectors.
 """
 
 """
-How can you conclude about the model's performance using the confusion matrix?
-
-Confusion matrix summarizes the performance of a classification model. In a confusion matrix, 
-we get four types of output (in case of a binary classification problem) which are TP, TN, FP, 
-and FN. As we know that there are two diagonals possible in a square, and one of these two 
-diagonals represents the numbers for which our model's prediction and the true labels are 
-the same. Our target is also to maximize the values along these diagonals. From the 
-confusion matrix, we can calculate various evaluation metrics like accuracy, precision, 
-recall, F1 score, etc.
-"""
-
-"""
-How can you conclude about the model's performance using the confusion matrix?
-Confusion matrix summarizes the performance of a classification model. In a confusion matrix, 
-we get four types of output (in case of a binary classification problem) which are 
-TP, TN, FP, and FN. As we know that there are two diagonals possible in a square, 
-and one of these two diagonals represents the numbers for which our model's prediction 
-and the true labels are the same. Our target is also to maximize the values along these 
-diagonals. From the confusion matrix, we can calculate various evaluation metrics like 
-accuracy, precision, recall, F1 score, etc.
-"""
-
-"""
 Explain the working principle of SVM.
 A data set that is not separable in different classes in one plane may be separable 
 in another plane. This is exactly the idea behind the SVMin this a low dimensional 
