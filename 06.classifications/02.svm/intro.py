@@ -1,32 +1,24 @@
 """
-It tries to find the best boundary known as hyperplane that separates different classes in 
-the data. 
-It is useful when you want to do binary classification like spam vs. not spam or cat vs. dog.
+SVM finds the best boundary known as hyperplane that separates different classes in 
+the data.
 """
 
 """
-Hyperplane : 
+In 2D space, this boundary is a line
+In 3D space, it’s a plane
+In higher dimensions, it’s called a hyperplane(surface)
+"""
+
+"""
+Hyperplane: 
 The hyperplane is halfway between these boundaries(support vectors).
 Boundaries are closest data points from each class.
 """
 
 """
-Margin : 
-The distance between the hyperplane and the support vectors.
-"""
-
-"""
-Explain the working principle of SVM.
-A data set that is not separable in different classes in one plane may be separable 
-in another plane. This is exactly the idea behind the SVMin this a low dimensional 
-data is mapped to high dimensional data so, that it becomes separable in the 
-different classes. A hyperplane is determined after mapping the data into a higher 
-dimension which can separate the data into categories.
-
-SVM model can even learn non-linear boundaries with the objective that there should be 
-as much margin as possible between the categories in which the data has been categorized. 
-To perform this mapping different types of kernels are used like radial basis kernel, 
-gaussian kernel, polynomial kernel, and many others.
+Margin: 
+- Distance between the hyperplane and the nearest data points from each class.
+- The data points that lie closest to the boundary are called support vectors.
 """
 
 """
