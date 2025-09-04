@@ -42,13 +42,21 @@ If entropy decreases a lot after a split, the feature provides high information 
 """
 
 """
-22. Whether decision tree or random forest is more robust to the outliers.
-Decision trees and random forests are both relatively robust to outliers. A random forest model is an ensemble of multiple decision trees so, the output of a random forest model is an aggregate of multiple decision trees.
+Whether decision tree or random forest is more robust to the outliers.
+Decision trees and random forests are both relatively robust to outliers. A random 
+forest model is an ensemble of multiple decision trees so, the output of a random forest 
+model is an aggregate of multiple decision trees.
 
-So, when we average the results the chances of overfitting get reduced. Hence we can say that the random forest models are more robust to outliers.
+So, when we average the results the chances of overfitting get reduced. Hence we can say 
+that the random forest models are more robust to outliers.
 """
 
 """
-46. What is the concept of information gain in decision trees? How does it guide the creation of the tree structure?
-Information gain is a measure used in decision trees to select the best feature that splits the data into the most informative subsets. It is calculated based on the reduction in entropy or impurity after a dataset is split on an attribute. Entropy is a measure of the randomness or uncertainty in the data set, and information gain quantifies how much splitting on a particular attribute reduces that randomness.
+What is the concept of information gain in decision trees? How does it guide the creation 
+of the tree structure?
+Information gain is a measure used in decision trees to select the best feature that 
+splits the data into the most informative subsets. It is calculated based on the reduction 
+in entropy or impurity after a dataset is split on an attribute. Entropy is a measure 
+of the randomness or uncertainty in the data set, and information gain quantifies 
+how much splitting on a particular attribute reduces that randomness.
 """
