@@ -5,15 +5,6 @@ on the basis some of their features or variables they are described by.
 """
 
 """
-Cluster Analysis
-1. Several clustering problems
-2. How to perform cluster analysis
-3. How to find the optimal number of cluster
-4. How to identify appropriate features
-5. How to interpret results
-"""
-
-"""
 Classification vs Clustering
 1. Classification means predicting an output category, given input data.
 2. Grouping data points together based on similarities among them and difference 
