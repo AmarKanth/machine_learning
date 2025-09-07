@@ -1,2 +1,7 @@
 np.arrange(1, 101)
 np.sort()
+np.concatenate()
+np.meshgrid()
+np.ravel()
+np.unique()
+np.linespace()

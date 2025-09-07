@@ -5,21 +5,17 @@ out into decisions.
 """
 
 """
-Splitting criteria in decision tree
+Gini Impurity: 
+-It measures the impurity rate of the class distribution of data points.
+-Features(fields) only come into play when we test how well a feature split reduces 
+ the impurity.
 
-Gini Index :
-----------
-Gini Impurity: This criterion measures how "impure" a node is. The lower the Gini Impurity 
-the better the feature splits the data into distinct categories.
+Gini = 1 - Σ(f_k^2)
+-f_k is the fraction(proportion) of samples in class k
+-Lower gini = purer node
+"""
 
-Formula:
-Gini(S) = 1 - Σ_{i=1}^C (p_i^2)
-C   : Number of classes
-p_i : Probability of class i in dataset S
-
-Interpretation:
-Lower Gini = purer node
-
+"""
 Information Gain (IG):
 ---------------------
 Information Gain tells us how useful a question (or feature) is for splitting data into 
@@ -49,14 +45,4 @@ model is an aggregate of multiple decision trees.
 
 So, when we average the results the chances of overfitting get reduced. Hence we can say 
 that the random forest models are more robust to outliers.
-"""
-
-"""
-What is the concept of information gain in decision trees? How does it guide the creation 
-of the tree structure?
-Information gain is a measure used in decision trees to select the best feature that 
-splits the data into the most informative subsets. It is calculated based on the reduction 
-in entropy or impurity after a dataset is split on an attribute. Entropy is a measure 
-of the randomness or uncertainty in the data set, and information gain quantifies 
-how much splitting on a particular attribute reduces that randomness.
 """

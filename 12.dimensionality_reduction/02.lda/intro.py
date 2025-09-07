@@ -9,16 +9,6 @@ It is commonly used for classification problems. The LDA mainly works on two obj
 """
 
 """
-What is Linear Discriminant Analysis?
-Linear Discriminant Analysis(LDA) is a supervised machine learning dimensionality 
-reduction technique because it uses target variables also for dimensionality reduction. 
-It is commonly used for classification problems. The LDA mainly works on two objectives:
-
-Maximize the distance between the means of the two classes.
-Minimize the variation within each class.
-"""
-
-"""
 How can we visualize high-dimensional data in 2-d?
 One of the most common and effective methods is by using the t-SNE algorithm which is a 
 short form for t-Distributed Stochastic Neighbor Embedding. This algorithm uses some 
