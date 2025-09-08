@@ -1,4 +1,9 @@
 """
+kernal pca:
+
+"""
+
+"""
 What is the reason behind the curse of dimensionality?
 As the dimensionality of the input data increases the amount of data required to generalize 
 or learn the patterns present in the data increases. 
