@@ -1,10 +1,13 @@
 """
 What is the reason behind the curse of dimensionality?
 As the dimensionality of the input data increases the amount of data required to generalize 
-or learn the patterns present in the data increases. For the model, it becomes 
-difficult to identify the pattern for every feature from the limited number of datasets 
-or we can say that the weights are not optimized properly due to the high dimensionality 
-of the data and the limited number of examples used to train the model. Due to this after 
-a certain threshold for the dimensionality of the input data, we have to face the curse of 
-dimensionality.
+or learn the patterns present in the data increases. 
+
+For the model, it becomes difficult to identify the pattern for every feature from the 
+limited number of datasets or we can say that the weights are not optimized properly due 
+to the high dimensionality of the data and the limited number of examples used to train 
+the model.
+
+Due to this after a certain threshold for the dimensionality of the input data, we have 
+to face the curse of dimensionality.
 """
