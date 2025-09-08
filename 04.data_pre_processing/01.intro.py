@@ -204,22 +204,6 @@ bias-variance trade-off.
 """
 
 """
-What is the difference between Manhattan Distance and Euclidean distance?
-Both Manhattan Distance and Euclidean distance are two distance measurement techniques. 
-
-Manhattan Distance (MD) is calculated as the sum of absolute differences between the 
-coordinates of two points along each dimension. 
-MD = |x1 - x2| + |y1 - y2|
-
-Euclidean Distance (ED) is calculated as the square root of the sum of squared 
-differences between the coordinates of two points along each dimension.
-ED = sqrt((x1 - x2)^2 + (y1 - y2)^2)
-
-Generally, these two metrics are used to evaluate the effectiveness of the clusters 
-formed by a clustering algorithm.
-"""
-
-"""
 What is the difference between one hot encoding and ordinal encoding?
 One Hot encoding and ordinal encoding both are different methods to convert categorical 
 features to numeric ones the difference is in the way they are implemented. In one hot 
