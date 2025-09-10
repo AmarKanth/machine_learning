@@ -115,3 +115,41 @@ Also, f1-score is another metric that can be used to measure performance but in 
 f1-score is also calculated using precision and recall as the f1-score is nothing but 
 the harmonic mean of the precision and recall.
 """
+
+"""
+What is the difference between precision and recall?
+Precision is the ratio between the true positives(TP) and all the positive examples 
+(TP+FP) predicted by the model. In other words, precision measures how many of the 
+predicted positive examples are actually true positives. It is a measure of the model's 
+ability to avoid false positives and make accurate positive predictions.
+
+Precision = TP / (TP + FP)
+
+In recall, we calculate the ratio of true positives (TP) and the total number of examples 
+(TP+FN) that actually fall in the positive class. Recall measures how many of the actual 
+positive examples are correctly identified by the model. It is a measure of the model's 
+ability to avoid false negatives and identify all positive examples correctly.
+
+Recall = TP / (TP + FN)
+"""
+
+"""
+How do you evaluate the effectiveness of a machine learning model in an imbalanced dataset 
+scenario? What metrics would you use instead of accuracy?
+We can use Precision, Recall, F1 score and ROC-AUC to evaluate the effectiveness of 
+machine learning model in imbalanced dataset scenario. The best metric is F1 score as it 
+combines both precision and recall into single metric that is important in imbalanced 
+datasets where a high number of true negatives can skew accuracy. By focusing on both false 
+positives and false negatives, the F1-score ensures that both the positive class detection 
+and false positives are accounted for.
+
+If the cost of false positives (Type I errors) and false negatives (Type II errors) is similar, 
+F1-Score strikes a good balance.
+It is especially useful when you need to prioritize performance in detecting the minority 
+class (positive class).
+However, if you are more concerned about false positives or false negatives specifically, 
+you may opt for:
+
+Precision (if false positives are more costly) or
+Recall (if false negatives are more costly).
+"""

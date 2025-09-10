@@ -145,23 +145,6 @@ global or local minima and end up oscillating back and forth.
 """
 
 """
-What is the difference between precision and recall?
-Precision is the ratio between the true positives(TP) and all the positive examples 
-(TP+FP) predicted by the model. In other words, precision measures how many of the 
-predicted positive examples are actually true positives. It is a measure of the model's 
-ability to avoid false positives and make accurate positive predictions.
-
-Precision = TP / (TP + FP)
-
-In recall, we calculate the ratio of true positives (TP) and the total number of examples 
-(TP+FN) that actually fall in the positive class. Recall measures how many of the actual 
-positive examples are correctly identified by the model. It is a measure of the model's 
-ability to avoid false negatives and identify all positive examples correctly.
-
-Recall = TP / (TP + FN)
-"""
-
-"""
 What is the difference between upsampling and downsampling?
 In upsampling method, we increase the number of samples in the minority class by 
 randomly selecting some points from the minority class and adding them to the dataset 
@@ -254,28 +237,6 @@ towards zero, especially when there are many features and the data is noisy.
 """
 
 """
-What is a radial basis function?
-RBF (radial basis function) is a real-valued function used in machine learning whose 
-value only depends upon the input and fixed point called the center.
-
-The formula for the radial basis function is as follows:
-
-K(x, x') = exp( - ||x - x'||^2 / (2 * sigma^2) )
-
-Machine learning systems frequently use the RBF function for a variety of functions, including:
-
-RBF networks can be used to approximate complex functions. By training the network's weights 
-to suit a set of input-output pairs, 
-RBF networks can be used for unsupervised learning to locate data groups. By treating the RBF 
-centers as cluster centers,
-RBF networks can be used for classification tasks by training the network's weights to divide 
-inputs into groups based on how far from the RBF nodes they are.
-It is one of the very famous kernels which is generally used in the SVM algorithm to map 
-low dimensional data to a higher dimensional plane so, we can determine a boundary that can 
-separate the classes in different regions of those planes with as much margin as possible. 
-"""
-
-"""
 Explain SMOTE method used to handle data imbalance.
 In SMOTE, we synthesize new data points using the existing ones from the minority 
 classes by using linear interpolation. The advantage of using this method is that the model 
@@ -299,27 +260,6 @@ distorting the model’s performance.
 MAE, on the other hand, takes the absolute value of the errors. Since it does not square 
 the error terms, the influence of large errors (outliers) is linear rather than exponential, 
 making MAE less sensitive to outliers.
-"""
-
-"""
-How do you evaluate the effectiveness of a machine learning model in an imbalanced dataset 
-scenario? What metrics would you use instead of accuracy?
-We can use Precision, Recall, F1 score and ROC-AUC to evaluate the effectiveness of 
-machine learning model in imbalanced dataset scenario. The best metric is F1 score as it 
-combines both precision and recall into single metric that is important in imbalanced 
-datasets where a high number of true negatives can skew accuracy. By focusing on both false 
-positives and false negatives, the F1-score ensures that both the positive class detection 
-and false positives are accounted for.
-
-If the cost of false positives (Type I errors) and false negatives (Type II errors) is similar, 
-F1-Score strikes a good balance.
-It is especially useful when you need to prioritize performance in detecting the minority 
-class (positive class).
-However, if you are more concerned about false positives or false negatives specifically, 
-you may opt for:
-
-Precision (if false positives are more costly) or
-Recall (if false negatives are more costly).
 """
 
 """
