@@ -1,23 +1,25 @@
 """
-Explain the working procedure of the XGBoost model?
-XGBoost model is an ensemble technique of machine learning in this method weights are 
-optimized in a sequential manner by passing them to the decision trees. After each pass, 
-the weights become better and better as each tree tries to optimize the weights, and finally, 
-we obtain the best weights for the problem at hand. Techniques like regularized gradient 
-and mini-batch gradient descent have been used to implement this algorithm so, that it 
-works in a very fast and optimized manner.
-"""
+XGBoost:
+It builds decision trees sequentially with each tree attempting to correct the mistakes 
+made by the previous one.
 
-"""
-Explain the working procedure of the XGBoost model?
-XGBoost model is an ensemble technique of machine learning in this method weights 
-are optimized in a sequential manner by passing them to the decision trees. 
+The process can be broken down as follows:
 
-After each pass, the weights become better and better as each tree tries to optimize 
-the weights, and finally, we obtain the best weights for the problem at hand. 
+Start with a base learner: The first model decision tree is trained on the data. 
+In regression tasks this base model simply predicts the average of 
+the target variable.
 
-Techniques like regularized gradient and mini-batch gradient descent have been used 
-to implement this algorithm so, that it works in a very fast and optimized manner.
+Calculate the errors: After training the first tree the errors between the predicted 
+and actual values are calculated.
+
+Train the next tree: The next tree is trained on the errors of the previous tree. 
+This step attempts to correct the errors made by the first tree.
+
+Repeat the process: This process continues with each new tree trying to correct 
+the errors of the previous trees until a stopping criterion is met.
+
+Combine the predictions: The final prediction is the sum of the predictions from 
+all the trees.
 """
 
 """
