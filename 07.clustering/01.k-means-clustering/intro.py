@@ -44,20 +44,18 @@ CD = max(|x1 - x2|, |y1 - y2|)
 
 """
 How to choose an optimal number of clusters?
-Elbow Method: 
-Plot the explained variance or within-cluster sum of squares (WCSS) against 
-the number of clusters. The "elbow" point, where the curve starts to flatten, indicates the 
-optimal number of clusters.
+Elbow Method:
+-Plot the explained variance or within-cluster sum of squares (WCSS) against the number of clusters. 
+-The "elbow" point, where the curve starts to flatten, indicates the optimal number of clusters.
 
-Silhouette Score: 
-Measures how similar each point is to its own cluster compared to 
-other clusters. A higher silhouette score indicates better-defined clusters. The optimal 
-number of clusters is the one with the highest average silhouette score.
+Silhouette Score:
+-Measures how similar each point is to its own cluster compared to other clusters. 
+ A higher silhouette score indicates better-defined clusters. 
+-The optimal number of clusters is the one with the highest average silhouette score.
 
-Gap Statistic: 
-Compares the clustering result with a random clustering of the same data. 
-A larger gap between the real and random clustering suggests a more appropriate 
-number of clusters.
+Gap Statistic:
+-Compares the clustering result with a random clustering of the same data. 
+-A larger gap between the real and random clustering suggests a more appropriate number of clusters.
 """
 
 """
