@@ -118,7 +118,8 @@ Sₓᵧ = Σ((xᵢ - x̄) * (yᵢ - ȳ)) / (n - 1)
 """
 
 """
-Correlation Coefficient :
+Correlation Coefficient:
+
 σₓᵧ / (σₓ * σᵧ)
 - σₓᵧ is the covariance of X and Y.
 - σₓ is the standard deviation of X.

@@ -6,47 +6,37 @@ H₁ : Alternative Hypothesis
 
 """
 What is Null Hypothesis?
-A default assumption that there is no effect, no difference, or no relationship 
-between variables.
-
-Example: The new product performs the same as the old one.
+-If there is no effect, no difference, or no relationship between variables.
+-Example: The new product performs the same as the old one.
+-We either reject the null hypothesis or fail to reject it — we never accept it as absolutely true.
+-If the test results are unclear, we say: 'We fail to reject, due to insufficient evidence.'
 """
 
 """
 What is Alternative Hypothesis?
-A statement that there is an effect, a difference, or a relationship — it's 
-what you're trying to prove.
-
-Example: The new product performs better than the old one.
+-If there is an effect, a difference, or a relationship — it's what you're trying to prove.
+-Example: The new product performs better than the old one.
+-If we reject H₀, we have sufficient evidence to support H₁, but we do not ‘accept’ H₁ as 
+ absolutely true.
 """
 
 """
-Important Notes :
-- In hypothesis testing, we either reject the null hypothesis or fail to reject it — we 
-  never accept it as absolutely true.
-- If the test results are unclear, we say:
-  “We fail to reject the null hypothesis due to insufficient evidence.”
-- If we reject H₀, we have sufficient evidence to support H₁, but we do not 
-  ‘accept’ H₁ as absolutely true.
+Significance Level:
+The significance level(denoted by α, "alpha") is a threshold used in hypothesis testing 
+to determine whether to reject the null hypothesis.
 """
 
 """
-Significance Level :
-The significance level (denoted by α, "alpha") is a threshold used in hypothesis 
-testing to determine whether to reject the null hypothesis.
+Rejection Region:
+The rejection region(also called the critical region) in hypothesis testing is 
+the range of values for the test statistic(like a z-score or t-score) that leads to 
+rejection of the null hypothesis(H₀).
 """
 
 """
-Rejection Region :
-The rejection region (also called the critical region) in hypothesis testing is 
-the range of values for the test statistic (like a z-score or t-score) that leads to 
-rejection of the null hypothesis (H₀).
-"""
-
-"""
-One-Sided Test :
-A one-sided test (also called a one-tailed test) is a hypothesis test where the 
-alternative hypothesis (H₁) states that the effect or difference exists in only one 
+One-Sided Test:
+A one-sided test(also called a one-tailed test) is a hypothesis test where the 
+alternative hypothesis(H₁) states that the effect or difference exists in only one 
 direction.
 """
 
@@ -54,12 +44,10 @@ direction.
 Explain about type 1 and type 2 error?
 
 Type I Error:
-A Type I error occurs in hypothesis testing when you reject the null hypothesis (H₀) 
-even though it is actually true.
+When you reject the null hypothesis(H₀) even though it is actually true.
 
 Type II Error:
-A Type II error occurs when you fail to reject the null hypothesis (H₀) even 
-though it is actually false.
+When you fail to reject the null hypothesis(H₀) even though it is actually false.
 
 Summary of Type I and Type II Errors in Hypothesis Testing:
 
