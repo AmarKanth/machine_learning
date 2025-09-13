@@ -1,5 +1,5 @@
 """
-t test :
+t test:
 The t-test determines either whether the sample mean and the mean of the population differ 
 or if two sample means differ statistically.
 """
@@ -11,15 +11,15 @@ or if two sample means differ statistically.
 """
 
 """
-One-sample t-test : 
+One-sample t-test: 
 Is there a difference between a group and the population
 
 t = (x̄ - μ₀) / (s / √n)
 
-x̄   = sample mean
-μ₀  = population mean
-s   = sample standard deviation
-n   = sample size
+x̄  = sample mean
+μ₀ = population mean
+s  = sample standard deviation
+n  = sample size
 
 Decision rules for one-tailed and two-tailed t-tests using p-values.
 ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────────┬─────────────────────────────┐

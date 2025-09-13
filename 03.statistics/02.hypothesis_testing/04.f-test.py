@@ -1,5 +1,5 @@
 """
-F Test :
+F Test:
 
 Null Hypothesis
 H₀ : β₁ = β₂ = ⋯ = βₖ = 0

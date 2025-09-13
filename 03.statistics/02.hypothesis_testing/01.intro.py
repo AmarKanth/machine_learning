@@ -28,16 +28,16 @@ to determine whether to reject the null hypothesis.
 
 """
 Rejection Region:
-The rejection region(also called the critical region) in hypothesis testing is 
-the range of values for the test statistic(like a z-score or t-score) that leads to 
-rejection of the null hypothesis(H₀).
+-The rejection region(also called the critical region) in hypothesis testing.
+-If your test statistic(z, t, etc.) falls into that region, you reject H₀
+-If it falls outside that region, you fail to reject H₀
 """
 
 """
 One-Sided Test:
-A one-sided test(also called a one-tailed test) is a hypothesis test where the 
-alternative hypothesis(H₁) states that the effect or difference exists in only one 
-direction.
+-A one-sided test(also called a one-tailed test) is a hypothesis test. 
+-Where the alternative hypothesis(H₁) states that the effect or difference exists in only one 
+ direction.
 """
 
 """
