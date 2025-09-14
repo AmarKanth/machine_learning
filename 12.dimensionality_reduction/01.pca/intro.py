@@ -23,3 +23,17 @@ By focusing on the directions of highest variance, PCA helps us:
 -Preserve information while reducing the dimensionality.
 -Simplify the data by eliminating less important features(those with low variance)
 """
+
+"""
+Why removing highly correlated features are considered a good practice?
+
+-When two features are highly correlated, they may provide similar information to the model, 
+ which may cause overfitting. 
+-If there are highly correlated features in the dataset then they unnecessarily increase 
+ the dimensionality of the feature space and sometimes create the problem of the curse of 
+ dimensionality. 
+-If the dimensionality of the feature space is high then the model training may take 
+ more time than expected, it will increase the complexity of the model and chances of error. 
+-This somehow also helps us to achieve data compression as the features have been removed 
+ without much loss of data.
+"""

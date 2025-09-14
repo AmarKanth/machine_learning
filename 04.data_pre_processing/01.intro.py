@@ -1,25 +1,31 @@
 """
 What is feature scaling?
-It involves transforming numerical features to a "standard" scale, often leading to better 
-model performance.
+It involves transforming numerical features into a "standard" scale, often leading to 
+better model performance.
 
-Methods for Feature Scaling
-1. Min-Max Scaling
-2. Standardization
-3. Robust Scaling
+Methods for feature scaling
+1.Min-Max Scaling
+2.Standardization
+3.Robust Scaling
+
+Algorithms that benefit from feature scaling
+1.k-Nearest Neighbors(KNN)
+2.k-Means Clustering
+3.Logistic Regression
 """
+
 
 """
 Min-Max Scaling:
-It is also called normalization.
 x' = (x - x_min) / (x_max - x_min)
 
-To achieve stable and fast training of the model we use normalization techniques to bring 
-all the features to a certain scale or range of values.
+-It is also called normalization.
+-It brings all the features to a certain scale or range of values.
 """
 from sklearn.preprocessing import MinMaxScaler
 min_max_scaler = MinMaxScaler()
 X_minmax = min_max_scaler.fit_transform(X)
+
 
 """
 Standardization:
@@ -33,9 +39,10 @@ from sklearn.preprocessing import StandardScaler
 std_scaler = StandardScaler()
 X_std = std_scaler.fit_transform(X)
 
+
 """
 Robust Scaling:
-(X − Q₁(X)) / (Q₃(X) − Q₁(X))
+x' = (X − Q₁(X)) / (Q₃(X) − Q₁(X))
 Q₁(X) = first quartile  
 Q₃(X) = third quartile
 """
@@ -43,24 +50,26 @@ from sklearn.preprocessing import RobustScaler
 robust_scaler = RobustScaler()
 X_robust = robust_scaler.fit_transform(X)
 
+
 """
 How do you handle missing values in a dataset using Scikit-Learn?
 
 SimpleImputer offers several strategies
 
-1. Mean, Median, Most Frequent: Fills in with the mean, median, or mode of the non-missing 
+1.Mean, Median, Most Frequent: Fills in with the mean, median, or mode of the non-missing 
 values in the column.
-2. Constant: Assigns a fixed value to all missing entries.
-3. KNN: Uses the k-Nearest Neighbors algorithm to determine an appropriate value based on other 
+2.Constant: Assigns a fixed value to all missing entries.
+3.KNN: Uses the k-Nearest Neighbors algorithm to determine an appropriate value based on other 
 instances' known feature values.
 """
-from sklearn.impute import SimpleImputer
 import numpy as np
+from sklearn.impute import SimpleImputer
 
 X = np.array([[1, 2], [np.nan, 3], [7, 6]])
 imp_mean = SimpleImputer()
 X_mean = imp_mean.fit_transform(X)
 print(X_mean)
+
 
 """
 How do you encode categorical variables using Scikit-Learn?

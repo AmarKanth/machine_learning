@@ -1,7 +1,5 @@
 """
-p value is the smallest level of significance at which we can still reject the 
-null hypothesis, given the observed sample statistics
-
+The p-value is the probability of getting results, assuming the null hypothesis is true.
 p < α   we should reject the null hypothesis
 p >= α  we failed to reject the null hypothesis
 

@@ -45,39 +45,39 @@ What is underfitting?
 """
 
 """
-4. What is overfitting in machine learning and how can it be avoided?
-Overfitting happens when the model learns patterns as well as the noises present in the data this leads to high performance on the training data but very low performance for data that the model has not seen earlier.
+What is overfitting in machine learning and how can it be avoided?
+Overfitting happens when the model learns patterns as well as the noises present in the 
+data this leads to high performance on the training data but very low performance for data 
+that the model has not seen earlier.
 
 To avoid overfitting there are multiple methods that we can use:
 
-Early stopping of the model’s training in case of validation training stops increasing but the training keeps going on.
-Using regularization methods like L1 or L2 regularization which is used to penalize the model's weights to avoid overfitting.
-"""
+Early stopping of the model’s training in case of validation training stops increasing but the 
+training keeps going on.
 
-"""
-13. Is it always necessary to use an 80:20 ratio for the train test split?
-No, there is no such necessary condition that the data must be split into 80:20 ratio. The main purpose of the splitting is to have some data which the model has not seen previously so, that we can evaluate the performance of the model.
-
-If the dataset contains let’s say 50,000 rows of data then only 1000 or maybe 2000 rows of data is enough to evaluate the model’s performance.
+Using regularization methods like L1 or L2 regularization which is used to penalize the model's 
+weights to avoid overfitting.
 """
 
 """
 Is it always necessary to use an 80:20 ratio for the train test split?
-
 No, there is no such necessary condition that the data must be split into 80:20 ratio. 
-The main purpose of the splitting is to have some data which the model has not seen 
-previously so, that we can evaluate the performance of the model.
+The main purpose of the splitting is to have some data which the model has not seen previously so, 
+that we can evaluate the performance of the model.
 
-If the dataset contains let’s say 50,000 rows of data then only 1000 or maybe 2000 rows 
-of data is enough to evaluate the model’s performance.
+If the dataset contains let’s say 50,000 rows of data then only 1000 or maybe 2000 rows of 
+data is enough to evaluate the model’s performance.
 """
 
 """
-29. What is the purpose of splitting a given dataset into training and validation data?
+What is the purpose of splitting a given dataset into training and validation data?
 The main purpose is to keep some data left over on which the model has not been trained so, 
-that we can evaluate the performance of our machine learning model after training. 
+that we can evaluate the performance of our machine learning model after training.
+
 Also, sometimes we use the validation dataset to choose among the multiple state-of-the-art 
-machine learning models. Like we first train some models let’s say LogisticRegression, XGBoost, 
+machine learning models. 
+
+Like we first train some models let’s say LogisticRegression, XGBoost, 
 or any other than test their performance using validation data and choose the model which has 
 less difference between the validation and the training accuracy.
 """
