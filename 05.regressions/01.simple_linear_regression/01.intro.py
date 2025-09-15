@@ -114,3 +114,42 @@ To evaluate the performance of a linear regression model, important key metrics 
  the robustness of our findings.
 -To learn more about regression metrics, check out: Regression Metrics
 """
+
+"""
+What is the difference between L1 and L2 regularization? What is their significance?
+
+L1 regularization(Lasso regularization) adds the sum of the absolute values of the model's 
+weights to the loss function. 
+This penalty encourages sparsity in the model by pushing the weights of less important 
+features to exactly zero. 
+As a result, L1 regularization automatically performs feature selection, removing 
+irrelevant or redundant features from the model, which can improve interpretability 
+and reduce overfitting.
+
+L2 regularization(Ridge regularization) in which we add the square of the weights to the 
+loss function. 
+In both of these regularization methods, weights are penalized but there is a subtle 
+difference between the objective they help to achieve. 
+
+In L2 regularization the weights are not penalized to 0 but they are near zero for 
+irrelevant features. 
+It is often used to prevent overfitting by shrinking the weights 
+towards zero, especially when there are many features and the data is noisy.
+"""
+
+"""
+Which metric is more robust to outliers: MAE, MSE, or RMSE?
+Out of the three metrics—Mean Absolute Error (MAE), Mean Squared Error (MSE), and 
+Root Mean Squared Error (RMSE)—MAE is more robust to outliers.
+
+The reason behind this is the way each metric handles error values:
+
+MSE and RMSE both square the error values. When there are outliers, the error is typically 
+large, and squaring it results in even larger error values. This causes outliers to 
+disproportionately affect the overall error, leading to misleading results and potentially 
+distorting the model’s performance.
+
+MAE, on the other hand, takes the absolute value of the errors. Since it does not square 
+the error terms, the influence of large errors (outliers) is linear rather than exponential, 
+making MAE less sensitive to outliers.
+"""
