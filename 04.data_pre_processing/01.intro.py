@@ -82,13 +82,9 @@ How do you encode categorical variables using Scikit-Learn?
 
 
 """
-OneHotEncoder: 
-Creates Binary columns representing each category to avoid assuming any ordinal 
-relationship. Ideal for non-binary categories.
-One Hot encoding and ordinal encoding both are different methods to convert categorical 
-features to numeric ones the difference is in the way they are implemented.
-In one hot encoding, we create a separate column for each category and add 0 or 1 as per the 
-value corresponding to that row.
+OneHotEncoder:
+In one hot encoding, we create a separate column for each category and add 0 or 1 as per 
+the value corresponding to that row.
 """
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
@@ -102,17 +98,9 @@ print(encoded_df)
 
 
 """
-OrdinalEncoder: 
-For ordinal categories, assigns a range of numbers to each category. Works 
-well when certain categories have an inherent order.
-
+OrdinalEncoder:
 In ordinal encoding, we replace the categories with numbers from 0 to n-1 based on the 
 order or rank where n is the number of unique categories present in the dataset.
-
-The main difference between one-hot encoding and ordinal encoding is that one-hot 
-encoding results in a binary matrix representation of the data in the form of 0 and 1, 
-it is used when there is no order or ranking between the dataset whereas ordinal encoding 
-represents categories as ordinal values.
 """
 
 
@@ -146,25 +134,18 @@ transformed_data = preprocessor.fit_transform(data)
 """
 Polynomial features 
 Power transformations 
-Binning 
-Name two feature engineering approaches.
+Binning
 """
 
 
 """
 What is feature engineering? How does it affect the model’s performance? 
-Feature engineering refers to developing some new features by using existing features. 
-
-Sometimes there is a very subtle mathematical relation between some features which if 
-explored properly then the new features can be developed using those mathematical 
-operations.
-
-Also, there are times when multiple pieces of information are clubbed and provided 
-as a single data column. 
-
-At those times developing new features and using them help us to 
-gain deeper insights into the data as well as if the features derived are significant 
-enough helps to improve the model’s performance a lot.
+-Feature engineering refers to developing some new features by using existing features.
+-Sometimes there is a very subtle mathematical relation between some features which if 
+ explored properly then the new features can be developed using those mathematical 
+ operations.
+-Also, there are times when multiple pieces of information are clubbed and provided 
+ as a single data column.
 """
 
 
