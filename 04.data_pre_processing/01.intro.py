@@ -150,10 +150,29 @@ What is feature engineering? How does it affect the model’s performance?
 
 
 """
+Correlation:
+Correlation is a statistical measure that shows how strongly two variables are related 
+to each other — in other words, how much one changes when the other changes.
+"""
+
+
+"""
+What is data leakage and how can we identify it?
+-If there is a high correlation between the target variable and the input features 
+ then this situation is referred to as data leakage.
+-This is because when we train our model with that highly correlated feature then the model gets 
+ most of the target variable's information and show artificially high accuracy during 
+ training and validation.
+-But in real-world predictions(where the leakage feature is not available), performance will 
+ drop badly
+"""
+
+
+"""
 What is the difference between upsampling and downsampling?
 In upsampling method, we increase the number of samples in the minority class by 
 randomly selecting some points from the minority class and adding them to the dataset 
-repeat this process till the dataset gets balanced for each class. 
+repeat this process till the dataset gets balanced for each class.
 
 But, here is a disadvantage the training accuracy becomes high as in each epoch model 
 trained more than once in each epoch but the same high accuracy is not observed in 
@@ -161,49 +180,10 @@ the validation accuracy.
 
 In downsampling, we decrease the number of samples in the majority class by selecting 
 some random number of points that are equal to the number of data points in the minority 
-class so that the distribution becomes balanced. 
+class so that the distribution becomes balanced.
 
 In this case, we have to suffer from data loss which may lead to the loss of some 
 critical information as well. 
-"""
-
-
-"""
-What is data leakage and how can we identify it?
-If there is a high correlation between the target variable and the input features 
-then this situation is referred to as data leakage. 
-
-This is because when we train our model with that highly correlated feature then the model gets 
-most of the target variable's information in the training process only and it has to do very 
-little to achieve high accuracy. 
-
-In this situation, the model gives pretty decent performance both on the 
-training as well as the validation data but as we use that model to make actual 
-predictions then the model’s performance is not up to the mark.
-"""
-
-
-"""
-What is the bias-variance tradeoff?
-First, let’s understand what is bias and variance:
-
-Bias refers to the difference between the actual values and the predicted values by 
-the model. 
-
-Low bias means the model has learned the pattern in the data and high bias means 
-the model is unable to learn the patterns present in the data i.e the underfitting.
-
-Variance refers to the change in accuracy of the model's prediction on which the model 
-has not been trained. 
-
-Low variance is a good case but high variance means that the 
-performance of the training data and the validation data vary a lot.
-
-If the bias is too low but the variance is too high then that case is known as 
-overfitting. 
-
-So, finding a balance between these two situations is known as the bias-variance 
-trade-off.
 """
 
 

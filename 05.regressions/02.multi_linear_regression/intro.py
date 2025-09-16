@@ -60,6 +60,26 @@ weights to avoid overfitting.
 """
 
 """
+What is the bias-variance tradeoff?
+
+Bias refers to the difference between the actual values and the predicted values by 
+the model.
+Low bias means the model has learned the pattern in the data and high bias means 
+the model is unable to learn the patterns present in the data i.e the underfitting.
+
+Variance refers to the change in accuracy of the model's prediction on which the model 
+has not been trained.
+Low variance is a good case but high variance means that the performance of the 
+training data and the validation data vary a lot.
+
+If the bias is too low but the variance is too high then that case is known as 
+overfitting.
+
+So, finding a balance between these two situations is known as the bias-variance 
+trade-off.
+"""
+
+"""
 Is it always necessary to use an 80:20 ratio for the train test split?
 No, there is no such necessary condition that the data must be split into 80:20 ratio. 
 The main purpose of the splitting is to have some data which the model has not seen previously so, 
