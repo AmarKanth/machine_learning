@@ -1,0 +1,6 @@
+np.dot()
+np.linalg.inv(A)
+np.eigvals()
+np.linalg.det()
+np.linalg.norm()
+np.linalg.qr()

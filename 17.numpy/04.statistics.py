@@ -1,0 +1,8 @@
+np.mean()
+np.var()
+np.min()
+np.max()
+np.mod()
+np.round()
+np.isclose()
+np.isnan()

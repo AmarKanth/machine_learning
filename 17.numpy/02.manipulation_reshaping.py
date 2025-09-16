@@ -1,0 +1,9 @@
+np.reshape()
+np.ravel()
+flatten()
+astype()
+dtype
+np.vstack()
+np.hstack()
+np.concatenate()
+np.meshgrid()
