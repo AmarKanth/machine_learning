@@ -5,61 +5,53 @@ import numpy as np
 arr = np.array([1, 2, 3, 4])
 print(arr)
 
-
 """
 np.zeros()
 """
 import numpy as np
-b = np.zeros((3, 4), dtype=int)
-print(b)
-
+arr = np.zeros((3, 4), dtype=int)
+print(arr)
 
 """
 np.ones()
 """
 import numpy as np
-b = np.ones((3, 4), dtype=int)
-print(b)
-
+arr = np.ones((3, 4), dtype=int)
+print(arr)
 
 """
 np.full()
 """
 import numpy as np
-b = np.full((3, 3), 9, dtype=int)
-print(b)
-
+arr = np.full((3, 3), 9, dtype=int)
+print(arr)
 
 """
 np.arange()
 """
 import numpy as np
-a = np.arange(10)
-
+arr = np.arange(10)
 
 """
 np.linspace()
 """
 import numpy as np
-a = np.linspace(0, 1, 5)
-print(a)
-
+arr = np.linspace(0, 1, 5)
+print(arr)
 
 """
 np.random.rand()
 """
 import numpy as np
-a = np.random.rand()
-print(a)
-
+arr = np.random.rand()
+print(arr)
 
 """
 np.random.randint()
 """
 import numpy as np
-a = np.random.randint(10)
-print(a)
-
+arr = np.random.randint(10)
+print(arr)
 
 """
 np.random.randn()
