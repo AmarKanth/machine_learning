@@ -1,13 +1,28 @@
 """
 What is Linear Discriminant Analysis?
--Linear Discriminant Analysis(LDA) is a supervised machine learning dimensionality 
- reduction technique. 
--It uses target variables also for dimensionality reduction. 
+-LDA is dimensionality reduction technique.
+-It is supervised because of the relation to the dependent variable.
+-It uses target variables also for dimensionality reduction.
 -It is commonly used for classification problems.
 
 The LDA mainly works on two objectives:
-1. Maximize the distance between the means of the two classes.
-2. Minimize the variation within each class.
+1.Maximize the distance between the means of the two classes.
+2.Minimize the variation within each class.
+"""
+
+"""
+How it works
+-Compute the d-dimensional mean vectors for the different classes from the dataset
+-Compute the scatter matrices(in-between-class and within-class scatter matrix)
+-Compute eigenvectors(e1, e2, e3 ...,ed) and corresponding eigenvalues(λ1, λ2, λ3 ...,λd) 
+ for the scatter matrices
+-Sort the eigenvectors by decreasing eigenvalues and choose k eigenvectors with the 
+ largest eigenvalues to form a d*k dimensional matrix W(where every column represents an 
+ eigenvector)
+-Use this d*k eigenvector matrix to transform the samples onto the new subspace. This can be 
+ summarized by the matrix multiplication: y = X*W
+ where x is a n*d dimensional matrix representing the n samples,
+ y are the transformed n*k dimensional samples in the new subspace
 """
 
 """
