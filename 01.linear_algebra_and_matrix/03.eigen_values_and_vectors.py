@@ -1,58 +1,46 @@
 """
-Eigenvectors are special vectors that, when a matrix (or transformation) is applied to them, don’t change their 
-direction. They might stretch, shrink, or stay the same size, but their direction remains unchanged.
+Eigenvectors are special vectors that, when a matrix(or transformation) is applied to them, 
+don’t change their direction. 
+They might stretch, shrink, or stay the same size, but their direction remains unchanged.
+"""
 
-Eigenvalues are the scaling factors that tell you how much the eigenvector is stretched or shrunk during 
-the transformation. Is also knows as scalar value.
-
-A = [[2, 0]
-     [0, 1]]
-
-consider two vectors:
-Eigenvector v1=[[1]
-                [0]] 
-v1​ (pointing in the x-direction)
-v1​ is an eigenvector with an eigenvalue of 2.
-
-Eigenvector v2=[[0]
-                [1]] 
-v2 (pointing in the yy-direction)
-v2​ is an eigenvector with an eigenvalue of 1.
+"""
+Eigenvalues are the scaling factors that tell you how much the eigenvector is stretched or 
+shrunk during the transformation. Is also knows as scalar value.
 """
 
 """
 Av = λv
-Where,
-A is the matrix,
-v is associated eigenvector, and
-λ is scalar eigenvalue.
+
+A is the matrix
+v is associated eigenvector
+λ is scaler eigenvalue
 """
 
 """
-1) Find the eigenvalues and the eigenvector for the matrix A = [[1, 2], [5, 4]
-"""
-import numpy as np
-
-A = np.array([
-     [1, 2], 
-     [5, 4]
-])
-eigenvalues, eigenvectors = np.linalg.eig(A)
-print(eigenvalues)
-print(eigenvectors)
-
-"""
-2) Find the eigenvalues and the eigenvector for the matrix 
-A = [[2,2,2], [2,2,2], [2,2,2]]
+Find the eigenvalues and the eigenvectors for the matrix 
+A = [[1, 5],
+     [2, 4]]
 """
 import numpy as np
 
-A = np.array([
-    [2, 2, 2],
-    [2, 2, 2],
-    [2, 2, 2]
-])
+A = np.array([[1, 5],
+              [2, 4]])
 
 eigenvalues, eigenvectors = np.linalg.eig(A)
-print(eigenvalues)
-print(eigenvectors)
+for i, val in enumerate(eigenvalues, start=1):
+    print(f"λ{i} = {val:.0f}")
+
+for i in range(len(eigenvalues)):
+    v = eigenvectors[:, i]
+    print(f"v{i+1} = {v}")
+
+for i in range(len(eigenvalues)):
+    lam = eigenvalues[i]
+    v = eigenvectors[:, i]
+    left = A @ v
+    right = lam * v
+    print(f"\nCheck for λ = {lam:.0f}:")
+    print("A v =", left)
+    print("λ v =", right)
+    print("Verification:", np.allclose(left, right))
