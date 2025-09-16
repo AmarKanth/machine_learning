@@ -10,15 +10,55 @@ In higher dimensions, it’s called a hyperplane(surface)
 """
 
 """
-Hyperplane: 
+Hyperplane:
 The hyperplane is halfway between these boundaries(support vectors).
 Boundaries are closest data points from each class.
 """
 
 """
-Margin: 
+Support Vectors:
+The closest data points to the hyperplane, crucial for determining the hyperplane and 
+margin in SVM.
+"""
+
+"""
+Margin:
 - Distance between the hyperplane and the nearest data points from each class.
 - The data points that lie closest to the boundary are called support vectors.
+"""
+
+"""
+Kernel:
+A function that maps data to a higher-dimensional space enabling SVM to handle non-linearly 
+separable data.
+"""
+
+"""
+Hard Margin:
+A maximum-margin hyperplane that perfectly separates the data without misclassifications.
+"""
+
+"""
+Soft Margin: 
+Allows some misclassifications by introducing slack variables, balancing margin maximization 
+and misclassification penalties when data is not perfectly separable.
+"""
+
+"""
+C: A regularization term balancing margin maximization and misclassification penalties. 
+A higher C value forces stricter penalty for misclassifications.
+"""
+
+"""
+Outlier:
+An outlier is a data point that is significantly different from the other data points in 
+the dataset.
+"""
+
+"""
+Hinge Loss:
+A loss function penalizing misclassified points or margin violations and is combined with 
+regularization in SVM.
 """
 
 """
