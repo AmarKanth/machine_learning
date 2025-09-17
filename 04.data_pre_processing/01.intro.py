@@ -150,13 +150,6 @@ What is feature engineering? How does it affect the model’s performance?
 
 
 """
-Correlation:
-Correlation is a statistical measure that shows how strongly two variables are related 
-to each other — in other words, how much one changes when the other changes.
-"""
-
-
-"""
 What is data leakage and how can we identify it?
 -If there is a high correlation between the target variable and the input features 
  then this situation is referred to as data leakage.

@@ -17,6 +17,7 @@ P(y = 0) = 1 − f(z)
 
 """
 MLE(Maximum likelihood estimation)
+
 1. It is a method used to estimate the model’s parameters (the coefficients).
 2. It produces Standard errors, Log-likelihood values, Pseudo R-Squared as well
 """
@@ -25,7 +26,7 @@ MLE(Maximum likelihood estimation)
 LLR(Log likelihood Ratio)
 The log-likelihood tells us how well the model explains the data.
 
-The null model(LL-null) is the model with only the intercept (no predictors).
+The null model(LL-null) is the model with only the intercept(no predictors).
 The full model(LL) is your fitted logistic regression with predictors.
 
 LLR = −2×(LLnull−LLmodel)
@@ -136,6 +137,7 @@ Recall = TP / (TP + FN)
 """
 How do you evaluate the effectiveness of a machine learning model in an imbalanced dataset 
 scenario? What metrics would you use instead of accuracy?
+
 We can use Precision, Recall, F1 score and ROC-AUC to evaluate the effectiveness of 
 machine learning model in imbalanced dataset scenario. The best metric is F1 score as it 
 combines both precision and recall into single metric that is important in imbalanced 
