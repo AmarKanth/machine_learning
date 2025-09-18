@@ -19,3 +19,13 @@ same splits, thereby increasing the diversity among the trees.
 The diversity among trees reduces the variance of the model without significantly 
 increasing the bias.
 """
+
+"""
+Whether decision tree or random forest is more robust to the outliers.
+Decision trees and random forests are both relatively robust to outliers. A random 
+forest model is an ensemble of multiple decision trees so, the output of a random forest 
+model is an aggregate of multiple decision trees.
+
+So, when we average the results the chances of overfitting get reduced. Hence we can say 
+that the random forest models are more robust to outliers.
+"""
