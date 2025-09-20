@@ -1,6 +1,10 @@
 """
 Logistic Regression:
-It predicts the probability of an event occuring (ex spam/not-spam, yes/no, 0/1).
+
+-It predicts the probability of an event occuring (ex spam/not-spam, yes/no, 0/1).
+-The main reason why we cannot use linear regression for a classification task is that the 
+ output of linear regression is continuous, while classification requires discrete 
+ output values.
 """
 
 """
@@ -69,89 +73,86 @@ Interpretation
 """
 
 """
-Why we cannot use linear regression for a classification task?
-The main reason why we cannot use linear regression for a classification task is that the 
-output of linear regression is continuous, while classification requires discrete 
-output values.
+---------------------------------------------------------
+                   Actual Positive   |   Actual Negative
+---------------------------------------------------------
+Predicted Positive |   TP (True Pos) |   FP (False Pos)
+Predicted Negative |   FN (False Neg)|   TN (True Neg)
+---------------------------------------------------------
 """
 
 """
-Explain the classification report and the metrics it includes?
+Accuracy:
 
-Precision: When the model predicts positive, how often is it correct?
-Precision = TP / (TP + FP)
+(TP + TN) / (TP + TN + FP + FN)
+-The overall proportion of correct predictions.
+-There are times when we train our model on an imbalanced dataset the accuracy score is 
+ not a good metric to measure the performance of the model. In such cases, we use precision and 
+ recall to measure the performance of a classification model.
+"""
 
-Recall: Out of all the actual positive cases, how many did the model find?
-Recall = TP / (TP + FN)
+"""
+Precision:
 
-F1-Score: The F1-Score is the harmonic mean of Precision and Recall
-F1 = 2 * (Precision * Recall) / (Precision + Recall)
-- High F1-score indicates a good balance between precision and recall.
-- Useful when both false positives and false negatives are important.
+TP / (TP + FP)
+-When the model predicts positive, how often is it correct?
+-Precision is the ratio between the true positives(TP) and all the positive examples 
+ (TP+FP) predicted by the model. 
+-In other words, precision measures how many of the predicted positive examples are actually 
+ true positives. 
+-It is a measure of the model's ability to avoid false positives and make accurate positive 
+ predictions.
+-However, if you are more concerned about false positives or false negatives specifically, 
+ you may opt for:Precision(if false positives are more costly) or Recall(if false negatives are 
+ more costly).
+"""
 
-Support: The number of true instances for each class in the dataset.
+"""
+Recall:
 
-Accuracy: The overall proportion of correct predictions.
-Accuracy = (TP + TN) / (TP + TN + FP + FN)
+TP / (TP + FN)
+-Out of all the actual positive cases, how many did the model find?
+-In recall, we calculate the ratio of true positives (TP) and the total number of examples 
+(TP+FN) that actually fall in the positive class. 
+-Recall measures how many of the actual positive examples are correctly identified by the model. 
+-It is a measure of the model's ability to avoid false negatives and identify all positive 
+ examples correctly.
+"""
 
-Macro Average: Compute the metric (Precision, Recall, F1-score) for each class individually.
+"""
+F1 Score:
 
-Weighted Average: Compute the metric (Precision, Recall, F1) for each class individually.
+2 * (Precision * Recall) / (Precision + Recall)
+-The F1-Score is the harmonic mean of Precision and Recall
+-High F1-score indicates a good balance between precision and recall.
+-Useful when both false positives and false negatives are important.
+-Also, f1-score is another metric that can be used to measure performance but in the end, 
+ f1-score is also calculated using precision and recall as the f1-score is nothing but 
+ the harmonic mean of the precision and recall.
+-We can use Precision, Recall, F1 score and ROC-AUC to evaluate the effectiveness of 
+ machine learning model in imbalanced dataset scenario. 
+-The best metric is F1 score as it combines both precision and recall into single metric that is 
+ important in imbalanced datasets where a high number of true negatives can skew accuracy. 
+-By focusing on both false positives and false negatives, the F1-score ensures that both the positive 
+ class detection and false positives are accounted for.
+-If the cost of false positives(Type I errors) and false negatives(Type II errors) is similar, 
+ F1-Score strikes a good balance.
+-It is especially useful when you need to prioritize performance in detecting the minority 
+ class(positive class).
+"""
+
+"""
+Macro Average: 
+-Compute the metric(Precision, Recall, F1-score) for each class individually.
+"""
+
+"""
+Weighted Average:
+
 Weighted Precision = Σ (Precision_i × Support_i) / Σ (Support_i)
 - Precision_i : Precision score for class i
 - Support_i   : Number of true instances of class i
 - C           : Total number of classes
-"""
 
-"""
-Does the accuracy score always a good metric to measure the performance of a 
-classification model?
-No, there are times when we train our model on an imbalanced dataset the accuracy score is 
-not a good metric to measure the performance of the model. 
-
-In such cases, we use precision and recall to measure the performance of a 
-classification model.
-
-Also, f1-score is another metric that can be used to measure performance but in the end, 
-f1-score is also calculated using precision and recall as the f1-score is nothing but 
-the harmonic mean of the precision and recall.
-"""
-
-"""
-What is the difference between precision and recall?
-Precision is the ratio between the true positives(TP) and all the positive examples 
-(TP+FP) predicted by the model. In other words, precision measures how many of the 
-predicted positive examples are actually true positives. It is a measure of the model's 
-ability to avoid false positives and make accurate positive predictions.
-
-Precision = TP / (TP + FP)
-
-In recall, we calculate the ratio of true positives (TP) and the total number of examples 
-(TP+FN) that actually fall in the positive class. Recall measures how many of the actual 
-positive examples are correctly identified by the model. It is a measure of the model's 
-ability to avoid false negatives and identify all positive examples correctly.
-
-Recall = TP / (TP + FN)
-"""
-
-"""
-How do you evaluate the effectiveness of a machine learning model in an imbalanced dataset 
-scenario? What metrics would you use instead of accuracy?
-
-We can use Precision, Recall, F1 score and ROC-AUC to evaluate the effectiveness of 
-machine learning model in imbalanced dataset scenario. The best metric is F1 score as it 
-combines both precision and recall into single metric that is important in imbalanced 
-datasets where a high number of true negatives can skew accuracy. By focusing on both false 
-positives and false negatives, the F1-score ensures that both the positive class detection 
-and false positives are accounted for.
-
-If the cost of false positives (Type I errors) and false negatives (Type II errors) is similar, 
-F1-Score strikes a good balance.
-It is especially useful when you need to prioritize performance in detecting the minority 
-class (positive class).
-However, if you are more concerned about false positives or false negatives specifically, 
-you may opt for:
-
-Precision (if false positives are more costly) or
-Recall (if false negatives are more costly).
+-Compute the metric(Precision, Recall, F1) for each class individually.
 """
