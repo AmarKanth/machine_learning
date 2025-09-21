@@ -5,29 +5,29 @@
 """
 
 """
-mean :
+mean:
 The mean is the average value of a set of numbers.
 """
 
 """
-median :
+median:
 The median is the middle value when all the numbers are arranged in ascending order.
 """
 
 """
-mode :
+mode:
 The mode is the value that appears most frequently in the dataset.
 """
 
 """
-Skewness :
-Skewness is a measure of the asymmetry in the distribution of data.
-It tells us whether the data is skewed to the left (negatively skewed), 
-to the right (positively skewed), or is symmetric.
+Skewness:
+-Skewness is a measure of the asymmetry in the distribution of data.
+-It tells us whether the data is skewed to the left(negatively skewed), to the 
+ right(positively skewed), or is symmetric.
 
-Symmetric (Zero Skewness) : Mean = Median = Mode.
-Positive Skewness (Right-Skewed) : Mean > Median > Mode.
-Negative Skewness (Left-Skewed) : Mean < Median < Mode.
+-Symmetric (Zero Skewness) : Mean = Median = Mode.
+-Positive Skewness (Right-Skewed) : Mean > Median > Mode.
+-Negative Skewness (Left-Skewed) : Mean < Median < Mode.
 
 Skewness for population:
 skewness = (1 / n) * Σⁿᵢ₌₁ [ (xᵢ - x̄) / s ]³
@@ -45,23 +45,23 @@ s  = sample standard deviation
 """
 
 """
-Variance :
+Variance:
 Variance is a statistical measure that indicates how much the values in a dataset 
-deviate from the mean (average).
+deviate from the mean(average).
 
 Variance for a population:    
 σ² = (1/N)*Σ (xᵢ - μ)²
-- σ² is the population variance,
-- xᵢ represents each data point,
-- μ is the population mean,
-- N is the total number of data points in the population.
+σ² = is the population variance,
+xᵢ = represents each data point,
+μ  = is the population mean,
+N  = is the total number of data points in the population.
 
 Variance for a sample:
 s² = (1/(n-1)Σ (xᵢ - x̄)²
-- s² is the sample variance,
-- xᵢ represents each data point,
-- x̄ is the sample mean,
-- n is the number of data points in the sample.
+s² = is the sample variance,
+xᵢ = represents each data point,
+x̄  = is the sample mean,
+n  = is the number of data points in the sample.
 """
 
 """
