@@ -105,7 +105,7 @@ Covariance for population:
 -σₓᵧ is population covariance between 'x' and 'y'
 -xᵢ and yᵢ are the individual elements of the lists 'x' and 'y'
 -μₓ is mean of the list 'x'
--μᵧ 	is mean of the list 'y'
+-μᵧ is mean of the list 'y'
 -n is number of elements in 'x' and 'y'(both must have the same length)
 
 Covariance for sample:
@@ -121,7 +121,7 @@ Sₓᵧ = Σ((xᵢ - x̄) * (yᵢ - ȳ)) / (n - 1)
 Correlation Coefficient:
 
 σₓᵧ / (σₓ * σᵧ)
--σₓᵧ 	is covariance of X and Y
+-σₓᵧ is covariance of X and Y
 -σₓ is standard deviation of X
 -σᵧ is standard deviation of Y
 """
