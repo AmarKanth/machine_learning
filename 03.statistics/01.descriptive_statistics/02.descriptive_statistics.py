@@ -25,9 +25,9 @@ Skewness:
 -It tells us whether the data is skewed to the left(negatively skewed), to the 
  right(positively skewed), or is symmetric.
 
--Symmetric (Zero Skewness) : Mean = Median = Mode.
--Positive Skewness (Right-Skewed) : Mean > Median > Mode.
--Negative Skewness (Left-Skewed) : Mean < Median < Mode.
+-Symmetric (Zero Skewness) : Mean = Median = Mode
+-Positive Skewness (Right-Skewed) : Mean > Median > Mode
+-Negative Skewness (Left-Skewed) : Mean < Median < Mode
 
 Skewness for population:
 skewness = (1 / n) * Σⁿᵢ₌₁ [ (xᵢ - x̄) / s ]³
@@ -51,77 +51,77 @@ deviate from the mean(average).
 
 Variance for a population:    
 σ² = (1/N)*Σ (xᵢ - μ)²
-σ² = is the population variance,
-xᵢ = represents each data point,
-μ  = is the population mean,
-N  = is the total number of data points in the population.
+σ² = population variance
+xᵢ = represents each data point
+μ  = population mean
+N  = total number of data points in the population
 
 Variance for a sample:
 s² = (1/(n-1)Σ (xᵢ - x̄)²
-s² = is the sample variance,
-xᵢ = represents each data point,
-x̄  = is the sample mean,
-n  = is the number of data points in the sample.
+s² = sample variance
+xᵢ = represents each data point
+x̄  = sample mean
+n  = number of data points in the sample
 """
 
 """
-Standard Deviation :
+Standard Deviation:
 
 Standard Deviation for population:
 σ = √σ²
-- σ is the standard deviation.
-- σ² is the variance.
+σ  = population standard deviation
+σ² = population variance
 
 Standard Deviation for sample:
 s = √s²
-- s is the sample standard deviation.
-- s² is the sample variance.
+s  = sample standard deviation
+s² = sample variance
 """
 
 """
-Coefficient Of Variance(Relative Standard Deviation) :
+Coefficient Of Variance(Relative Standard Deviation):
 The coefficient of variation tells us what percentage of the mean is made up by 
 the standard deviation.
 
 Coefficient Of Variance for popultaion
-CV = σ / μ
-- CV is the Coefficient of Variation (expressed as a percentage).
-- σ is the standard deviation.
-- μ is the mean of the dataset.
+cv = σ / μ
+cv = Coefficient of Variation(expressed as a percentage)
+σ  = standard deviation
+μ  = mean of the dataset
 
 Coefficient Of Variance for sample
-CV = s / x̄
-- CV is the sample Coefficient of Variation (expressed as a percentage).
-- s is the sample standard deviation.
-- x̄ is the sample mean.
+cv = s / x̄
+cv = sample Coefficient of Variation(expressed as a percentage)
+s  = sample standard deviation
+x̄  = sample mean
 """
 
 """
-Covariance :
+Covariance:
 Covariance measures how much two variables vary together from their respective means.
 
 Covariance for population:
 σₓᵧ = Σ((xᵢ - μₓ) * (yᵢ - μᵧ)) / n
-- σₓᵧ is the population covariance between `x` and `y`
-- xᵢ and yᵢ are the individual elements of the lists `x` and `y`
-- μₓ is the mean of the list `x`
-- μᵧ is the mean of the list `y`
-- n is the number of elements in `x` and `y` (both must have the same length)
+σₓᵧ 			= population covariance between 'x' and 'y'
+xᵢ and yᵢ 	= individual elements of the lists 'x' and 'y'
+μₓ 			= mean of the list 'x'
+μᵧ 			= mean of the list 'y'
+n 			= number of elements in 'x' and 'y'(both must have the same length)
 
 Covariance for sample:
 Sₓᵧ = Σ((xᵢ - x̄) * (yᵢ - ȳ)) / (n - 1)
-- Sₓᵧ is the covariance between `x` and `y`
-- xᵢ and yᵢ are the individual elements of the lists `x` and `y`
-- x̄ is the mean of the list `x`
-- ȳ is the mean of the list `y`
-- n is the number of elements in `x` and `y` (both must have the same length)
+Sₓᵧ 			= covariance between 'x' and 'y'
+xᵢ and yᵢ 	= individual elements of the lists 'x' and 'y'
+x̄ 			= mean of the list 'x'
+ȳ 			= mean of the list 'y'
+n 			= number of elements in 'x' and 'y'(both must have the same length)
 """
 
 """
 Correlation Coefficient:
 
 σₓᵧ / (σₓ * σᵧ)
-- σₓᵧ is the covariance of X and Y.
-- σₓ is the standard deviation of X.
-- σᵧ is the standard deviation of Y.
+σₓᵧ 	= covariance of X and Y
+σₓ 	= standard deviation of X
+σᵧ 	= standard deviation of Y
 """
