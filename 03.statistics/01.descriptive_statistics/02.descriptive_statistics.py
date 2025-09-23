@@ -32,18 +32,18 @@ Skewness:
 Skewness for population:
 skewness = (1 / n) * Σⁿᵢ₌₁ [ (xᵢ - x̄) / s ]³
 where:
-n  = number of observations
-xᵢ = individual data points
-x̄  = population mean
-s  = population standard deviation
+- n is the number of observations
+- xᵢ is individual data points
+- x̄ is population mean
+- s is population standard deviation
 
 Skewness for sample:
 skewness = (n / ((n - 1)(n - 2))) * Σ[((xᵢ - x̄) / s)³]
 where:
-n  = number of observations
-xᵢ = individual data points
-x̄  = sample mean
-s  = sample standard deviation
+- n is number of observations
+- xᵢ is individual data points
+- x̄ is sample mean
+- s is sample standard deviation
 """
 
 """
@@ -54,18 +54,18 @@ deviate from the mean(average).
 Variance for a population:    
 σ²  = (1/N)*Σ (xᵢ - μ)²
 where:
-σ²  = population variance
-xᵢ  = represents each data point
-μ   = population mean
-N   = total number of data points in the population
+- σ² is population variance
+- xᵢ is represents each data point
+- μ is population mean
+- N is total number of data points in the population
 
 Variance for a sample:
 s² = (1/(n-1)Σ (xᵢ - x̄)²
 where:
-s² = sample variance
-xᵢ = represents each data point
-x̄  = sample mean
-n  = number of data points in the sample
+- s² is sample variance
+- xᵢ is represents each data point
+- x̄ is sample mean
+- n is number of data points in the sample
 """
 
 """
@@ -74,14 +74,14 @@ Standard Deviation:
 Standard Deviation for population:
 σ = √σ²
 where:
-σ   = population standard deviation
-σ²  = population variance
+- σ is population standard deviation
+- σ² is population variance
 
 Standard Deviation for sample:
 s = √s²
 where:
-s   = sample standard deviation
-s²  = sample variance
+- s is sample standard deviation
+- s² is sample variance
 """
 
 """
@@ -92,16 +92,16 @@ the standard deviation.
 Coefficient Of Variance for popultaion
 cv = σ / μ
 where:
-cv  = Coefficient of Variation(expressed as a percentage)
-σ   = standard deviation
-μ   = mean of the dataset
+- cv is Coefficient of Variation(expressed as a percentage)
+- σ is standard deviation
+- μ is mean of the dataset
 
 Coefficient Of Variance for sample
 cv = s / x̄
 where:
-cv = sample Coefficient of Variation(expressed as a percentage)
-s  = sample standard deviation
-x̄  = sample mean
+- cv is sample Coefficient of Variation(expressed as a percentage)
+- s is sample standard deviation
+- x̄ is sample mean
 """
 
 """
@@ -111,27 +111,27 @@ Covariance measures how much two variables vary together from their respective m
 Covariance for population:
 σₓᵧ = Σ((xᵢ - μₓ) * (yᵢ - μᵧ)) / n
 where:
-σₓᵧ    	= population covariance between 'x' and 'y'
-xᵢ, yᵢ 	= individual elements of the lists 'x' and 'y'
-μₓ      = mean of the list 'x'
-μᵧ		= mean of the list 'y'
-n 		= number of elements in 'x' and 'y' (both must have the same length)
+- σₓᵧ is population covariance between 'x' and 'y'
+- xᵢ, yᵢ is individual elements of the lists 'x' and 'y'
+- μₓ is mean of the list 'x'
+- μᵧ is mean of the list 'y'
+- n is number of elements in 'x' and 'y' (both must have the same length)
 
 Covariance for sample:
 Sₓᵧ = Σ((xᵢ - x̄) * (yᵢ - ȳ)) / (n - 1)
 where:
-Sₓᵧ   	= covariance between 'x' and 'y'
-xᵢ, yᵢ 	= individual elements of the lists 'x' and 'y'
-x̄      	= mean of the list 'x'
-ȳ       = mean of the list 'y'
-n       = number of elements in 'x' and 'y'(both must have the same length)
+- Sₓᵧ is covariance between 'x' and 'y'
+- xᵢ, yᵢ is individual elements of the lists 'x' and 'y'
+- x̄ is mean of the list 'x'
+- ȳ is mean of the list 'y'
+- n is number of elements in 'x' and 'y'(both must have the same length)
 """
 
 """
 Correlation Coefficient:
 cc = σₓᵧ / (σₓ * σᵧ)
 where:
-σₓᵧ = covariance of X and Y
-σₓ  = standard deviation of X
-σᵧ  = standard deviation of Y
+- σₓᵧ is covariance of X and Y
+- σₓ is standard deviation of X
+- σᵧ is standard deviation of Y
 """
