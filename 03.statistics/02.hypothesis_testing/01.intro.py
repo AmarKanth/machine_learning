@@ -28,7 +28,7 @@ to determine whether to reject the null hypothesis.
 
 """
 Rejection Region:
-- The rejection region(also called the critical region) in hypothesis testing.
+- The rejection region is also called the critical region in hypothesis testing.
 - If your test statistic(z, t, etc.) falls into that region, you reject H₀
 - If it falls outside that region, you fail to reject H₀
 """

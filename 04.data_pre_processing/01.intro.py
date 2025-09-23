@@ -139,7 +139,7 @@ Binning
 
 
 """
-What is feature engineering? How does it affect the model’s performance? 
+What is feature engineering? How does it affect the model's performance? 
 -Feature engineering refers to developing some new features by using existing features.
 -Sometimes there is a very subtle mathematical relation between some features which if 
  explored properly then the new features can be developed using those mathematical 
