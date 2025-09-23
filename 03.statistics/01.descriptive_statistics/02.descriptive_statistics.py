@@ -132,6 +132,6 @@ Correlation Coefficient:
 cc = σₓᵧ / (σₓ * σᵧ)
 where:
 σₓᵧ 	= covariance of X and Y
-σₓᵧ	= standard deviation of X
+σₓᵧ	  = standard deviation of X
 σᵧ  	= standard deviation of Y
 """
