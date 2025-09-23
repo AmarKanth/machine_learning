@@ -14,9 +14,9 @@ What is Null Hypothesis?
 
 """
 What is Alternative Hypothesis?
--If there is an effect, a difference, or a relationship — it's what you're trying to prove.
+-If there is an effect, a difference, or a relationship — it's what we're trying to prove.
 -Example: The new product performs better than the old one.
--If we reject H₀, we have sufficient evidence to support H₁, but we do not ‘accept’ H₁ as 
+-If we reject H₀, we have sufficient evidence to support H₁, but we do not 'accept' H₁ as 
  absolutely true.
 """
 
@@ -57,6 +57,6 @@ Summary of Type I and Type II Errors in Hypothesis Testing:
 | Type II    | Failed to reject H₀    | H₀ is false    | False negative    | Missed detection   |
 
 Notes:
-- Type I error (α): Incorrectly rejecting a true null hypothesis.
-- Type II error (β): Failing to reject a false null hypothesis.
+-Type I error (α): Incorrectly rejecting a true null hypothesis.
+-Type II error (β): Failing to reject a false null hypothesis.
 """
