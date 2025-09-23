@@ -111,27 +111,27 @@ Covariance measures how much two variables vary together from their respective m
 Covariance for population:
 σₓᵧ = Σ((xᵢ - μₓ) * (yᵢ - μᵧ)) / n
 where:
-σₓᵧ 			= population covariance between 'x' and 'y'
-xᵢ and yᵢ 	= individual elements of the lists 'x' and 'y'
-μₓ 			= mean of the list 'x'
-μᵧ 			= mean of the list 'y'
-n 			= number of elements in 'x' and 'y'(both must have the same length)
+σₓᵧ       = population covariance between 'x' and 'y'
+xᵢ and yᵢ = individual elements of the lists 'x' and 'y'
+μₓ 			  = mean of the list 'x'
+μᵧ 			  = mean of the list 'y'
+n 			  = number of elements in 'x' and 'y'(both must have the same length)
 
 Covariance for sample:
 Sₓᵧ = Σ((xᵢ - x̄) * (yᵢ - ȳ)) / (n - 1)
 where:
-Sₓᵧ 			= covariance between 'x' and 'y'
-xᵢ and yᵢ 	= individual elements of the lists 'x' and 'y'
-x̄ 			= mean of the list 'x'
-ȳ 			= mean of the list 'y'
-n 			= number of elements in 'x' and 'y'(both must have the same length)
+Sₓᵧ       = covariance between 'x' and 'y'
+xᵢ and yᵢ = individual elements of the lists 'x' and 'y'
+x̄ 			  = mean of the list 'x'
+ȳ 			  = mean of the list 'y'
+n 			  = number of elements in 'x' and 'y'(both must have the same length)
 """
 
 """
 Correlation Coefficient:
 cc = σₓᵧ / (σₓ * σᵧ)
 where:
-σₓᵧ 	= covariance of X and Y
+σₓᵧ = covariance of X and Y
 σₓ 	= standard deviation of X
 σᵧ 	= standard deviation of Y
 """
