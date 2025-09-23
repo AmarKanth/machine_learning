@@ -131,7 +131,7 @@ n       = number of elements in 'x' and 'y'(both must have the same length)
 Correlation Coefficient:
 cc = σₓᵧ / (σₓ * σᵧ)
 where:
-σₓᵧ 	= covariance of X and Y
+σₓᵧ = covariance of X and Y
 σₓᵧ	= standard deviation of X
-σᵧ  	= standard deviation of Y
+σᵧ  = standard deviation of Y
 """
