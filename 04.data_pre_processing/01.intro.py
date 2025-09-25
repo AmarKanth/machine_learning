@@ -1,77 +1,69 @@
 """
 What is feature scaling?
-It involves transforming numerical features into a "standard" scale, often leading to 
-better model performance.
+- Transforming numerical features into a "standard" scale. 
+- Often leading to better model performance.
 
 Methods for feature scaling
-1.Min-Max Scaling
-2.Standardization
-3.Robust Scaling
+1. Min-Max Scaling
+2. Standardization
+3. Robust Scaling
 
 Algorithms that benefit from feature scaling
-1.k-Nearest Neighbors(KNN)
-2.k-Means Clustering
-3.Logistic Regression
+1. k-Nearest Neighbors(KNN)
+2. k-Means Clustering
+3. Logistic Regression
 """
-
 
 """
 Min-Max Scaling:
 x' = (x - x_min) / (x_max - x_min)
 
--It is also called normalization.
--It brings all the features to a certain scale or range of values.
+- It is also called normalization.
+- It brings all the features to a certain scale or range of values.
 """
 from sklearn.preprocessing import MinMaxScaler
 min_max_scaler = MinMaxScaler()
 X_minmax = min_max_scaler.fit_transform(X)
 
-
 """
 Standardization:
 x' = (x - μ) / σ
-μ : Mean of the feature
-σ : Standard deviation of the feature
+where:
+- μ is mean of the feature
+- σ is standard deviation of the feature
 
-It indicates how many standard deviations a data point is from the mean of the dataset.
+- It indicates how many standard deviations a data point is from the mean of the 
+  dataset.
 """
 from sklearn.preprocessing import StandardScaler
 std_scaler = StandardScaler()
 X_std = std_scaler.fit_transform(X)
 
-
 """
 Robust Scaling:
 x' = (X − Q₁(X)) / (Q₃(X) − Q₁(X))
-Q₁(X) = first quartile  
-Q₃(X) = third quartile
+where:
+- Q₁(X) is first quartile  
+- Q₃(X) is third quartile
 """
 from sklearn.preprocessing import RobustScaler
 robust_scaler = RobustScaler()
 X_robust = robust_scaler.fit_transform(X)
 
-
 """
-How do you handle missing values in a dataset using Scikit-Learn?
-
-Mean, Median, Median:
-Fills in with the mean, median, or mode of the non-missing values in the column.
-
-Constant:
-Assigns a fixed value to all missing entries.
-
-KNN:
-Uses the k-Nearest Neighbors algorithm to determine an appropriate value based on other 
-instances known feature values.
+How do you handle missing values in a dataset?
+- Mean, Median, Median: Fills in with the mean, median, or mode of the non-missing 
+  values in the column.
+- Constant: Assigns a fixed value to all missing entries.
+- KNN: Uses the knn algorithm to determine an appropriate value based on other instances 
+  known feature values.
 """
 import numpy as np
 from sklearn.impute import SimpleImputer
-
 X = np.array([[1, 2], [np.nan, 3], [7, 6]])
 imp_mean = SimpleImputer()
 X_mean = imp_mean.fit_transform(X)
 print(X_mean)
-
 
 """
 How do you encode categorical variables using Scikit-Learn?
@@ -79,7 +71,6 @@ How do you encode categorical variables using Scikit-Learn?
 2.OrdinalEncoder
 3.LabelBinarizer
 """
-
 
 """
 OneHotEncoder:
@@ -96,19 +87,16 @@ columns = encoder.get_feature_names_out(['Color'])
 encoded_df = pd.DataFrame(encoded_data.toarray(), columns=columns)
 print(encoded_df)
 
-
 """
 OrdinalEncoder:
 In ordinal encoding, we replace the categories with numbers from 0 to n-1 based on the 
 order or rank where n is the number of unique categories present in the dataset.
 """
 
-
 """
 LabelBinarizer: 
 A simpler version of OneHotEncoder designed for binary(two-class) categories.
 """
-
 
 """
 Describe the use of ColumnTransformer in Scikit-Learn
@@ -130,13 +118,11 @@ preprocessor = ColumnTransformer(
 
 transformed_data = preprocessor.fit_transform(data)
 
-
 """
 Polynomial features 
 Power transformations 
 Binning
 """
-
 
 """
 What is feature engineering? How does it affect the model's performance? 
@@ -148,7 +134,6 @@ What is feature engineering? How does it affect the model's performance?
  as a single data column.
 """
 
-
 """
 What is data leakage and how can we identify it?
 -If there is a high correlation between the target variable and the input features 
@@ -159,7 +144,6 @@ What is data leakage and how can we identify it?
 -But in real-world predictions(where the leakage feature is not available), performance will 
  drop badly
 """
-
 
 """
 What is the difference between upsampling and downsampling?
@@ -178,7 +162,6 @@ class so that the distribution becomes balanced.
 In this case, we have to suffer from data loss which may lead to the loss of some 
 critical information as well. 
 """
-
 
 """
 Explain SMOTE method used to handle data imbalance.
