@@ -52,8 +52,8 @@ X_robust = robust_scaler.fit_transform(X)
 
 """
 How do you handle missing values in a dataset?
-- Mean, Median, Median: Fills in with the mean, median, or mode of the non-missing 
-  values in the column.
+- Mean, Median, Median: replace missing values with the mean, median, or mode of the 
+  non-missing values in the column.
 - Constant: Assigns a fixed value to all missing entries.
 - KNN: Uses the knn algorithm to determine an appropriate value based on other instances 
   known feature values.
@@ -67,9 +67,9 @@ print(X_mean)
 
 """
 How do you encode categorical variables using Scikit-Learn?
-1.OneHotEncoder
-2.OrdinalEncoder
-3.LabelBinarizer
+1. OneHotEncoder
+2. OrdinalEncoder
+3. LabelBinarizer
 """
 
 """
@@ -126,50 +126,45 @@ Binning
 
 """
 What is feature engineering? How does it affect the model's performance? 
--Feature engineering refers to developing some new features by using existing features.
--Sometimes there is a very subtle mathematical relation between some features which if 
- explored properly then the new features can be developed using those mathematical 
- operations.
--Also, there are times when multiple pieces of information are clubbed and provided 
- as a single data column.
+- Feature engineering refers to developing some new features by using existing features.
+- Sometimes there is a very subtle mathematical relation between some features which if 
+  explored properly then the new features can be developed using those mathematical 
+  operations.
+- Also, there are times when multiple pieces of information are clubbed and provided 
+  as a single data column.
 """
 
 """
 What is data leakage and how can we identify it?
--If there is a high correlation between the target variable and the input features 
- then this situation is referred to as data leakage.
--This is because when we train our model with that highly correlated feature then the model gets 
- most of the target variable's information and show artificially high accuracy during 
- training and validation.
--But in real-world predictions(where the leakage feature is not available), performance will 
- drop badly
+- If there is a high correlation between the target variable and the input features 
+  then this situation is referred to as data leakage.
+- This is because when we train our model with that highly correlated feature then the model gets 
+  most of the target variable's information and show artificially high accuracy during 
+  training and validation.
+- But in real-world predictions(where the leakage feature is not available), performance will 
+  drop badly
 """
 
 """
 What is the difference between upsampling and downsampling?
-In upsampling method, we increase the number of samples in the minority class by 
-randomly selecting some points from the minority class and adding them to the dataset 
-repeat this process till the dataset gets balanced for each class.
-
-But, here is a disadvantage the training accuracy becomes high as in each epoch model 
-trained more than once in each epoch but the same high accuracy is not observed in 
-the validation accuracy. 
-
-In downsampling, we decrease the number of samples in the majority class by selecting 
-some random number of points that are equal to the number of data points in the minority 
-class so that the distribution becomes balanced.
-
-In this case, we have to suffer from data loss which may lead to the loss of some 
-critical information as well. 
+- In upsampling method, we increase the number of samples in the minority class by 
+  randomly selecting some points from the minority class and adding them to the dataset 
+  repeat this process till the dataset gets balanced for each class.
+- But, here is a disadvantage the training accuracy becomes high as in each epoch model 
+  trained more than once in each epoch but the same high accuracy is not observed in 
+  the validation accuracy.
+- In downsampling, we decrease the number of samples in the majority class by selecting 
+  some random number of points that are equal to the number of data points in the minority 
+  class so that the distribution becomes balanced.
+- In this case, we have to suffer from data loss which may lead to the loss of some 
+  critical information as well. 
 """
 
 """
 Explain SMOTE method used to handle data imbalance.
-In SMOTE, we synthesize new data points using the existing ones from the minority 
-classes by using linear interpolation.
-
-The advantage of using this method is that the model does not get trained on the same data. 
-
-But the disadvantage of using this method is that it adds undesired noise to the dataset and 
-can lead to a negative effect on the model’s performance.
+- In SMOTE, we synthesize new data points using the existing ones from the minority 
+  classes by using linear interpolation.
+- The advantage of using this method is that the model does not get trained on the same data. 
+- But the disadvantage of using this method is that it adds undesired noise to the dataset and 
+  can lead to a negative effect on the model’s performance.
 """
