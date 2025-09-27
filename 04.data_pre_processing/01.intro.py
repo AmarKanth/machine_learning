@@ -127,11 +127,9 @@ Binning
 """
 What is feature engineering? How does it affect the model's performance? 
 - Feature engineering refers to developing some new features by using existing features.
-- Sometimes there is a very subtle mathematical relation between some features which if 
-  explored properly then the new features can be developed using those mathematical 
-  operations.
-- Also, there are times when multiple pieces of information are clubbed and provided 
-  as a single data column.
+- If there is a mathematical relation between some features, then the new features can be 
+  developed using those mathematical operations.
+- Multiple pieces of information are clubbed and provided as a single data column.
 """
 
 """
@@ -141,23 +139,29 @@ What is data leakage and how can we identify it?
 - This is because when we train our model with that highly correlated feature then the model gets 
   most of the target variable's information and show artificially high accuracy during 
   training and validation.
-- But in real-world predictions(where the leakage feature is not available), performance will 
-  drop badly
+- But in real-world predictions, performance will drop badly, if the leakage feature 
+  is not available.
 """
 
 """
-What is the difference between upsampling and downsampling?
-- In upsampling method, we increase the number of samples in the minority class by 
-  randomly selecting some points from the minority class and adding them to the dataset 
+Up Sampling:
+- In upsampling method, we increase the number of samples in the minority class.
+- Randomly selecting some data points from the minority class and adding them to the dataset 
   repeat this process till the dataset gets balanced for each class.
-- But, here is a disadvantage the training accuracy becomes high as in each epoch model 
-  trained more than once in each epoch but the same high accuracy is not observed in 
-  the validation accuracy.
-- In downsampling, we decrease the number of samples in the majority class by selecting 
-  some random number of points that are equal to the number of data points in the minority 
-  class so that the distribution becomes balanced.
+- Disadvantage is that training model gets high accuracy and validation accuracy does 
+  not improve.
+- The training accuracy becomes high, because in random oversampling, the minority class 
+  samples are repeated(duplicated) in the training data.
+- The validation accuracy does not improve, because of the model has mostly memorized 
+  duplicates(not learned new general patterns), it doesn’t generalize well.
+- It causes the overfitting.
+"""
+
+"""
+Down Sampling:
+- In downsampling, we decrease the number of observations in the majority class.
 - In this case, we have to suffer from data loss which may lead to the loss of some 
-  critical information as well. 
+  critical information as well.
 """
 
 """
