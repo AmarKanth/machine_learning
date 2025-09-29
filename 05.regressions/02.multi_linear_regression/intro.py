@@ -20,9 +20,9 @@ where:
 - n is number of data points(samples)
 - p is number of predictors(independent variables)
 
-- It tells you whether adding a variable actually improves the model or not.
+- It tells us whether adding a variable actually improves the model or not.
 - If a new variable improves the model, adjusted R² goes up
-- If a new variable is useless, adjusted R² goes down
+- If a new variable is not effective, adjusted R² goes down
 - Adj_R² ≤ R²(it is always less than or equal)
 - It helps to prevent overfitting by punishing complexity
 """
