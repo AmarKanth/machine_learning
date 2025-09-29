@@ -52,6 +52,22 @@ CD = max(|x1 - x2|, |y1 - y2|)
 """
 
 """
+Cosine Similarity: 
+- By considering the two vectors in n - dimension we evaluate the cosine of the angle 
+  between the two. 
+- The range of this similarity measure varies from [-1, 1] where the value 1 represents 
+  that the two vectors are highly similar and -1 represents that the two vectors are 
+  completely different from each other.
+"""
+
+"""
+Jaccard Similarity: 
+- It is also known as IoU or Intersection over union it is widely 
+  used in the field of object detection to evaluate the overlap between the predicted 
+  bounding box and the ground truth bounding box.
+"""
+
+"""
 Classification vs Clustering:
 - Classification means predicting an output category, given input data.
 - Grouping data points together based on similarities among them and difference 
@@ -81,6 +97,15 @@ Silhouette Score:
 Gap Statistic:
 - Compares the clustering result with a random clustering of the same data. 
 - A larger gap between the real and random clustering suggests a more appropriate number of clusters.
+"""
+
+"""
+k-means vs KNN:
+- K-means algorithm is one of the popular unsupervised machine learning algorithms which is 
+  used for clustering purposes. 
+- But, KNN is a model which is generally used for the classification task and is a supervised 
+  machine learning algorithm. The k-means algorithm helps us to label the data by forming 
+  clusters within the dataset.
 """
 
 """

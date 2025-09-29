@@ -66,6 +66,18 @@ X_mean = imp_mean.fit_transform(X)
 print(X_mean)
 
 """
+KNN imputer:
+- KNN imputer imputes missing values in a dataset compared to traditional methods like 
+  using mean, median, or mode. 
+- It is based on the K-Nearest Neighbors(KNN) algorithm, which fills missing values 
+  by referencing the values of the nearest neighbors.
+- The KNN Imputer identifies the k nearest neighbors to the data point with the missing value, 
+  based on a distance metric(e.g., Euclidean distance).
+- Once the nearest neighbors are found, the missing value is imputed(filled) 
+  using a statistical measure, such as the mean or median, of the values from these neighbors.
+"""
+
+"""
 How do you encode categorical variables using Scikit-Learn?
 1. OneHotEncoder
 2. OrdinalEncoder
