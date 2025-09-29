@@ -8,9 +8,10 @@ Logistic Regression:
 
 """
 Logistic(sigmoid) function:
+z = b₁·x₁ + b₂·x₂ + ... + bₖ·xₖ + a
+
 f(z) = 1 / (1 + e^(−z))
 f(z) = e^(z)/(1+e^(z))
-z = b₁·x₁ + b₂·x₂ + ... + bₖ·xₖ + a
 
 P(y = 1) = f(z)
 P(y = 0) = 1 − f(z)
