@@ -11,14 +11,14 @@ on the basis some of their features or variables they are described by.
 """
 
 """
-Classification vs Clustering
+Classification vs Clustering:
 - Classification means predicting an output category, given input data.
 - Grouping data points together based on similarities among them and difference 
   from others.
 """
 
 """
-Elbow Method
+Elbow Method:
 - Minimizing the distance between points in a cluster
 - Maximizing the distance between clusters
 """
