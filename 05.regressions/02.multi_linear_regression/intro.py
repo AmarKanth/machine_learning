@@ -29,7 +29,7 @@ where:
 
 """
 Overfitting:
-- Model performs well, during training but fails to predict new observations.
+- If model performs well, during training but fails to predict new observations.
 - Overfitting can be minimize by early stopping of the model's training in case of 
   validation training stops increasing but the training keeps going on.
 """

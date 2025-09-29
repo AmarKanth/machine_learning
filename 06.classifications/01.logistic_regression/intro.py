@@ -1,6 +1,5 @@
 """
 Logistic Regression:
-
 - It predicts the probability of an event occuring (ex spam/not-spam, yes/no, 0/1).
 - The main reason why we cannot use linear regression for a classification task is that the 
   output of linear regression is continuous, while classification requires discrete 
@@ -9,7 +8,6 @@ Logistic Regression:
 
 """
 Logistic(sigmoid) function:
-
 f(z) = 1 / (1 + e^(−z))
 f(z) = e^(z)/(1+e^(z))
 z = b₁·x₁ + b₂·x₂ + ... + bₖ·xₖ + a
@@ -20,14 +18,12 @@ P(y = 0) = 1 − f(z)
 
 """
 MLE(Maximum likelihood estimation):
-
 - It is a method used to estimate the model’s parameters (the coefficients).
 - It produces Standard errors, Log-likelihood values, Pseudo R-Squared as well
 """
 
 """
 LLR(Log likelihood Ratio):
-
 LLR = −2×(LLnull−LLmodel)
 - The log-likelihood tells us how well the model explains the data.
 - The null model(LL-null) is the model with only the intercept(no predictors).
@@ -51,7 +47,6 @@ odds = P(event) / (1 - P(event))
 """
 odds-ratio:
 oddsratio = odds(Group A) / odds(Group B)
-
 - The odds ratio (OR) compares the odds of an event occurring in one group to the odds of 
   it occurring in another group.
 Interpretation:
@@ -61,9 +56,8 @@ Interpretation:
 """
 
 """
-Pseudo R-Squared
+Pseudo R²:
 1 - (LL_model / LL_null)
-
 Interpretation
 - Values closer to 1 indicate a better fit.
 - Typical values for real-world logistic regression are between 0.2 and 0.4.
@@ -71,17 +65,13 @@ Interpretation
 """
 
 """
----------------------------------------------------------
-                   Actual Positive   |   Actual Negative
----------------------------------------------------------
-Predicted Positive |   TP (True Pos) |   FP (False Pos)
-Predicted Negative |   FN (False Neg)|   TN (True Neg)
----------------------------------------------------------
+                        Actual Positive   Actual Negative
+Predicted Positive      TP(True Pos)      FP(False Pos)
+Predicted Negative      FN(False Neg)     TN(True Neg)
 """
 
 """
 Accuracy:
-
 (TP + TN) / (TP + TN + FP + FN)
 - The overall proportion of correct predictions.
 - There are times when we train our model on an imbalanced dataset the accuracy score is 
@@ -91,7 +81,6 @@ Accuracy:
 
 """
 Precision:
-
 TP / (TP + FP)
 - When the model predicts positive, how often is it correct?
 - Precision is the ratio between the true positives(TP) and all the positive examples 
@@ -107,7 +96,6 @@ TP / (TP + FP)
 
 """
 Recall:
-
 TP / (TP + FN)
 - Out of all the actual positive cases, how many did the model find?
 - In recall, we calculate the ratio of true positives (TP) and the total number of examples 
@@ -119,7 +107,6 @@ TP / (TP + FN)
 
 """
 F1 Score:
-
 2 * (Precision * Recall) / (Precision + Recall)
 - The F1-Score is the harmonic mean of Precision and Recall
 - High F1-score indicates a good balance between precision and recall.
@@ -146,7 +133,6 @@ Macro Average:
 
 """
 Weighted Average:
-
 wp = Σ (Precision_i × Support_i) / Σ (Support_i)
 where:
 - Precision_i is Precision score for class i
