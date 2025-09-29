@@ -67,10 +67,3 @@ import numpy as np
 np.random.seed(42)
 x = np.random.randn(3)
 print(x)
-
-"""
-np.poly1d()
-"""
-import numpy as np
-arr = np.poly1d([2, 3, 4])
-print(arr)
