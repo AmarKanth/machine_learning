@@ -5,26 +5,29 @@ on the basis some of their features or variables they are described by.
 """
 
 """
-- After you’ve chosen K (number of clusters), k-means tries to find K centroids.
-- A centroid is just the “center point” of a cluster. It’s not necessarily one of the 
-  data points—it’s the mean position of all the points in that cluster.
-"""
+1.Specifying k:
+- The algorithm needs to know how many clusters to generate as an end result.
 
-"""
-Classification vs Clustering:
-- Classification means predicting an output category, given input data.
-- Grouping data points together based on similarities among them and difference 
-  from others.
-"""
+2.Initializing centroids:
+- The algorithm starts with randomly selecting k samples from the dataset as centroids.
 
-"""
-Elbow Method:
-- Minimizing the distance between points in a cluster
-- Maximizing the distance between clusters
-"""
+3.Assigning clusters:
+- Now that we have k centroids, samples that share the same closest centroid constitute 
+  one cluster. K clusters are created as a result.
+- Note that closeness is usually measured by the Euclidean distance. Other
+  metrics can also be used, such as the Manhattan distance and Chebyshev
+  distance
 
-"""
-Similar to SSC, SSR and SSE, WCSS is a measure developed within the ANOVA framework
+4.Updating centroids: 
+- For each cluster, we need to recalculate its center point, which is the mean of all 
+  the samples in the cluster. 
+- K centroids are updated to be the means of corresponding clusters. 
+- This is why the algorithm is called k-means.
+
+5.Repeating steps 3 and 4: 
+- We keep repeating assigning clusters and updating centroids until the model converges 
+  when no or a small enough update of centroids can be done, or enough iterations have 
+  been completed.
 """
 
 """
@@ -49,7 +52,20 @@ CD = max(|x1 - x2|, |y1 - y2|)
 """
 
 """
+Classification vs Clustering:
+- Classification means predicting an output category, given input data.
+- Grouping data points together based on similarities among them and difference 
+  from others.
+"""
+
+"""
+Similar to SSC, SSR and SSE, WCSS is a measure developed within the ANOVA framework
+"""
+
+"""
 Elbow Method:
+- Minimizing the distance between points in a cluster
+- Maximizing the distance between clusters
 - Plot the explained variance or within-cluster sum of squares (WCSS) against the number of clusters. 
 - The "elbow" point, where the curve starts to flatten, indicates the optimal number of clusters.
 """
