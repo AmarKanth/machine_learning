@@ -30,8 +30,8 @@ where:
 """
 Overfitting:
 - If model performs well, during training but fails to predict new observations.
-- Overfitting can be minimize by early stopping of the model's training in case of 
-  validation training stops increasing but the training keeps going on.
+- Overfitting can be minimized by early stopping the training when the validation 
+  accuracy stops improving.
 """
 
 """
