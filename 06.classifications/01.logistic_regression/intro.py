@@ -1,6 +1,6 @@
 """
 Logistic Regression:
-- It predicts the probability of an event occuring (ex spam/not-spam, yes/no, 0/1).
+- It predicts the probability of an event occuring(ex spam/not-spam, yes/no, 0/1).
 - The main reason why we cannot use linear regression for a classification task is that the 
   output of linear regression is continuous, while classification requires discrete 
   output values.
@@ -18,24 +18,24 @@ P(y = 0) = 1 − f(z)
 """
 
 """
-MLE(Maximum likelihood estimation):
-- It is a method used to estimate the model’s parameters (the coefficients).
-- It produces Standard errors, Log-likelihood values, Pseudo R-Squared as well
+MLE(Maximum Likelihood Estimation) Method:
+- It is a method used to estimate the model's parameters(the coefficients)
+- It produces standard errors, log-likelihood values, pseudo r-squared as well
 """
 
 """
-LLR(Log likelihood Ratio):
+LLR(Log Likelihood Ratio) Test:
 LLR = −2×(LLnull−LLmodel)
-- The log-likelihood tells us how well the model explains the data.
-- The null model(LL-null) is the model with only the intercept(no predictors).
-- The full model(LL) is your fitted logistic regression with predictors.
+- The log-likelihood tells us how well the model explains the data
+- The null model(LL-null) is the model with only the intercept(no predictors)
+- The full model(LL-model) is fitted logistic regression that includes the predictors
 
-Interpretation
-LLR p-value: This is the probability of seeing such an improvement in log-likelihood 
-if the null model were true.
-
-A small p-value(< 0.05) means your predictors significantly improve the model 
-compared to the null.
+- Null Hypothesis : null model is correct. Adding the predictors does not improve the fit.
+  β₁ = β₂ = ⋯ = βₖ = 0
+- Alternative Hypothesis: full model fits significantly better than the null model.
+  β₁,β₂,βₖ != 0
+- LLR p-value = 0 then we reject the null hypothesis.
+- LLR p-value > 0.05 then we failed to reject the null hypothesis.
 """
 
 """
@@ -50,7 +50,6 @@ odds-ratio:
 oddsratio = odds(Group A) / odds(Group B)
 - The odds ratio (OR) compares the odds of an event occurring in one group to the odds of 
   it occurring in another group.
-Interpretation:
 - OR = 1 → No difference in odds between groups.
 - OR > 1 → Event is more likely in Group A.
 - OR < 1 → Event is more likely in Group B.
@@ -59,7 +58,6 @@ Interpretation:
 """
 Pseudo R²:
 1 - (LL_model / LL_null)
-Interpretation
 - Values closer to 1 indicate a better fit.
 - Typical values for real-world logistic regression are between 0.2 and 0.4.
 - Much higher values may indicate a very strong predictor or possible overfitting.
