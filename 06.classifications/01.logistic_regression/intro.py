@@ -72,22 +72,18 @@ Predicted Negative      FN(False Neg)     TN(True Neg)
 """
 Accuracy:
 (TP + TN) / (TP + TN + FP + FN)
-- The overall proportion of correct predictions.
+- The percentage of total predictions that the model got correct.
 - There are times when we train our model on an imbalanced dataset the accuracy score is 
-  not a good metric to measure the performance of the model. In such cases, we use precision and 
-  recall to measure the performance of a classification model.
+  not a good metric to measure the performance of the model. 
+- In such cases, we use precision and recall to measure the performance of a classification 
+  model.
 """
 
 """
 Precision:
 TP / (TP + FP)
-- When the model predicts positive, how often is it correct?
 - Precision is the ratio between the true positives(TP) and all the positive examples 
-  (TP+FP) predicted by the model. 
-- In other words, precision measures how many of the predicted positive examples are actually 
-  true positives. 
-- It is a measure of the model's ability to avoid false positives and make accurate positive 
-  predictions.
+  (TP+FP) predicted by the model.
 - However, if you are more concerned about false positives or false negatives specifically, 
   you may opt for:Precision(if false positives are more costly) or Recall(if false negatives are 
   more costly).
