@@ -92,12 +92,8 @@ TP / (TP + FP)
 """
 Recall:
 TP / (TP + FN)
-- Out of all the actual positive cases, how many did the model find?
-- In recall, we calculate the ratio of true positives (TP) and the total number of examples 
-  (TP+FN) that actually fall in the positive class. 
-- Recall measures how many of the actual positive examples are correctly identified by the model. 
-- It is a measure of the model's ability to avoid false negatives and identify all positive 
-  examples correctly.
+- In recall, we calculate the ratio of true positives(TP) and the total number of examples 
+  (TP+FN) that actually fall in the positive class.
 """
 
 """
@@ -106,33 +102,32 @@ F1 Score:
 - The F1-Score is the harmonic mean of Precision and Recall
 - High F1-score indicates a good balance between precision and recall.
 - Useful when both false positives and false negatives are important.
-- Also, f1-score is another metric that can be used to measure performance but in the end, 
-  f1-score is also calculated using precision and recall as the f1-score is nothing but 
-  the harmonic mean of the precision and recall.
 - We can use Precision, Recall, F1 score and ROC-AUC to evaluate the effectiveness of 
-  machine learning model in imbalanced dataset scenario. 
-- The best metric is F1 score as it combines both precision and recall into single metric that is 
-  important in imbalanced datasets where a high number of true negatives can skew accuracy. 
-- By focusing on both false positives and false negatives, the F1-score ensures that both the positive 
-  class detection and false positives are accounted for.
-- If the cost of false positives(Type I errors) and false negatives(Type II errors) is similar, 
-  F1-Score strikes a good balance.
-- It is especially useful when you need to prioritize performance in detecting the minority 
-  class(positive class).
+  machine learning model in imbalanced dataset scenario.
 """
 
 """
-Macro Average: 
+Macro Average:
+ma = (1 / 𝐶) × ∑ᶦ⁼¹ ᶜ Precisionᵢ
+where:
+C = total number of classes
+Precisionᵢ = precision for class i
+
 - Compute the metric(Precision, Recall, F1-score) for each class individually.
+- Take the unweighted mean across all classes.
+- Every class contributes equally, regardless of how many samples it has.
 """
 
 """
 Weighted Average:
-wp = Σ (Precision_i × Support_i) / Σ (Support_i)
+wp = ( Σᶦ⁼¹ ᶜ (Precisionᵢ × Supportᵢ) ) / ( Σᶦ⁼¹ ᶜ Supportᵢ )
+
 where:
-- Precision_i is Precision score for class i
-- Support_i is Number of true instances of class i
-- C is Total number of classes
+- Precisionᵢ is Precision score for class i
+- Supportᵢ is number of true instances of class i
+- C is total number of classes
 
 - Compute the metric(Precision, Recall, F1) for each class individually.
+- Take the support-weighted mean across classes.
+- Classes with more samples (higher support) have more influence.
 """
