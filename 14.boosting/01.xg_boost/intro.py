@@ -29,9 +29,9 @@ The final prediction is the sum of the predictions from all the trees.
 """
 ŷ = Tree₁(x) + η*Tree₂(x) + η*Tree₃(x) + ... + η*Treeₙ(x)
 
-ŷ 		 : Final prediction
-Treeᵢ(x) : The i-th decision tree's prediction
-η 		 : Learning rate(a small constant, e.g., 0.1)
+- ŷ is final prediction
+- Treeᵢ(x) is the i-th decision tree's prediction
+- η is learning rate(a small constant, e.g., 0.1)
 """
 
 
