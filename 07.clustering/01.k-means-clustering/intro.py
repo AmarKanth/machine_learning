@@ -1,7 +1,8 @@
 """
 Cluster Analysis:
-Cluster analysis is a multivariate statistical technique that groups observations 
-on the basis some of their features or variables they are described by.
+Cluster analysis is a method of grouping things(like people, objects, or data points) 
+so that observations in the same group are more similar to each other than to items 
+in other groups.
 """
 
 """
@@ -9,25 +10,24 @@ on the basis some of their features or variables they are described by.
 - The algorithm needs to know how many clusters to generate as an end result.
 
 2.Initializing centroids:
-- The algorithm starts with randomly selecting k samples from the dataset as centroids.
+- The algorithm begins by picking k random points from the data. These points act as the 
+  starting centers of the clusters.
 
 3.Assigning clusters:
-- Now that we have k centroids, samples that share the same closest centroid constitute 
-  one cluster. K clusters are created as a result.
+- Each data point is compared to the k centers(centroids). A data point is placed into the 
+  group of the closest center. This way, every point ends up in one of the k clusters.
 - Note that closeness is usually measured by the Euclidean distance. Other
   metrics can also be used, such as the Manhattan distance and Chebyshev
   distance
 
-4.Updating centroids: 
-- For each cluster, we need to recalculate its center point, which is the mean of all 
-  the samples in the cluster. 
-- K centroids are updated to be the means of corresponding clusters. 
+4.Updating centroids:
+- After grouping the points, we find the new center of each cluster by taking the average 
+  position of all points in that group. These new centers become the updated centroids.
 - This is why the algorithm is called k-means.
 
-5.Repeating steps 3 and 4: 
-- We keep repeating assigning clusters and updating centroids until the model converges 
-  when no or a small enough update of centroids can be done, or enough iterations have 
-  been completed.
+5.Repeating steps 3 and 4:
+- We keep moving points to their closest centers(step 3) and recalculating the new centers(step 4) 
+  again and again. This continues until the centers stop changing much.
 """
 
 """
